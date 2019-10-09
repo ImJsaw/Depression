@@ -18,12 +18,12 @@ export default class End extends StateBase {
     
     public stateInitialize(){
         cc.warn("Enter Reality!!!");
-        UIMgr.Inst.realityMgr.showRealityeUI(true);
+        UIMgr.Inst.showReality(true);
     }
     
     public stateRelease(){
         cc.warn("Leave Reality!!!");
-        UIMgr.Inst.realityMgr.showRealityeUI(false);    
+        UIMgr.Inst.showReality(false);    
     }
 
     public stateUpdate(dt: number){

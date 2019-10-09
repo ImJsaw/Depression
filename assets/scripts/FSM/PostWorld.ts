@@ -19,12 +19,12 @@ export default class End extends StateBase {
     
     public stateInitialize(){
         cc.warn("Enter post!!!");
-        UIMgr.Inst.postMgr.showPostUI(true);
+        UIMgr.Inst.showPost(true);
     }
     
     public stateRelease(){
         cc.warn("Leave post!!!");
-        UIMgr.Inst.postMgr.showPostUI(false);
+        UIMgr.Inst.showPost(false);
     }
 
     public stateUpdate(dt: number){

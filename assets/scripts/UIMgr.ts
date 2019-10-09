@@ -31,4 +31,22 @@ export default class UIMgr extends cc.Component {
     onLoad() {
         UIMgr.instance = this;
     }
+
+    showMobile( isOn : boolean){
+        //anim if need
+        //TODO in animNgr....
+        this.mobileMgr.showMobileUI(isOn);
+    }
+    
+    showReality( isOn : boolean){
+        //anim if need
+        //TODO in animNgr....
+        this.realityMgr.showRealityUI(isOn);
+    }
+    
+    showPost( isOn : boolean){
+        //anim if need
+        //TODO in animNgr....
+        this.postMgr.showPostUI(isOn);
+    }
 }

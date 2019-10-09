@@ -19,12 +19,12 @@ export default class End extends StateBase {
     
     public stateInitialize(){
         cc.warn("Enter Mobile!!!");
-        UIMgr.Inst.mobileMgr.showMobileUI(true);
+        UIMgr.Inst.showMobile(true);
     }
     
     public stateRelease(){
         cc.warn("Leave Mobile!!!");
-        UIMgr.Inst.mobileMgr.showMobileUI(false);    
+        UIMgr.Inst.showMobile(false);    
     }
 
     public stateUpdate(dt: number){
