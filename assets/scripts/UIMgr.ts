@@ -1,6 +1,9 @@
 import AnimMgr from "./AnimationMgr";
 import * as Define from "./Define";
 import Game from "./Game";
+import MobileUIMgr from "./UI/MobileUIMgr";
+import RealityUIMgr from "./UI/RealityUIMgr";
+import PostWorldUIMgr from "./UI/PostWorldUIMgr";
 
 
 const { ccclass, property } = cc._decorator;
@@ -21,9 +24,11 @@ export default class UIMgr extends cc.Component {
     }
 
     @property(AnimMgr) animMgr: AnimMgr = null;
+    @property(MobileUIMgr) mobileMgr: MobileUIMgr = null;
+    @property(RealityUIMgr) realityMgr: RealityUIMgr = null;
+    @property(PostWorldUIMgr) postMgr: PostWorldUIMgr = null;
 
     onLoad() {
         UIMgr.instance = this;
-
     }
 }

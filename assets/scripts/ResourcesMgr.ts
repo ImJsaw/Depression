@@ -70,7 +70,7 @@ export default class ResourcesMgr extends cc.Component {
             this.assetList[ResourceIndex.Game] = list;
         });
 
-        cc.game.addPersistRootNode(this.node);
+        // cc.game.addPersistRootNode(this.node);
     }
 
     /**

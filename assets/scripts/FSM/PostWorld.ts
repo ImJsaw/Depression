@@ -12,17 +12,19 @@ const {ccclass, property} = cc._decorator;
 export default class End extends StateBase {
 
     @property({type:cc.Enum(Define.GameState),serializable:true})
-    public state:Define.GameState = Define.GameState.End;
-    onLoad(){
-        
+    public state:Define.GameState = Define.GameState.PostWorld;
+
+    onLoad(){    
     }
     
     public stateInitialize(){
-        cc.warn("END!!!");
+        cc.warn("Enter post!!!");
+        UIMgr.Inst.postMgr.showPostUI(true);
     }
-
+    
     public stateRelease(){
-
+        cc.warn("Leave post!!!");
+        UIMgr.Inst.postMgr.showPostUI(false);
     }
 
     public stateUpdate(dt: number){

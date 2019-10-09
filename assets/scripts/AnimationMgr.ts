@@ -14,7 +14,7 @@ export default class AnimationMgr extends cc.Component {
         super();
 
         this.animationList = [];
-        cc.game.addPersistRootNode(this.node);
+        // cc.game.addPersistRootNode(this.node);
     }
 
     /**

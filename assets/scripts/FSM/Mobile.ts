@@ -12,17 +12,19 @@ const {ccclass, property} = cc._decorator;
 export default class End extends StateBase {
 
     @property({type:cc.Enum(Define.GameState),serializable:true})
-    public state:Define.GameState = Define.GameState.End;
+    public state:Define.GameState = Define.GameState.Mobile;
     onLoad(){
         
     }
     
     public stateInitialize(){
-        cc.warn("END!!!");
+        cc.warn("Enter Mobile!!!");
+        UIMgr.Inst.mobileMgr.showMobileUI(true);
     }
-
+    
     public stateRelease(){
-
+        cc.warn("Leave Mobile!!!");
+        UIMgr.Inst.mobileMgr.showMobileUI(false);    
     }
 
     public stateUpdate(dt: number){
@@ -30,6 +32,10 @@ export default class End extends StateBase {
 
     change(){
         this.m_FSM.setState(Define.GameState.PostWorld);
+    }
+
+    backReality(){
+        this.m_FSM.setState(Define.GameState.Reality);
     }
     
 }

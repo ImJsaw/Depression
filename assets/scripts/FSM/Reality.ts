@@ -10,17 +10,20 @@ const {ccclass, property} = cc._decorator;
 export default class End extends StateBase {
 
     @property({type:cc.Enum(Define.GameState),serializable:true})
-    public state:Define.GameState = Define.GameState.End;
+    public state:Define.GameState = Define.GameState.Reality;
+
     onLoad(){
         
     }
     
     public stateInitialize(){
-        cc.warn("END!!!");
+        cc.warn("Enter Reality!!!");
+        UIMgr.Inst.realityMgr.showRealityeUI(true);
     }
-
+    
     public stateRelease(){
-
+        cc.warn("Leave Reality!!!");
+        UIMgr.Inst.realityMgr.showRealityeUI(false);    
     }
 
     public stateUpdate(dt: number){
