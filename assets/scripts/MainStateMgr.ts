@@ -4,7 +4,8 @@ const { ccclass, property } = cc._decorator;
 
 export enum GameState {
     Start = 1,
-    Game = 2,
+    Loading = 2,
+    Game = 3,
     End = 99
 }
 

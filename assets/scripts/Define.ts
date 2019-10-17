@@ -7,6 +7,13 @@ export enum GameState {
     End
 }
 
+export enum NotifyType {
+    None = 0,
+    Line,
+    IG,
+    Map
+}
+
 export class GameInfo{
     private static instance: GameInfo = null;
 

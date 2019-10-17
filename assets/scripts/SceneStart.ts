@@ -13,7 +13,7 @@ export default class SceneStart extends cc.Component {
         Game.Inst.utils.resize();
     }
 
-    startGame(){
-        Game.Inst.mainStateMgr.changeState(GameState.Game);
+    enterGame(){
+        Game.Inst.mainStateMgr.changeState(GameState.Loading);
     }
 }
