@@ -73,7 +73,7 @@ export default class End extends StateBase {
         });
         //release mouse inside
         this.mobileRoot.on(cc.Node.EventType.TOUCH_END, function (event) {
-            cc.log("delta : " + self.delta.x + " , " + self.delta.y);
+            // cc.log("[Mobile]delta : " + self.delta.x + " , " + self.delta.y);
             //log start point
             self.endPos = event.getLocation();
             if( Math.abs(self.delta.x) > self.threshold || Math.abs(self.delta.y) > self.threshold ){

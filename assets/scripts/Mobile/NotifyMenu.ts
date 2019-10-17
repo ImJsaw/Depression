@@ -3,7 +3,7 @@ import MessagePrefab from "../components/MessagePrefab";
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class NotifyMenu extends cc.Component {
 
     /**整個下拉選單root node */
     @property(cc.Node)
@@ -22,8 +22,12 @@ export default class NewClass extends cc.Component {
     /**animation duration */
     private duration : number = 1;
 
+    /**目前訊息流水號派發 */
+    private curMsgSerialNum : number = 1;
+
     onLoad(){
         this.root.position = this.hidePos;
+
     }
 
     start () {
@@ -50,19 +54,30 @@ export default class NewClass extends cc.Component {
     }
 
     getNotify(){
-        let moveVec : cc.Vec2 = new cc.Vec2(0,-200); 
-
+        //generate new msg
         let node = cc.instantiate(this.msgPrefab);
         node.parent = this.msgRoot;
         node.y = 200;
 
-        let action = cc.moveBy(this.duration, moveVec ).easing(cc.easeCubicActionInOut())
+        //manage serial num
+        node.getComponent(MessagePrefab).init(this.curMsgSerialNum);
+        this.curMsgSerialNum++;
+
+        //move all exist msg down
         this.msgRoot.children.forEach(element=>{
-            // element.runAction(action);
-            // element.y -= 200;
             element.getComponent(MessagePrefab).moveDown();
         })
-        
     }
+
+    /**broadcast msg remove to all msg prefab */
+    removeMsg( serialNum : number){
+        cc.log("[Msg]remove " + serialNum);
+        //move all exist msg down
+        this.msgRoot.children.forEach(element=>{
+            element.getComponent(MessagePrefab).removeBroadcast(serialNum);
+        })
+    }
+
+
 
 }
