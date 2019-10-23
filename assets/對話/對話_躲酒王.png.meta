@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "b0697dfd-fa88-4876-897e-6506f123b4a3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "對話_躲酒王": {
+      "ver": "1.0.4",
+      "uuid": "dbda2f58-740c-4571-ac04-06b83bb9f93e",
+      "rawTextureUuid": "b0697dfd-fa88-4876-897e-6506f123b4a3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 447,
+      "height": 664,
+      "rawWidth": 447,
+      "rawHeight": 664,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
