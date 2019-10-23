@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "8a8ad740-6c60-4824-99ea-82e05c5efb11",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "渣南": {
+      "ver": "1.0.4",
+      "uuid": "3e438934-8f54-42f6-ad50-e5505ddf1ed9",
+      "rawTextureUuid": "8a8ad740-6c60-4824-99ea-82e05c5efb11",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 422,
+      "height": 425,
+      "rawWidth": 422,
+      "rawHeight": 425,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

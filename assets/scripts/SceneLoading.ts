@@ -21,6 +21,7 @@ export default class SceneLoading extends cc.Component {
     @property(Number) minLoadingBarHeadPos: number = -580;
     @property(Number) maxLoadingBarHeadPos: number = 570;
 
+    @property(cc.Node) button: cc.Node = null;
     stateStr: string;
     progress: number;
     isLoading: boolean;
@@ -64,10 +65,16 @@ export default class SceneLoading extends cc.Component {
 
         this.isLoading = false;
         //this.stateStr = Game.Inst.text.get("SwitchingScene");
-
+        
+        if(this.button == null)
+            this.button =this.node.getChildByName("Game");
+        //this.button.opacity = 255;
         Game.Inst.mainStateMgr.changeState(GameState.Game);
     }
-
+    
+    enterGame(){
+        Game.Inst.mainStateMgr.changeState(GameState.Game);
+    }
     // called every frame, uncomment this function to activate update callback
     update(dt) {
         if (this.isLoading) {

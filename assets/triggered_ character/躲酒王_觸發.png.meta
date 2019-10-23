@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "168353b6-2052-4883-9626-d0655949c435",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "躲酒王_觸發": {
+      "ver": "1.0.4",
+      "uuid": "9ffae243-0c04-47af-b6ac-c6c79a6a9ccc",
+      "rawTextureUuid": "168353b6-2052-4883-9626-d0655949c435",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 413,
+      "height": 641,
+      "rawWidth": 413,
+      "rawHeight": 641,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
