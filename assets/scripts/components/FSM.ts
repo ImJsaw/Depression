@@ -36,7 +36,7 @@ export default class FSM {
 
         state.onLoadInit(this);
 
-        console.log("add " + stateID.toString() + " finish");
+        // console.log("add " + stateID.toString() + " finish");
     }
 
     /**釋放FSM資源 */

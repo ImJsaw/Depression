@@ -9,6 +9,7 @@ export default class PostWorldUIMgr extends cc.Component {
     postRoot: cc.Node = null;
 
     onLoad() {
+        this.postRoot.active = true;
         this.showPostUI(false);
     }
 

@@ -6,8 +6,6 @@ import { GameState } from "../MainStateMgr";
 
 const {ccclass, property} = cc._decorator;
 
-
-
 @ccclass
 export default class End extends StateBase {
 
@@ -57,7 +55,6 @@ export default class End extends StateBase {
     }
 
     registerDragEvent(){
-        cc.log(this.mobileRoot);
         let self = this;
         this.mobileRoot.on(cc.Node.EventType.TOUCH_START, function (event) {
             // cc.log("start");
@@ -115,10 +112,7 @@ export default class End extends StateBase {
      * @param isOn 
      */
     showNotifyMenu(isOn : boolean){
-        this.isNotifyMenuShow = isOn;
-        UIMgr.Inst.mobileMgr.showNotifyMenu(isOn);
+        UIMgr.Inst.mobileMgr.showNotifyMenu(isOn, ()=> this.isNotifyMenuShow = isOn );
     }
 
-
-    
 }

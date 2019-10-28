@@ -18,13 +18,13 @@ export default class PageMgr extends cc.Component {
     private maxPageNum : number = 2;
 
     onLoad(){
-        this.registerTouchEvent();
+        this.regDragEvent();
     }
 
     start () {
     }
 
-    registerTouchEvent(){
+    regDragEvent(){
         //register touch event
         let self = this;
         this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
@@ -55,6 +55,13 @@ export default class PageMgr extends cc.Component {
                 self.backToOrigin();
             }
         });
+    }
+
+    unRegDragEvent(){
+        this.node.off(cc.Node.EventType.TOUCH_START);
+        this.node.off(cc.Node.EventType.TOUCH_MOVE);
+        this.node.off(cc.Node.EventType.TOUCH_END);
+        this.node.off(cc.Node.EventType.TOUCH_CANCEL);
     }
 
     backToOrigin(){

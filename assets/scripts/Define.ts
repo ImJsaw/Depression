@@ -1,3 +1,4 @@
+import App from "./components/App";
 
 export enum GameState {
     None = 0,
@@ -14,6 +15,13 @@ export enum NotifyType {
     Map
 }
 
+export enum Apps{
+    None = 0,
+    Line,
+    IG,
+    Map
+}
+
 export class GameInfo{
     private static instance: GameInfo = null;
 
@@ -23,8 +31,7 @@ export class GameInfo{
         }
         return this.instance;
     }
-    
-    
+    curApp : App = null;
     endGame: boolean = false;
 }
 

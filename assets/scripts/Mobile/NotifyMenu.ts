@@ -22,6 +22,8 @@ export default class NotifyMenu extends cc.Component {
     /**animation duration */
     private duration : number = 1;
 
+    private isMoving : boolean = false;
+
     /**目前訊息流水號派發 */
     private curMsgSerialNum : number = 1;
 
@@ -34,7 +36,13 @@ export default class NotifyMenu extends cc.Component {
 
     }
 
-    showUI(isOn : boolean){
+    isShow(isOn : boolean, onFinished?){
+        //do nothing if still moving
+        if(this.isMoving) return;
+
+        this.isMoving = true;
+
+        let self = this;
         let start : cc.Vec2;
         let end : cc.Vec2;
         if( isOn){
@@ -48,7 +56,13 @@ export default class NotifyMenu extends cc.Component {
 
         let action = cc.sequence(
             cc.moveTo(0,start),
-            cc.moveTo(this.duration, end).easing(cc.easeCubicActionInOut())
+            cc.moveTo(this.duration, end).easing(cc.easeCubicActionInOut()),
+            cc.callFunc(()=>{
+                //move complete, close flag
+                self.isMoving = false;
+                if(onFinished != undefined )
+                    onFinished();
+            })
         )
         this.root.runAction(action);
     }
