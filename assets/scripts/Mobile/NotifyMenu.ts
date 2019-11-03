@@ -1,4 +1,4 @@
-import MessagePrefab from "../components/MessagePrefab";
+import NotifyMsgPrefab from "../components/NotifyMsgPrefab";
 
 const {ccclass, property} = cc._decorator;
 
@@ -74,12 +74,12 @@ export default class NotifyMenu extends cc.Component {
         node.y = 200;
 
         //manage serial num
-        node.getComponent(MessagePrefab).init(this.curMsgSerialNum);
+        node.getComponent(NotifyMsgPrefab).init(this.curMsgSerialNum);
         this.curMsgSerialNum++;
 
         //move all exist msg down
         this.msgRoot.children.forEach(element=>{
-            element.getComponent(MessagePrefab).moveDown();
+            element.getComponent(NotifyMsgPrefab).moveDown();
         })
     }
 
@@ -88,7 +88,7 @@ export default class NotifyMenu extends cc.Component {
         cc.log("[Msg]remove " + serialNum);
         //move all exist msg down
         this.msgRoot.children.forEach(element=>{
-            element.getComponent(MessagePrefab).removeBroadcast(serialNum);
+            element.getComponent(NotifyMsgPrefab).removeBroadcast(serialNum);
         })
     }
 

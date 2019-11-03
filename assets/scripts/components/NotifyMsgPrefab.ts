@@ -4,7 +4,7 @@ const { ccclass, property } = cc._decorator;
 
 /**提示視窗物件 */
 @ccclass
-export default class MessagePrefab extends cc.Component {
+export default class NotifyMsgPrefab extends cc.Component {
 
     /**流水號 */
     serialNum : number = 0;
