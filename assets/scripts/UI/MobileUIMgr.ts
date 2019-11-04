@@ -2,6 +2,7 @@ import NotifyMenu from "../Mobile/NotifyMenu";
 import UIMgr from "../UIMgr";
 import PageMgr from "../Mobile/PageMgr";
 import * as Define from "../Define";
+import Game from "../Game";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -50,9 +51,7 @@ export default class MobileUIMgr extends cc.Component {
 
     backButton(){
         cc.log("back!");
-        if( Define.GameInfo.Inst.curApp != undefined){
-            Define.GameInfo.Inst.curApp.endApp();
-        }
+        Game.Inst.appMgr.endApp();
     }
 
     

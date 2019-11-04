@@ -1,30 +1,80 @@
-import App from "./components/App";
+import line from "./components/app/line";
+import gMap from "./components/app/gMap";
 import * as Define from "./Define";
+import App from "./components/App";
+import instagram from "./components/app/instagram";
 
-const { ccclass, property } = cc._decorator;
-
-
-@ccclass("singleSymbolSetting")
-class SymbolSetting{
-    @property(cc.Integer)
-    symbolID : number = 1;
-
-}
+const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class AppMgr extends cc.Component {
 
-    @property ( [SymbolSetting] )
-    AppList : SymbolSetting[] = [];
+    @property(line)
+    line : line = null;
+    
+    @property(instagram)
+    ig : instagram = null;
 
-    @property(App)
-    Apps : App = null;
+    @property(gMap)
+    map : gMap = null;
+    
 
-    @property(cc.Node)
-    app : cc.Node = null;
+    private appList : App[] = [];
 
+    private curAppID : Define.Apps = Define.Apps.None;
 
-    startApp( appNum : Define.Apps){
+    private static instance: AppMgr;
+
+    /**
+     * 取得遊戲主控端
+     */
+    static get Inst(): AppMgr {
+        if (!AppMgr.instance) {
+            return undefined;
+        }
+        return this.instance;
     }
 
+    onLoad(){
+        AppMgr.instance = this;
+        //make appList
+        this.appList[Define.Apps.Line] = this.line;
+        this.appList[Define.Apps.IG] = this.ig;
+        this.appList[Define.Apps.Map] = this.map;
+    }
+    
+    startApp(appID : Define.Apps){
+        if(appID != Define.Apps.None){
+            this.curAppID = appID;
+            this.appList[this.curAppID].startApp();
+        }
+    }
+
+    /**
+     * 當按下返回鍵時呼叫
+     */
+    endApp(){
+        if(this.curAppID != Define.Apps.None){
+            this.endAppAnime();
+            this.appList[this.curAppID].endApp();
+        }
+    }
+    
+    /**
+     * app畫面縮小動畫
+     */
+    endAppAnime(){
+        let appNode : cc.Node = this.appList[this.curAppID].node;
+        let action = cc.sequence(
+            cc.spawn(
+                cc.scaleTo(0.1, 0).easing(cc.easeCubicActionOut()),
+                cc.fadeTo(0.1,0).easing(cc.easeCubicActionIn()),
+            ),
+            cc.callFunc(()=>{
+                appNode.children.forEach( (element)=>element.active  = false);
+            })
+        )
+        appNode.runAction(action);
+
+    }
 }

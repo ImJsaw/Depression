@@ -65,6 +65,7 @@ export default class PageMgr extends cc.Component {
     }
 
     backToOrigin(){
+        cc.warn("[Page] back to origin");
         this.node.children.forEach(element=> element.getComponent(Page).backToOrigin(this.delta.x));
     }
 

@@ -3,6 +3,8 @@ import * as Define from "../Define";
 import Game from "../Game";
 import UIMgr from "../UIMgr";
 import { GameState } from "../MainStateMgr";
+import line from "../components/app/line";
+import gMap from "../components/app/gMap";
 
 const {ccclass, property} = cc._decorator;
 

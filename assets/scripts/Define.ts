@@ -1,4 +1,3 @@
-import App from "./components/App";
 
 export enum GameState {
     None = 0,
@@ -31,11 +30,44 @@ export class GameInfo{
         }
         return this.instance;
     }
-    curApp : App = null;
     endGame: boolean = false;
 }
 
 export default class Converter {
     //convert enum and string
+
+    /**
+     * return app name below icon
+     * @param appID 
+     */
+    static getAppName( appID : Apps){
+        switch(appID){
+            case Apps.Line:
+                return "line";
+            case Apps.IG:
+                return "instagram";
+            case Apps.Map:
+                return "map";
+        }
+        cc.warn("[Converter] wrong app name");
+        return "";
+    }
+
+    /**
+     * return img name for resourseMgr
+     * @param appID 
+     */
+    static getAppIconName( appID : Apps){
+        switch(appID){
+            case Apps.Line:
+                return "line";
+            case Apps.IG:
+                return "instagram";
+            case Apps.Map:
+                return "map";
+        }
+        cc.warn("[Converter] wrong appIcon name");
+        return "";
+    }
     
 }
