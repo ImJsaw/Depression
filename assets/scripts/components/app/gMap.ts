@@ -31,8 +31,6 @@ export default class gMap extends App {
             cc.fadeTo(0.3,255).easing(cc.easeCubicActionIn()),
         );
         this.node.runAction(action);
-        //cache this to GameInfo
-        Define.GameInfo.Inst.curApp = this;
 
         this.regDragEvent();
         
@@ -73,19 +71,6 @@ export default class gMap extends App {
 
     endApp(){
         cc.log("end gMap");
-        let action = cc.sequence(
-            cc.spawn(
-                cc.scaleTo(0.1, 0).easing(cc.easeCubicActionOut()),
-                cc.fadeTo(0.1,0).easing(cc.easeCubicActionIn()),
-            ),
-            cc.callFunc(()=>{
-                this.node.children.forEach( (element)=>element.active  = false);
-            })
-        )
-        this.node.runAction(action);
-
-        Define.GameInfo.Inst.curApp = undefined;
         this.unRegDragEvent();
-        
     }
 }

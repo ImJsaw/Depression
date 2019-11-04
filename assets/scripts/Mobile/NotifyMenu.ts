@@ -18,7 +18,7 @@ export default class NotifyMenu extends cc.Component {
     msgPrefab : cc.Prefab = null;
 
     private showPos : cc.Vec2 = new cc.Vec2(0,0);
-    private hidePos : cc.Vec2 = new cc.Vec2(0,1000);
+    private hidePos : cc.Vec2 = new cc.Vec2(0,1080);
     /**animation duration */
     private duration : number = 1;
 
