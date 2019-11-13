@@ -18,7 +18,8 @@ export enum ShaderType {
     GrayScaling,
     WaterWave,
     StartLighting,
-    Blackhole
+    Blackhole,
+    TikTok,
 }
 
 /**
@@ -31,7 +32,8 @@ export let ShaderEffects = cc.Enum({
     灰度图: 0,
     水波: 1,
     闪电: 2,
-    黑洞照片:3
+    黑洞照片: 3,
+    抖音: 4
 })
 
 export default class MaterialManager {
