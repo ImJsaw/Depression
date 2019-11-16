@@ -1,13 +1,17 @@
 
-module.exports = {
+{
     "scriptname": [
         {
             "name": "eqweq",
+            "content": "emqkweqweqjeioq"
+        },
+        {
+            "name": "eqweq",
             "content": "ddd",
-            "selection": [
+            "selections": [
                 {
                     "content": "alert",
-                    "event": "alert"
+                    "event": "example"
                 }
             ]
         }
