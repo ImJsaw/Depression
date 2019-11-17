@@ -48,11 +48,5 @@ export default class MobileUIMgr extends cc.Component {
             });
         }
     }
-
-    backButton(){
-        cc.log("back!");
-        Game.Inst.appMgr.endApp();
-    }
-
     
 }

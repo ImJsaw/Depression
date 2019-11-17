@@ -3,6 +3,8 @@ import gMap from "./components/app/gMap";
 import * as Define from "./Define";
 import App from "./components/App";
 import instagram from "./components/app/instagram";
+import MobileUIMgr from "./UI/MobileUIMgr";
+import UIMgr from "./UIMgr";
 
 const {ccclass, property} = cc._decorator;
 
@@ -46,6 +48,7 @@ export default class AppMgr extends cc.Component {
     startApp(appID : Define.Apps){
         if(appID != Define.Apps.None){
             this.curAppID = appID;
+            UIMgr.Inst.mobileMgr.pageMgr.unRegDragEvent();
             this.appList[this.curAppID].startApp();
         }
     }
@@ -54,9 +57,11 @@ export default class AppMgr extends cc.Component {
      * 當按下返回鍵時呼叫
      */
     endApp(){
+        cc.log("call end app");
         if(this.curAppID != Define.Apps.None){
             this.endAppAnime();
             this.appList[this.curAppID].endApp();
+            UIMgr.Inst.mobileMgr.pageMgr.regDragEvent();
         }
     }
     
