@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "46f21a6f-10e0-4f36-bcbf-73bda75d83c5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "icon_instagram": {
+      "ver": "1.0.4",
+      "uuid": "ba72b591-ffee-4b28-9efc-f4e8aec1921d",
+      "rawTextureUuid": "46f21a6f-10e0-4f36-bcbf-73bda75d83c5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 86,
+      "height": 85,
+      "rawWidth": 86,
+      "rawHeight": 86,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -167,6 +167,7 @@ export default class ResourcesMgr extends cc.Component {
                     cc.log("[Resources] Load Texture: " + name + " success");
                     return this.textures[name];
                 }
+                else cc.log("[Resources] cannot find" + name);
                 break;
             case ResourcesType.SequenceClip:
                 if (name in this.sequences) {
