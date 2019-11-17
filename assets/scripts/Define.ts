@@ -20,7 +20,11 @@ export enum Apps{
     IG,
     Map,
     Photo,
-    Sceduler
+    Sceduler,
+    Call,
+    Contacts,
+    Browser,
+    Settings
 }
 
 export class GameInfo{
@@ -54,6 +58,14 @@ export default class Converter {
                 return "photo";
             case Apps.Sceduler:
                 return "scheduler";
+            case Apps.Call:
+                return "call";
+            case Apps.Contacts:
+                return "contacts";
+            case Apps.Browser:
+                return "browser";
+            case Apps.Settings:
+                return "settings";
         }
         cc.warn("[Converter] wrong app name");
         return "";
@@ -75,6 +87,15 @@ export default class Converter {
                 return "icon_photo";
             case Apps.Sceduler:
                 return "icon_scheduler";
+            case Apps.Call:
+                return "icon_call";
+            case Apps.Contacts:
+                return "icon_contacts";
+            case Apps.Browser:
+                return "icon_browser";
+            case Apps.Settings:
+                return "icon_settings";
+
         }
         cc.warn("[Converter] wrong appIcon name");
         return "";

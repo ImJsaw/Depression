@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "30a9a4e0-8ebd-484e-9330-7b229b062ce5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "icon_wifi": {
+      "ver": "1.0.4",
+      "uuid": "15a6d3c3-e403-4ffd-9cce-7ddef2f175ba",
+      "rawTextureUuid": "30a9a4e0-8ebd-484e-9330-7b229b062ce5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 51,
+      "height": 62,
+      "rawWidth": 51,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

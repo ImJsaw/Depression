@@ -5,6 +5,8 @@ import App from "./components/App";
 import instagram from "./components/app/instagram";
 import MobileUIMgr from "./UI/MobileUIMgr";
 import UIMgr from "./UIMgr";
+import scheduler from "./components/app/scheduler";
+import photo from "./components/app/photo";
 
 const {ccclass, property} = cc._decorator;
 
@@ -19,7 +21,12 @@ export default class AppMgr extends cc.Component {
 
     @property(gMap)
     map : gMap = null;
+
+    @property(scheduler)
+    scheduler : scheduler = null;
     
+    @property(photo)
+    photos : photo = null;
 
     private appList : App[] = [];
 
