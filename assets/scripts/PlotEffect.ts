@@ -22,7 +22,7 @@ export default class NewClass extends cc.Component {
     @property (cc.Node) effect: cc.Node = null;
     // LIFE-CYCLE CALLBACKS:
     private mouseDetacted = false;
-    onload() {
+    onLoad() {
         this.node.on(cc.Node.EventType.MOUSE_ENTER, function (event){
             this.mouseDetacted = true;
         }, this);
@@ -34,11 +34,13 @@ export default class NewClass extends cc.Component {
 
     update (dt) {
         if(this.mouseDetacted == true) {
-            this.effect.opacity += 85;
+            this.effect.opacity += 51;
+            
+        
             cc.log("mouse enter");
         }
         else {
-            this.effect.opacity -= 85;
+            this.effect.opacity -= 51;
             cc.log("mouse leave");
         }
     }

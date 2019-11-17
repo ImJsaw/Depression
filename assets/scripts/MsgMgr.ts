@@ -37,7 +37,8 @@ export default class MsgMgr extends cc.Component {
 
         this.node.active = false
         
-        window['some'] = () => this.play('scriptname')
+        window['playScript'] = (name) => this.play(name)
+        window['stopScript'] = () => this.close()
     }
 
     load (file: string) {
@@ -67,6 +68,10 @@ export default class MsgMgr extends cc.Component {
             // @ts-ignore
             this.normal(this.scripts[this.playing][this.playingProcess])
         }
+    }
+
+    close () {
+        this.node.active = false
     }
 
     next () {
