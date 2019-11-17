@@ -12,6 +12,8 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class MsgMgr extends cc.Component {
+    private speakerImage: Object
+    private speaker: cc.Node
     private static selectionChar = ['A', 'B', 'C', 'D']
     private nextButton: cc.Node
     private nameText: cc.Node
@@ -24,6 +26,7 @@ export default class MsgMgr extends cc.Component {
 
     async start () {
         this.nextButton = cc.find('MsgBox/Next', this.node)
+        this.speaker = cc.find('Speaker', this.node) 
         this.nameText = cc.find('MsgBox/Name/Background/Text', this.node)
         this.contentText = cc.find('MsgBox/Content/Background/Text', this.node)
         this.buttonGroup = cc.find('MsgBox/Buttons', this.node)
@@ -33,12 +36,12 @@ export default class MsgMgr extends cc.Component {
         this.buttons.push(cc.find('ButtonD', this.buttonGroup))
 
         this.node.on('click', this.next)
-        await this.load('腳本/example.json')
-
-        this.node.active = false
+        await this.load('腳本/example')
         
         window['playScript'] = (name) => this.play(name)
         window['stopScript'] = () => this.close()
+
+        this.node.active = false
     }
 
     load (file: string) {
@@ -48,6 +51,7 @@ export default class MsgMgr extends cc.Component {
                 if (this.scripts) {
                     Object.keys(obj.json).forEach(e => {
                         this.scripts[e] = obj.json[e]
+                        this.autoloadSpeaker(this.scripts[e])
                     })
                 } else {
                     this.scripts = obj.json
@@ -57,10 +61,30 @@ export default class MsgMgr extends cc.Component {
         })
     }
 
+    autoloadSpeaker (script) {
+        return Promise.all(script.map(e => this.loadSpeakerImage(e.speaker)))
+    }
+
+    loadSpeakerImage (file: string) {
+        return new Promise((res, rej) => {
+            if (this.speakerImage && this.speakerImage[file]) res(this.speakerImage[file])
+            cc.loader.loadRes('人物/' + file, cc.SpriteFrame, (err, obj) => {
+                if (err) rej(err)
+                if (!this.speakerImage) {
+                    this.speakerImage = {}
+                }
+                console.log(obj)
+                this.speakerImage[file] = obj
+                res(this.speakerImage)
+            })
+        })
+    }
+
     play (script: string, init: number = 0) {
         this.node.active = true
         this.playing = script
         this.playingProcess = init
+        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])
@@ -74,10 +98,14 @@ export default class MsgMgr extends cc.Component {
         this.node.active = false
     }
 
-    next () {
-        if (this.scripts[this.playing][this.playingProcess].selections) return false
+    next (evt) {
+        evt.stopPropagation()
+        if (this.scripts[this.playing][this.playingProcess].selections) {
+            return false
+        }
         
         this.playingProcess += 1 
+        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])
@@ -92,14 +120,12 @@ export default class MsgMgr extends cc.Component {
     }
 
     normal (obj: {name: string, content: string}) {
-        this.nextButton.active = true
         this.buttonGroup.active = false
         this.nameText.getComponent(cc.Label).string = obj.name
         this.contentText.getComponent(cc.Label).string = obj.content
     }
 
     select (obj: {name: string, content: string, selections: Array<{content: string, event: string, data?: any}>}) {
-        this.nextButton.active = false
         this.buttonGroup.active = true
         this.buttons.forEach(n => {
             n.active = false

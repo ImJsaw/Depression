@@ -1,15 +1,15 @@
 {
   "ver": "2.2.0",
-  "uuid": "b0697dfd-fa88-4876-897e-6506f123b4a3",
+  "uuid": "b3c8c9f8-a870-4a62-8f66-ff826e817c37",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "對話_躲酒王": {
+    "躲酒王": {
       "ver": "1.0.4",
-      "uuid": "dbda2f58-740c-4571-ac04-06b83bb9f93e",
-      "rawTextureUuid": "b0697dfd-fa88-4876-897e-6506f123b4a3",
+      "uuid": "deba306b-d077-41d0-83b8-9a184909b151",
+      "rawTextureUuid": "b3c8c9f8-a870-4a62-8f66-ff826e817c37",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
