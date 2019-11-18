@@ -50,6 +50,8 @@ export default class AppMgr extends cc.Component {
         this.appList[Define.Apps.Lime] = this.line;
         this.appList[Define.Apps.IG] = this.ig;
         this.appList[Define.Apps.Map] = this.map;
+        this.appList[Define.Apps.Photo] = this.photos;
+        this.appList[Define.Apps.Sceduler] = this.scheduler;
     }
     
     startApp(appID : Define.Apps){

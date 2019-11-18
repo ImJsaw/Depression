@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "ig底圖-64": {
+    "bg": {
       "ver": "1.0.4",
       "uuid": "03c09644-5fbb-4bb2-af6f-d6f0d5409af5",
       "rawTextureUuid": "1ca0b8f4-4159-44ae-9a82-e7e95028c457",
