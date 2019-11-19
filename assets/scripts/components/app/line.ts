@@ -15,6 +15,9 @@ export default class line extends App {
     @property(cc.Prefab)
     msgPrefab : cc.Prefab = null;
 
+    @property(cc.Node)
+    profile : cc.Node = null;
+
     /**animation duration */
     private duration : number = 1;
 
@@ -46,8 +49,18 @@ export default class line extends App {
         //test
         this.generateMsg();
 
-        this.regDragEvent();
-        
+        this.openChat();
+        // this.regDragEvent();
+    }
+
+    openChat(){
+        this.profile.active = false;
+        this.msgRoot.active = true;
+    }
+
+    openProfile(){
+        this.profile.active = true;
+        this.msgRoot.active = false;
     }
 
     regDragEvent(){
@@ -102,6 +115,7 @@ export default class line extends App {
     }
 
     msgPosRecover(){
+        cc.log("rec"+this.offSet);
         this.msgRoot.children.forEach( (element)=> element.y -= this.offSet);
         this.offSet = 0;
     }

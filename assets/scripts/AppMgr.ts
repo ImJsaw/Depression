@@ -5,6 +5,8 @@ import App from "./components/App";
 import instagram from "./components/app/instagram";
 import MobileUIMgr from "./UI/MobileUIMgr";
 import UIMgr from "./UIMgr";
+import scheduler from "./components/app/scheduler";
+import photo from "./components/app/photo";
 
 const {ccclass, property} = cc._decorator;
 
@@ -19,7 +21,12 @@ export default class AppMgr extends cc.Component {
 
     @property(gMap)
     map : gMap = null;
+
+    @property(scheduler)
+    scheduler : scheduler = null;
     
+    @property(photo)
+    photos : photo = null;
 
     private appList : App[] = [];
 
@@ -40,9 +47,11 @@ export default class AppMgr extends cc.Component {
     onLoad(){
         AppMgr.instance = this;
         //make appList
-        this.appList[Define.Apps.Line] = this.line;
+        this.appList[Define.Apps.Lime] = this.line;
         this.appList[Define.Apps.IG] = this.ig;
         this.appList[Define.Apps.Map] = this.map;
+        this.appList[Define.Apps.Photo] = this.photos;
+        this.appList[Define.Apps.Sceduler] = this.scheduler;
     }
     
     startApp(appID : Define.Apps){

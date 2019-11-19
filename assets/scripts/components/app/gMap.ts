@@ -1,5 +1,4 @@
 import App from "../App";
-import * as Define from "../../Define";
 
 const {ccclass, property} = cc._decorator;
 
@@ -10,9 +9,8 @@ export default class gMap extends App {
     @property(cc.Node)
     mapRoot : cc.Node = null;
 
-    private mapMax : cc.Vec2 = new cc.Vec2(600,800);
-    private mapMin : cc.Vec2 = new cc.Vec2(-600,-800);
-    
+    private mapMax : cc.Vec2 = new cc.Vec2(700,340);
+    private mapMin : cc.Vec2 = new cc.Vec2(-700,-340);
 
     onLoad(){
         this.node.scale = 0;

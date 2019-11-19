@@ -15,8 +15,8 @@ export default class PostWorldUIMgr extends cc.Component {
 
     showPostUI( isOn : boolean){
         if( isOn) 
-            this.postRoot.opacity = 255;
+            this.postRoot.children.forEach((element)=>element.active = true);
         else 
-            this.postRoot.opacity = 0;
+            this.postRoot.children.forEach((element)=>element.active = false);
     }
 }
