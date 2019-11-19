@@ -105,7 +105,6 @@ export default class MsgMgr extends cc.Component {
         }
         
         this.playingProcess += 1 
-        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])
@@ -116,6 +115,7 @@ export default class MsgMgr extends cc.Component {
             // @ts-ignore
             this.normal(this.scripts[this.playing][this.playingProcess])
         }
+        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         return true
     }
 
