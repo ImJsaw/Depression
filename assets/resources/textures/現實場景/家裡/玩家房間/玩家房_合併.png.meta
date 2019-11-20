@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "aebe399c-d799-47b7-8059-6580529230fd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "玩家房_合併": {
+      "ver": "1.0.4",
+      "uuid": "7e09fad3-a707-4dce-90f1-7ef5f11bbf2e",
+      "rawTextureUuid": "aebe399c-d799-47b7-8059-6580529230fd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 8508,
+      "height": 4655,
+      "rawWidth": 8508,
+      "rawHeight": 4655,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

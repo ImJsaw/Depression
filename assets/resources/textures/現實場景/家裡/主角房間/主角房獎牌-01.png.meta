@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "728fb865-9612-4f51-9fc1-d187fbf1357c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "主角房獎牌-01": {
+      "ver": "1.0.4",
+      "uuid": "6a707062-afdc-446c-8649-e2d0785bc898",
+      "rawTextureUuid": "728fb865-9612-4f51-9fc1-d187fbf1357c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 54,
+      "height": 60,
+      "rawWidth": 54,
+      "rawHeight": 60,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

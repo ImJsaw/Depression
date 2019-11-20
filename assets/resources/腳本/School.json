@@ -1,0 +1,190 @@
+
+{
+    "sunnyAndPunk": [
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "你知道嗎？據說每天都喝水的人有很大的機率在100年內死去欸！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "天啊！太可怕了吧，所以我不應該天天喝水囉？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "沒錯，我們應該用飲料來代替水，以免容易死亡！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "對欸！妳好聰明哦，我還在苦惱怎樣才能一整天不喝水，哈哈哈哈"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "噗哧妳真的很好笑欸哈哈哈哈哈哈哈哈"
+        }
+
+    ],
+    "shaderTest": [
+        {
+            "name": "shader",
+            "speaker": "null",
+            "content": "shaderTest"
+        },
+        {
+            "name": "shader",
+            "speaker": "null",
+            "content": "shaderTest",
+            "selections": [
+                {
+                    "content": "紅藍",
+                    "event": "tt"
+                },
+                {
+                    "content": "水波",
+                    "event": "water"
+                },
+                {
+                    "content": "紅藍",
+                    "event": "tt"
+                },
+                {
+                    "content": "紅藍",
+                    "event": "tt"
+                }
+            ]
+        }
+    ],
+    "demo": [
+        {
+            "name": "你",
+            "speaker": "null",
+            "content": "欸你們今天有看到宇翔嗎？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "誰知道啊，大概是跟XXX一起翹課出去玩了吧。"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "又出去玩？他們該不會還在熱戀期吧？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Sunny",
+            "content": "但我聽說他們一起兩年多了。"
+        },
+        {
+            "name": "你",
+            "speaker": "null",
+            "content": "所以．．．你們知道宇翔去哪裡了嗎？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "哇~這麼厲害喔，好想知道要怎麼維持一段兩年的感情喔。"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "哇~這種事情有什麼好羨慕的？不就死撐著不分手？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "哇呀，我跟你說你不要跟別人說哦！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "Sunny",
+            "content": "他上次借我腳踏車，被我抓到密碼鎖是設女友的生日喔。超級閃的～"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "Punk",
+            "content": "太誇張了吧，都讓我起雞皮疙瘩了"
+        },
+        {
+            "name": "你",
+            "speaker": "null",
+            "content": "（看來在這裡是問不出什麼了．．．）"
+        }
+    ],
+    "notebook": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "最新一代的電競筆電欸，宇翔真的很奢侈..."
+        }
+    ],
+    "wallPaper": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "都是一些藝文活動留下的海報跟票根"
+        }
+    ],
+    "book": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "「你有看過自己那一顆心背後的理由嗎？」"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "...他會看這一種書哦？"
+        }
+    ],
+    "secret": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這不是宇翔跟他前女友的情書嗎？竟然還好好的收藏在這邊啊..."
+        }
+    ],
+    "switch": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "好久沒跟林克一起戰鬥了啊..."
+        }
+    ],
+    "note":[
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "「...好痛苦...為什麼...」"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "被撕碎的紙條上依稀可見一些充滿負面、憤怒的字詞"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這個是宇翔的吧...她到底發生甚麼事了呢？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "感覺怪怪的，該怎麼做呢？",
+            "selections": [
+                {
+                    "content": "有點擔心，問看看別人有沒有遇到宇翔好了",
+                    "event": "help"
+                },
+                {
+                    "content": "算了，還是先準備上課吧",
+                    "event": "ingore"
+                }
+            ]
+        }
+    ]
+}

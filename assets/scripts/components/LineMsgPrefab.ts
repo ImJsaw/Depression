@@ -67,7 +67,12 @@ export default class LineMsgPrefab extends cc.Component {
      * 查看訊息內容
      */
     showMsgDetail(){
-
+        //demo
+        this.node.getChildByName("msgDetail").active = true
     }
 
+    hideMsgDetail(){
+        //demo
+        this.node.getChildByName("msgDetail").active = false
+    }
 }

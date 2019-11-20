@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c117bdb2-20e0-4ffa-82f3-66d2034faee4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "事件_ktv": {
+      "ver": "1.0.4",
+      "uuid": "ecb8f69b-8677-415c-8c3f-cedc96330092",
+      "rawTextureUuid": "c117bdb2-20e0-4ffa-82f3-66d2034faee4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 554,
+      "height": 564,
+      "rawWidth": 554,
+      "rawHeight": 564,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

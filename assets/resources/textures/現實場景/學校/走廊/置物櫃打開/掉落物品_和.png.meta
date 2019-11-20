@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "451da5cc-db40-4bcc-a0da-de5bca104850",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "掉落物品_和": {
+      "ver": "1.0.4",
+      "uuid": "2c6daf8a-19c6-492c-b938-d52d97431256",
+      "rawTextureUuid": "451da5cc-db40-4bcc-a0da-de5bca104850",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 80,
+      "height": 62,
+      "rawWidth": 80,
+      "rawHeight": 62,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

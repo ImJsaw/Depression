@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c9dc7544-c0b9-4189-88c9-26cef0bb689e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "主角房_櫃4-01": {
+      "ver": "1.0.4",
+      "uuid": "9375bcba-4897-414b-99fa-478e7076f7cd",
+      "rawTextureUuid": "c9dc7544-c0b9-4189-88c9-26cef0bb689e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 166,
+      "height": 209,
+      "rawWidth": 166,
+      "rawHeight": 209,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

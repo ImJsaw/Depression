@@ -25,6 +25,8 @@ export default class MsgMgr extends cc.Component {
     private playingProcess: number
 
     async start () {
+        this.node.y+=2000;
+
         this.nextButton = cc.find('MsgBox/Next', this.node)
         this.speaker = cc.find('Speaker', this.node) 
         this.nameText = cc.find('MsgBox/Name/Background/Text', this.node)
@@ -36,12 +38,15 @@ export default class MsgMgr extends cc.Component {
         this.buttons.push(cc.find('ButtonD', this.buttonGroup))
 
         this.node.on('click', this.next)
-        await this.load('腳本/example')
+        await this.load('腳本/School')
         
         window['playScript'] = (name) => this.play(name)
         window['stopScript'] = () => this.close()
 
         this.node.active = false
+
+        this.node.y-=2000;
+
     }
 
     load (file: string) {
@@ -84,7 +89,6 @@ export default class MsgMgr extends cc.Component {
         this.node.active = true
         this.playing = script
         this.playingProcess = init
-        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])
@@ -92,6 +96,7 @@ export default class MsgMgr extends cc.Component {
             // @ts-ignore
             this.normal(this.scripts[this.playing][this.playingProcess])
         }
+        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
     }
 
     close () {
@@ -105,17 +110,17 @@ export default class MsgMgr extends cc.Component {
         }
         
         this.playingProcess += 1 
-        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
-        if (this.scripts[this.playing][this.playingProcess].selections) {
-            // @ts-ignore
-            this.select(this.scripts[this.playing][this.playingProcess])
-        } else if (this.scripts[this.playing].length <= this.playingProcess) {
+        if (this.scripts[this.playing].length <= this.playingProcess) {
             this.node.active = false
             return false
+        } else if (this.scripts[this.playing][this.playingProcess].selections) {
+            // @ts-ignore
+            this.select(this.scripts[this.playing][this.playingProcess])
         } else {
             // @ts-ignore
             this.normal(this.scripts[this.playing][this.playingProcess])
         }
+        this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
         return true
     }
 

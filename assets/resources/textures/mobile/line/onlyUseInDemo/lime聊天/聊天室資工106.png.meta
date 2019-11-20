@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "87423fdd-c2aa-4569-ade5-ed96596f7ef2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "聊天室資工106": {
+      "ver": "1.0.4",
+      "uuid": "ab578a40-b005-42e0-8ebe-67e6f1b70ee7",
+      "rawTextureUuid": "87423fdd-c2aa-4569-ade5-ed96596f7ef2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 555,
+      "height": 910,
+      "rawWidth": 555,
+      "rawHeight": 910,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

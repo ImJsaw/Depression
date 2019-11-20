@@ -72,4 +72,9 @@ export default class ShaderComponent extends cc.Component {
             this._material.setTime(this._time);
         }
     }
+
+    opentt(){
+        this.enabled=true
+        //this._shader=ShaderType.TikTok
+    }
 }

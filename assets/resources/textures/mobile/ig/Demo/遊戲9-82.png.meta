@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "2326041b-8bb8-4d0c-8570-e338ec0c0717",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "遊戲9-82": {
+      "ver": "1.0.4",
+      "uuid": "8ec33dd7-65e4-41de-9e5b-ca51fb08e7c0",
+      "rawTextureUuid": "2326041b-8bb8-4d0c-8570-e338ec0c0717",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 554,
+      "height": 588,
+      "rawWidth": 554,
+      "rawHeight": 590,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

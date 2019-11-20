@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "e8ff6bfd-0d6a-4b7a-97d6-d71dc16c8c5f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "櫃子_下層-01": {
+      "ver": "1.0.4",
+      "uuid": "b6a7f6ba-1c0f-4311-8ef1-0b5019debdf9",
+      "rawTextureUuid": "e8ff6bfd-0d6a-4b7a-97d6-d71dc16c8c5f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 221,
+      "height": 235,
+      "rawWidth": 221,
+      "rawHeight": 235,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

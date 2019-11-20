@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "13967ca8-80db-44f0-9a19-b6016140a351",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "廢文_貓咪": {
+      "ver": "1.0.4",
+      "uuid": "7ed78963-9758-4374-9b04-d40db18ba39c",
+      "rawTextureUuid": "13967ca8-80db-44f0-9a19-b6016140a351",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 0.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 551,
+      "height": 660,
+      "rawWidth": 554,
+      "rawHeight": 661,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

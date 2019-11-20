@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "04381192-7f28-4f7b-9f1e-7ef8d387a31f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "主角房_地毯-01": {
+      "ver": "1.0.4",
+      "uuid": "648f99f9-cfcc-43d6-b61c-3f67ed541ea3",
+      "rawTextureUuid": "04381192-7f28-4f7b-9f1e-7ef8d387a31f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 538,
+      "height": 106,
+      "rawWidth": 538,
+      "rawHeight": 106,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

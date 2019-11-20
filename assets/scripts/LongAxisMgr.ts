@@ -63,9 +63,10 @@ export default class LongAxis extends cc.Component {
 	}
 	
 	scrollByMousePosition() {
-		const range = 20; // Scroll when the length from the mouse position to canvas edge is less than
-		const moveStep = 2; // How much px should move per update
+		const range = 150; // Scroll when the length from the mouse position to canvas edge is less than
+		const moveStep = 1; // How much px should move per update
 		const widest = this.KTV.getChildByName('Background').width;
+		//const widest = this.KTV.width;
 		
 		// Now it move linearly, I wander use logarithmic function
 		
@@ -84,5 +85,13 @@ export default class LongAxis extends cc.Component {
 	
 	update(evt) {
 		this.scrollByMousePosition()
-	}
+    }
+    
+    disable(){
+        this.enabled = false;
+    }
+
+    enable(){
+        this.enabled = true;
+    }
 }

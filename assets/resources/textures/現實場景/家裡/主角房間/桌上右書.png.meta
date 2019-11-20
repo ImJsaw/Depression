@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a07929b6-a73d-4340-8c56-788bdcbeca4c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "桌上右書": {
+      "ver": "1.0.4",
+      "uuid": "6a5ef7e4-4c14-4b22-a207-f80cf125c606",
+      "rawTextureUuid": "a07929b6-a73d-4340-8c56-788bdcbeca4c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 134,
+      "height": 79,
+      "rawWidth": 134,
+      "rawHeight": 79,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

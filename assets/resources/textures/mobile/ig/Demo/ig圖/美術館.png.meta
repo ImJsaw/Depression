@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1483b3f1-09ca-422d-8605-f17fe2bd45c3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "美術館": {
+      "ver": "1.0.4",
+      "uuid": "a62c9b41-7cd0-49ac-9211-76eefc94ce46",
+      "rawTextureUuid": "1483b3f1-09ca-422d-8605-f17fe2bd45c3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 512,
+      "height": 341,
+      "rawWidth": 512,
+      "rawHeight": 341,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

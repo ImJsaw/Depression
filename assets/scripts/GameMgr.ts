@@ -13,7 +13,7 @@ export default class GameMgr extends GameMgrBase {
     }
 
     startStateMachine() {
-        this.FSM.setState(Define.GameState.Mobile);
+        this.FSM.setState(Define.GameState.Reality);
         //BGM
         // Game.Inst.audioMgr.playBGM("");
     }

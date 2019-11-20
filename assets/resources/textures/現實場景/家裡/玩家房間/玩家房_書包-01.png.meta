@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c9d167a4-7b44-4bfc-9bb2-c13ae80b35eb",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "玩家房_書包-01": {
+      "ver": "1.0.4",
+      "uuid": "41fe924b-9b76-4072-8c94-b2519f5d2f5e",
+      "rawTextureUuid": "c9d167a4-7b44-4bfc-9bb2-c13ae80b35eb",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 822,
+      "height": 943,
+      "rawWidth": 822,
+      "rawHeight": 943,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

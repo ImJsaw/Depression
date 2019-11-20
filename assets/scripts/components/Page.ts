@@ -27,4 +27,7 @@ export default class Page extends cc.Component {
         this.node.runAction(action);
     }
 
+    close(){
+        this.node.active =false
+    }
 }

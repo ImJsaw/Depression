@@ -29,10 +29,16 @@ export default class MobileUIMgr extends cc.Component {
     }
 
     showMobileUI( isOn : boolean){
-        if( isOn) 
+        if( isOn) {
             this.mobileRoot.opacity = 255;
-        else 
+            this.mobileRoot.y+=2000;
+            //this.mobileRoot.children.forEach(node=>node.active=true)
+        }
+        else {
             this.mobileRoot.opacity = 0;
+            this.mobileRoot.y-=2000;
+            //this.mobileRoot.children.forEach(node=>node.active=false)
+        }
     }
 
     showNotifyMenu(isOn : boolean, onFinished?){

@@ -15,8 +15,10 @@ export default class RealityUIMgr extends cc.Component {
 
     showRealityUI( isOn : boolean){
         if( isOn) 
-            this.realityRoot.opacity = 255;
+            //this.realityRoot.opacity = 255;
+            this.realityRoot.y-=2000;
         else 
-            this.realityRoot.opacity = 0;
+            //this.realityRoot.opacity = 0;
+            this.realityRoot.y+=2000;
     }
 }

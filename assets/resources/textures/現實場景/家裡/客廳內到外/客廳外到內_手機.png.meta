@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "e1bc5ab4-fe9d-48ae-954e-142488b62b70",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "客廳外到內_手機": {
+      "ver": "1.0.4",
+      "uuid": "ba15bac8-1933-4cab-bee6-9973e77a0a35",
+      "rawTextureUuid": "e1bc5ab4-fe9d-48ae-954e-142488b62b70",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 97,
+      "height": 37,
+      "rawWidth": 97,
+      "rawHeight": 37,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
