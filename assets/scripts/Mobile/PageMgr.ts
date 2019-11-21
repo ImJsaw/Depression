@@ -91,4 +91,15 @@ export default class PageMgr extends cc.Component {
     moveLeft(deltaX : number){
         this.node.children.forEach(element=> element.getComponent(Page).moveLeft(deltaX));
     }
+
+    //disable moves when not focus
+    setFocus(isFocus : boolean = false){
+        if(isFocus){
+            this.node.children.forEach((element)=>element.active = isFocus);
+            this.regDragEvent();
+            return;
+        }
+        this.unRegDragEvent();
+        this.node.children.forEach((element)=>element.active = isFocus);
+    }
 }
