@@ -7,7 +7,7 @@ import { GameState } from "../MainStateMgr";
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class End extends StateBase {
+export default class Reality extends StateBase {
 
     @property({type:cc.Enum(Define.GameState),serializable:true})
     public state:Define.GameState = Define.GameState.Reality;

@@ -3,13 +3,13 @@ import Converter ,* as Define from "./Define";
 import UIMgr from "./UIMgr";
 import Game from "./Game";
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executionOrder} = cc._decorator;
 
 @ccclass
+@executionOrder(-1)
 export default class GameMgr extends GameMgrBase {
     start() {
         this.init();
-
     }
 
     startStateMachine() {

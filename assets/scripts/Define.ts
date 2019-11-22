@@ -36,7 +36,41 @@ export class GameInfo{
         }
         return this.instance;
     }
+    mobileEventList : EventContent[];
+    curIG : IGpost[];
+    curLine : LineLog;
     endGame: boolean = false;
+}
+
+export interface LineLog{
+    //TODO:
+}
+
+export interface MobileContent{
+    EventContents : EventContent[];
+    Line : LineMsg[];
+    IG : IGpost[];
+}
+
+export interface EventContent{
+    LineIndex : number;
+    IGIndex : number;
+}
+
+export interface LineMsg{
+    name : string;
+    msg : string;
+}
+
+export interface IGpost{
+    account : string;
+    txt : string;
+    comments : IGComment[];
+}
+
+export interface IGComment{
+    name : string;
+    comment : string;
 }
 
 export default class Converter {

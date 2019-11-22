@@ -1,4 +1,5 @@
 import Game from "./Game";
+import { MobileContent, IGpost, LineMsg } from "./Define";
 
 const { ccclass, property } = cc._decorator;
 
@@ -29,6 +30,8 @@ export default class ResourcesMgr extends cc.Component {
     private textures = {};
     private sequences = {};
     private musics = {};
+    private IGposts : IGpost[] = [];
+    private LineMsgs : LineMsg[] = [];
     /**各場景須預讀取的檔案列表 */
     private assetList = {};
 
@@ -79,8 +82,24 @@ export default class ResourcesMgr extends cc.Component {
      * @param onloading loading中途觸發事件
      */
     preload(idx: ResourceIndex, onloading: Function = undefined) {
-        cc.log("ResourcesMgr.preload(" + idx + ")");
+        cc.log("ResourceMgr.preload mobile content");
+        let url = "text/mobile.json";
+        cc.loader.loadRes(url, (err, res) => {
+            if (cc.isValid(err)) {
+                cc.error("[ResourceMgr]: " + err);
+                return;
+            }
 
+            let JsonObj: JSON = res["json"];
+            cc.log(JsonObj);
+            let cont : MobileContent = res["json"];
+            cc.log(cont);
+            cc.log(cont.IG);
+
+        });
+
+        
+        cc.log("ResourcesMgr.preload texture");
         let assetListComplete = 0;
         let assetList: [string] = this.assetList[idx.toString()];
         if (assetList != undefined) {

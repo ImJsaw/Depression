@@ -1,0 +1,35 @@
+{
+	"EventContents":[
+		{
+			"LineIndex" : 4,
+			"IGIndex" : 1
+		},
+		{
+			"LineIndex" : 2,
+			"IGIndex" : 3
+		}
+	],
+	
+	"Line":[
+		{
+			"name" : "testName1",
+			"msg" : "1112312"
+		}
+	],
+	"IG":[
+		{
+			"account" : "Malaise",
+			"txt" : "12345554",
+			"comments" : [
+				{
+					"name" : "name1",
+					"comment" : "txt1"
+				},
+				{
+					"name" : "name1",
+					"comment" : "txt1"
+				}
+			]
+		}
+	]
+}
