@@ -36,6 +36,9 @@ export class GameInfo{
         }
         return this.instance;
     }
+
+    isWifiConnect : boolean = false;
+
     mobileEventList : EventContent[];
     curIG : IGpost[];
     curLine : LineLog;

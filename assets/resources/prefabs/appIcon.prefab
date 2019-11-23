@@ -30,7 +30,7 @@
         "__id__": 8
       },
       {
-        "__id__": 9
+        "__id__": 10
       }
     ],
     "_prefab": {
@@ -280,23 +280,6 @@
     "sync": false
   },
   {
-    "__type__": "ce7ccBTgnBCQ6a5c04FgtXN",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "app": 0,
-    "appIcon": {
-      "__id__": 3
-    },
-    "appName": {
-      "__id__": 6
-    },
-    "_id": ""
-  },
-  {
     "__type__": "cc.Button",
     "_name": "",
     "_objFlags": 0,
@@ -308,7 +291,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 10
+        "__id__": 9
       }
     ],
     "_N$interactable": true,
@@ -374,9 +357,26 @@
       "__id__": 1
     },
     "component": "",
-    "_componentId": "ce7ccBTgnBCQ6a5c04FgtXN",
+    "_componentId": "d2cfc6wTrpJsZCPeqqdLNkE",
     "handler": "enterApp",
     "customEventData": ""
+  },
+  {
+    "__type__": "d2cfc6wTrpJsZCPeqqdLNkE",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "app": 0,
+    "appIcon": {
+      "__id__": 3
+    },
+    "appName": {
+      "__id__": 6
+    },
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
