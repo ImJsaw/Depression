@@ -39,36 +39,47 @@ export class GameInfo{
 
     isWifiConnect : boolean = false;
 
-    mobileEventList : EventContent[];
-    curIG : IGpost[];
-    curLine : LineLog;
+    curIGState : number = 0;
+    curLineState : number = 0;
     endGame: boolean = false;
 }
 
-export interface LineLog{
-    //TODO:
-}
-
 export interface MobileContent{
-    EventContents : EventContent[];
-    Line : LineMsg[];
-    IG : IGpost[];
+    LineState : State[];
+    IGState : State[];
+    IGPosts : IGpost[];
+    LineLogs : LineLog[];
 }
 
-export interface EventContent{
-    LineIndex : number;
-    IGIndex : number;
+export interface LineLog{
+    /**群組名稱/姓名 */
+    logName : string;
+    /**頭像img name */
+    icon : string;
+    /**對話紀錄 */
+    msgs : LineMsg[];
+}
+
+export interface State{
+    index : number[];
 }
 
 export interface LineMsg{
-    name : string;
+    nameIndex : number;
     msg : string;
 }
 
 export interface IGpost{
+    /**帳戶名稱 */
     account : string;
+    /**貼文帳號頭像img name */
+    icon : string;
+    /**內文 */
     txt : string;
+    /**留言 */
     comments : IGComment[];
+    /**和下文距離 */
+    offset : number;
 }
 
 export interface IGComment{

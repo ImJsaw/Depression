@@ -1,5 +1,5 @@
 import Game from "./Game";
-import { MobileContent, IGpost, LineMsg } from "./Define";
+import * as Define from "./Define";
 
 const { ccclass, property } = cc._decorator;
 
@@ -30,8 +30,8 @@ export default class ResourcesMgr extends cc.Component {
     private textures = {};
     private sequences = {};
     private musics = {};
-    private IGposts : IGpost[] = [];
-    private LineMsgs : LineMsg[] = [];
+    private LineStates : Define.State[] = null;
+    private LineLogs : Define.LineLog[] = null;
     /**各場景須預讀取的檔案列表 */
     private assetList = {};
 
@@ -90,14 +90,15 @@ export default class ResourcesMgr extends cc.Component {
                 return;
             }
 
-            let JsonObj: JSON = res["json"];
-            cc.log(JsonObj);
-            let cont : MobileContent = res["json"];
+            let cont : Define.MobileContent = res["json"];
+            cc.log("load mobile content : ");
             cc.log(cont);
-            cc.log(cont.IG);
+            this.LineStates = cont.LineState;
+            this.LineLogs = cont.LineLogs;
+            
+            cc.log(this.LineStates);
 
         });
-
         
         cc.log("ResourcesMgr.preload texture");
         let assetListComplete = 0;
@@ -173,6 +174,16 @@ export default class ResourcesMgr extends cc.Component {
             onloading(1);
         }
 
+    }
+
+    /**return cur line logs */
+    getLineLog(){
+        let logs : Define.LineLog[] = [];
+        this.LineStates[Define.GameInfo.Inst.curLineState].index.forEach((element)=>{
+            cc.log("cur : "+element);
+            logs.push(this.LineLogs[element]);
+        })
+        return logs;
     }
 
     /**

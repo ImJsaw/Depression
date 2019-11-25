@@ -1,24 +1,51 @@
 {
-	"EventContents":[
+	
+	"LineState":[
 		{
-			"LineIndex" : 4,
-			"IGIndex" : 1
+			"index" : [0,1,2]
+		}
+	],
+	"IGState":[
+		{
+			"index" : [0,1,2]
+		}
+	],
+	"LineLogs" : [
+		{
+			"logName" : "群組112",
+			"icon" : "icon_gps",
+			"msgs" : [ 
+			{
+				"nameIndex" : 0,
+				"msg" : "testMsg1"
+			}
+			]
 		},
 		{
-			"LineIndex" : 2,
-			"IGIndex" : 3
-		}
-	],
-	
-	"Line":[
+			"logName" : "群組223",
+			"icon" : "icon_gps",
+			"msgs" : [ 
+			{
+				"nameIndex" : 0,
+				"msg" : "testMsg1"
+			}
+			]
+		},
 		{
-			"name" : "testName1",
-			"msg" : "1112312"
+			"logName" : "群組334",
+			"icon" : "icon_gps",
+			"msgs" : [ 
+			{
+				"nameIndex" : 0,
+				"msg" : "testMsg1"
+			}
+			]
 		}
 	],
-	"IG":[
+	"IGPosts":[
 		{
 			"account" : "Malaise",
+			"icon" : "icon_gps",
 			"txt" : "12345554",
 			"comments" : [
 				{
@@ -29,7 +56,14 @@
 					"name" : "name1",
 					"comment" : "txt1"
 				}
-			]
+			],
+			"offset" : 0
 		}
+	],
+	"names" : [
+	{
+		"name" : "name1",
+		"img" : "icon_gps"
+	}
 	]
 }
