@@ -3,6 +3,9 @@
 	"LineState":[
 		{
 			"index" : [0,1,2]
+		},
+		{
+			"index" : [0,2]
 		}
 	],
 	"IGState":[
@@ -60,10 +63,14 @@
 			"offset" : 0
 		}
 	],
-	"names" : [
+	"IGAccount" : [
 	{
-		"name" : "name1",
-		"img" : "icon_gps"
+		"name" : "Malaise",
+		"icon" : "icon_gps"
+	},
+	{
+		"name" : "aiiuii",
+		"icon" : "icon_stupid"
 	}
 	]
 }

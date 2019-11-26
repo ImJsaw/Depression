@@ -1,6 +1,7 @@
 import * as Define from "../../Define";
 import LineMsgPrefab from "../../components/LineMsgPrefab";
 import App from "./App";
+import Game from "../../Game";
 
 const {ccclass, property} = cc._decorator;
 
@@ -46,11 +47,19 @@ export default class line extends App {
         //refresh msg
         this.msgRoot.children.forEach((element)=>element.destroy());
 
+        //get cur log
+        this.getCurLineMsg();
         //test
         this.generateMsg();
 
         this.openChat();
         // this.regDragEvent();
+    }
+
+    getCurLineMsg(){
+        let curLog : Define.LineLog[] = Game.Inst.resourcesMgr.getLineLog();
+        cc.log("[Line]curMsg : ");
+        cc.log(curLog);
     }
 
     openChat(){

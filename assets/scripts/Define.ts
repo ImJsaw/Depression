@@ -27,6 +27,10 @@ export enum Apps{
     Settings
 }
 
+export enum IGAccount{
+    self = 0,
+}
+
 export class GameInfo{
     private static instance: GameInfo = null;
 
@@ -40,6 +44,7 @@ export class GameInfo{
     isWifiConnect : boolean = false;
 
     curIGState : number = 0;
+    /**目前line狀態id */
     curLineState : number = 0;
     endGame: boolean = false;
 }
