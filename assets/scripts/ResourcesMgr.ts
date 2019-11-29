@@ -31,7 +31,9 @@ export default class ResourcesMgr extends cc.Component {
     private sequences = {};
     private musics = {};
     private LineStates : Define.State[] = null;
+    private IGStates : Define.State[] = null;
     private LineLogs : Define.LineLog[] = null;
+    private IGPosts : Define.IGpost[] = null;
     /**各場景須預讀取的檔案列表 */
     private assetList = {};
 
@@ -95,7 +97,8 @@ export default class ResourcesMgr extends cc.Component {
             cc.log(cont);
             this.LineStates = cont.LineState;
             this.LineLogs = cont.LineLogs;
-            
+            this.IGStates = cont.IGState;
+            this.IGPosts = cont.IGPosts;
             cc.log(this.LineStates);
 
         });
@@ -182,8 +185,18 @@ export default class ResourcesMgr extends cc.Component {
         this.LineStates[Define.GameInfo.Inst.curLineState].index.forEach((element)=>{
             cc.log("cur : "+element);
             logs.push(this.LineLogs[element]);
-        })
+        });
         return logs;
+    }
+
+    getIGPost( id : number){
+        let posts : Define.IGpost[] = [];
+        this.IGStates[Define.GameInfo.Inst.curIGState].index.forEach((element)=>{
+            if(this.IGPosts[element].accountID == id){
+                posts.push(this.IGPosts[element]);
+            }
+        });
+        return posts;
     }
 
     /**

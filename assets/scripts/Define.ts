@@ -27,10 +27,6 @@ export enum Apps{
     Settings
 }
 
-export enum IGAccount{
-    self = 0,
-}
-
 export class GameInfo{
     private static instance: GameInfo = null;
 
@@ -75,16 +71,21 @@ export interface LineMsg{
 }
 
 export interface IGpost{
-    /**帳戶名稱 */
-    account : string;
-    /**貼文帳號頭像img name */
-    icon : string;
+    /**帳戶index */
+    accountID : number;
     /**內文 */
     txt : string;
     /**留言 */
     comments : IGComment[];
     /**和下文距離 */
     offset : number;
+}
+
+export interface IGAccount{
+    /**帳號名稱 */
+    name : string;
+    /**頭像img name */
+    icon : string;
 }
 
 export interface IGComment{

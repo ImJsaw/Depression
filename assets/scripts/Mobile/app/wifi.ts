@@ -1,5 +1,7 @@
 import * as Define from "../../Define";
 import App from "./App";
+import Game from "../../Game";
+import UIMgr from "../../UIMgr";
 
 const {ccclass, property} = cc._decorator;
 
@@ -71,6 +73,7 @@ export default class wifi extends App {
     connectWifi(){
         //TODO:
         Define.GameInfo.Inst.isWifiConnect = true;
+        UIMgr.Inst.mobileMgr.notifyMenu.setWifi(true);
         cc.log("connectWIFI");
     }
 

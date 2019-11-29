@@ -47,8 +47,7 @@
 	],
 	"IGPosts":[
 		{
-			"account" : "Malaise",
-			"icon" : "icon_gps",
+			"accountID" : 0,
 			"txt" : "12345554",
 			"comments" : [
 				{

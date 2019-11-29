@@ -1,4 +1,5 @@
 import NotifyMsgPrefab from "../components/NotifyMsgPrefab";
+import Game from "../Game";
 
 const {ccclass, property} = cc._decorator;
 
@@ -17,6 +18,9 @@ export default class NotifyMenu extends cc.Component {
     @property(cc.Prefab)
     msgPrefab : cc.Prefab = null;
 
+    @property(cc.Sprite)
+    wifiIcon : cc.Sprite = null;
+
     private showPos : cc.Vec2 = new cc.Vec2(0,0);
     private hidePos : cc.Vec2 = new cc.Vec2(0,1080);
     /**animation duration */
@@ -28,8 +32,9 @@ export default class NotifyMenu extends cc.Component {
     private curMsgSerialNum : number = 1;
 
     onLoad(){
+        /**init */
         this.root.position = this.hidePos;
-
+        this.setWifi(false);
     }
 
     start () {
@@ -65,6 +70,14 @@ export default class NotifyMenu extends cc.Component {
             })
         )
         this.root.runAction(action);
+    }
+
+    /**show wifi connect icon */
+    setWifi(isOn : boolean){
+        if(isOn)
+            this.wifiIcon.spriteFrame = Game.Inst.resourcesMgr.load("notify_wifi");
+        else
+            this.wifiIcon.spriteFrame = null;
     }
 
     getNotify(){
