@@ -8,7 +8,7 @@ export default class NotifyMenu extends cc.Component {
 
     /**整個下拉選單root node */
     @property(cc.Node)
-    root : cc.Node = null;
+    dropMenuRoot : cc.Node = null;
 
     /**提示訊息root node */
     @property(cc.Node)
@@ -33,7 +33,7 @@ export default class NotifyMenu extends cc.Component {
 
     onLoad(){
         /**init */
-        this.root.position = this.hidePos;
+        this.dropMenuRoot.position = this.hidePos;
         this.setWifi(false);
     }
 
@@ -69,7 +69,7 @@ export default class NotifyMenu extends cc.Component {
                     onFinished();
             })
         )
-        this.root.runAction(action);
+        this.dropMenuRoot.runAction(action);
     }
 
     /**show wifi connect icon */
