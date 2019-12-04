@@ -27,6 +27,16 @@ export enum Apps{
     Settings
 }
 
+export enum RealityScene{
+    None,
+    home,
+    school,
+    coffee,
+    street,
+    mountain,
+    bridge
+}
+
 export class GameInfo{
     private static instance: GameInfo = null;
 
@@ -42,6 +52,7 @@ export class GameInfo{
     curIGState : number = 0;
     /**目前line狀態id */
     curLineState : number = 0;
+    curRealityScene : RealityScene = RealityScene.None;
     endGame: boolean = false;
 }
 

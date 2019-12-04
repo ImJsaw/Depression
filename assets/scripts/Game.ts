@@ -4,6 +4,7 @@ import Utils from "./Utils";
 import ResourcesMgr from "./ResourcesMgr";
 import MainStateMgr from "./MainStateMgr";
 import AnimationMgr from "./AnimationMgr";
+import EventMgr from "./EventMgr";
 
 export enum GameID {
     None = 0,
@@ -31,6 +32,7 @@ export default class Game {
             Game.instance.resourcesMgr = new ResourcesMgr();
             Game.instance.animationMgr = new AnimationMgr();
             Game.instance.audioMgr = new AudioMgr();
+            Game.instance.eventMgr = new EventMgr();
             Game.instance.audioMgr.init();
             Game.instance.utils = new Utils();
         }
@@ -45,6 +47,8 @@ export default class Game {
     public animationMgr: AnimationMgr;
     /**音樂管理 */
     public audioMgr: AudioMgr;
+    /**觸發事件管理 */
+    public eventMgr : EventMgr;
     /**動態資源管理 */
     public resourcesMgr: ResourcesMgr;
     /**通用功能 */

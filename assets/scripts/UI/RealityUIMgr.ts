@@ -1,3 +1,5 @@
+import * as Define from "../Define";
+import RealityChild from "../components/RealityChild";
 
 const { ccclass, property } = cc._decorator;
 
@@ -18,5 +20,15 @@ export default class RealityUIMgr extends cc.Component {
             this.realityRoot.children.forEach((element)=>element.active = true);
         else 
             this.realityRoot.children.forEach((element)=>element.active = false);
+    }
+
+    changeScene( sceneName : Define.RealityScene ){
+        this.realityRoot.children.forEach((element)=>{
+            if(element.getComponent(RealityChild).getSceneName() == sceneName){
+                element.active = true;
+            }
+            else 
+                element.active = false;
+        })
     }
 }
