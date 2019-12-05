@@ -59,7 +59,7 @@ export default class LongAxis extends cc.Component {
     }
 	
 	onMouseMove(event) {
-		this.mousePosition = this.node.convertToNodeSpaceAR(event.getLocation());
+        this.mousePosition = this.node.convertToNodeSpaceAR(event.getLocation());
 	}
 	
 	scrollByMousePosition() {
