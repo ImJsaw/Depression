@@ -13,7 +13,9 @@ export default class Reality extends StateBase {
     public state:Define.GameState = Define.GameState.Reality;
 
     onLoad(){
-        
+        UIMgr.Inst.realityMgr.changeScene(Define.RealityScene.None);
+        //initial start scene
+        Define.GameInfo.Inst.curRealityScene = Define.RealityScene.school;
     }
     
     public stateInitialize(){

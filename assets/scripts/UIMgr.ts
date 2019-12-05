@@ -6,9 +6,10 @@ import RealityUIMgr from "./UI/RealityUIMgr";
 import PostWorldUIMgr from "./UI/PostWorldUIMgr";
 
 
-const { ccclass, property } = cc._decorator;
+const { ccclass, property, executionOrder} = cc._decorator;
 
 @ccclass
+@executionOrder(-1)
 export default class UIMgr extends cc.Component {
 
     private static instance: UIMgr;
