@@ -12,18 +12,18 @@ const {ccclass, property} = cc._decorator;
 
 @ccclass
 export default class GhostCursor extends cc.Component {
+    start () {
+		this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
+		this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
+    }
 
     onMouseLeave (_) {
-        cc.find('Canvas/Cursor').position.x = -1024
-        cc.find('Canvas/Cursor').position.y = -1024
-        window.console.log('eqeqw')
+        cc.find('Canvas/Cursor').setPosition(-4096, -2048)
     }
 
     onMouseMove (evt) {
         evt.stopPropagation()
         let mousePosition = this.node.convertToNodeSpaceAR(evt.getLocation());
-        window.console.log(mousePosition)
-        evt.position.x = mousePosition.x
-        evt.position.y = mousePosition.y
+        cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
     }
 }
