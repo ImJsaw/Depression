@@ -7,7 +7,14 @@ export default class LongAxis extends cc.Component {
 	private mousePosition = {x: 0, y: 0};
 	
 	@property(cc.Node)
-	KTV: cc.Node = null;
+    KTV: cc.Node = null;
+    
+    @property(Number)
+    moveSpeed : number = 1;
+
+    /**離邊界多少開始移動 */
+    @property(Number)
+    range : number = 200;
 	
     onLoad (){
         // add key down and key up event
@@ -63,21 +70,21 @@ export default class LongAxis extends cc.Component {
 	}
 	
 	scrollByMousePosition() {
-		const range = 150; // Scroll when the length from the mouse position to canvas edge is less than
-		const moveStep = 1; // How much px should move per update
+		//const range = 150; // Scroll when the length from the mouse position to canvas edge is less than
+		//const moveSpeed = 1; // How much px should move per update
 		const widest = this.KTV.getChildByName('Background').width;
 		//const widest = this.KTV.width;
 		
 		// Now it move linearly, I wander use logarithmic function
 		
 		if (this.node.opacity) {
-			if (this.mousePosition.x < - this.node.width / 2 + range) {
+			if (this.mousePosition.x < - this.node.width / 2 + this.range) {
 				if (this.KTV.x < (widest / 2 - this.node.width / 2)) {
-					this.KTV.x += moveStep * (1 - (this.node.width / 2 + this.mousePosition.x)  / range);
+					this.KTV.x += this.moveSpeed * (1 - (this.node.width / 2 + this.mousePosition.x)  / this.range);
 				}
-			} else if (this.mousePosition.x > this.node.width / 2 - range) {
+			} else if (this.mousePosition.x > this.node.width / 2 - this.range) {
 				if (this.KTV.x > - (widest / 2 - this.node.width / 2)) {
-					this.KTV.x -= moveStep * (1 - (this.node.width / 2 - this.mousePosition.x)  / range);
+					this.KTV.x -= this.moveSpeed * (1 - (this.node.width / 2 - this.mousePosition.x)  / this.range);
 				}
 			}
 		}	
