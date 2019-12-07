@@ -24,7 +24,7 @@ export default class GhostCursor extends cc.Component {
 
     onMouseMove(evt) {
         evt.stopPropagation()
-        let mousePosition = this.node.convertToNodeSpaceAR(evt.getLocation());
+        let mousePosition = this.node.convertToNodeSpaceAR(evt.getLocation()).add(this.node.parent.position);
         //let mousePosition = evt.getLocation();
         mousePosition = mousePosition.add(this.node.position);
         cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
