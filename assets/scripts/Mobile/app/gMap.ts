@@ -9,8 +9,8 @@ export default class gMap extends App {
     @property(cc.Node)
     mapRoot : cc.Node = null;
 
-    private mapMax : cc.Vec2 = new cc.Vec2(700,340);
-    private mapMin : cc.Vec2 = new cc.Vec2(-700,-340);
+    private mapMax : cc.Vec2 = new cc.Vec2(1000,500);
+    private mapMin : cc.Vec2 = new cc.Vec2(-1000,-500);
 
     onLoad(){
         this.node.scale = 0;
@@ -53,6 +53,9 @@ export default class gMap extends App {
      * @param y 
      */
     moveMap( x : number, y : number){
+        cc.log("x:"+this.mapRoot.x)
+        cc.log("y"+this.mapRoot.y)
+        
         this.mapRoot.x += x;
         this.mapRoot.y += y;
         //handle border
