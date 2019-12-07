@@ -18,7 +18,7 @@ export default class PageMgr extends cc.Component {
     private maxPageNum : number = 2;
 
     onLoad(){
-        this.regDragEvent();
+        // this.regDragEvent();
     }
 
     start () {
@@ -96,10 +96,10 @@ export default class PageMgr extends cc.Component {
     setFocus(isFocus : boolean = false){
         if(isFocus){
             this.node.children.forEach((element)=>element.active = isFocus);
-            this.regDragEvent();
+            // this.regDragEvent();
             return;
         }
-        this.unRegDragEvent();
+        // this.unRegDragEvent();
         this.node.children.forEach((element)=>element.active = isFocus);
     }
 }

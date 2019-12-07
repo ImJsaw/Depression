@@ -55,7 +55,13 @@ export default class NotifyMsgPrefab extends cc.Component {
 
     init( serialNum: number){
         this.serialNum = serialNum;
-        this.notifyMenu = UIMgr.Inst.mobileMgr.notifyMenu;;
+        if(serialNum > this.node.childrenCount){
+            cc.log("msg not set");
+            return;
+        }
+        this.notifyMenu = UIMgr.Inst.mobileMgr.notifyMenu;
+        this.node.children.forEach((element)=>element.active = false);
+        this.node.children[serialNum].active = true;
     }
 
     moveDown(){

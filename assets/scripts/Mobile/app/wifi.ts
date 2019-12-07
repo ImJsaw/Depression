@@ -91,10 +91,6 @@ export default class wifi extends App {
         }
     }
 
-    renewPost(){
-        //TODO:
-    }
-
     endApp(){
         cc.log("end WIFI");
     }
