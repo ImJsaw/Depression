@@ -31,7 +31,6 @@ export enum RealityScene{
     None,
     home,
     school,
-    coffee,
     street,
     mountain,
     bridge
@@ -65,9 +64,6 @@ export class GameInfo{
 
     mobilePassword : number = 1206;
 
-    curIGState : number = 0;
-    /**目前line狀態id */
-    curLineState : number = 0;
     curRealityScene : RealityScene = RealityScene.None;
     endGame: boolean = false;
 }

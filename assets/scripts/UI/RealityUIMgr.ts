@@ -23,6 +23,7 @@ export default class RealityUIMgr extends cc.Component {
     }
 
     changeScene( sceneName : Define.RealityScene ){
+        Define.GameInfo.Inst.curRealityScene = sceneName;
         this.realityRoot.children.forEach((element)=>{
             if(element.getComponent(RealityChild).getSceneName() == sceneName){
                 element.active = true;

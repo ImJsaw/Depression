@@ -1,4 +1,6 @@
 import App from "./App";
+import mapIcon from "../mapIcon";
+import { GameInfo } from "../../Define";
 
 const {ccclass, property} = cc._decorator;
 
@@ -9,6 +11,13 @@ export default class gMap extends App {
     @property(cc.Node)
     mapRoot : cc.Node = null;
 
+    @property(cc.Node)
+    cursor : cc.Node = null;
+
+    @property(cc.Node)
+    iconRoot : cc.Node = null;
+    
+
     private mapMax : cc.Vec2 = new cc.Vec2(1000,500);
     private mapMin : cc.Vec2 = new cc.Vec2(-1000,-500);
 
@@ -18,6 +27,7 @@ export default class gMap extends App {
         this.node.children.forEach( (element)=>{
             element.active  = false;
         } )
+        
     }
 
     startApp(){
@@ -31,6 +41,8 @@ export default class gMap extends App {
         this.node.runAction(action);
 
         this.regDragEvent();
+
+        this.updateCursor();
         
     }
 
@@ -53,9 +65,6 @@ export default class gMap extends App {
      * @param y 
      */
     moveMap( x : number, y : number){
-        cc.log("x:"+this.mapRoot.x)
-        cc.log("y"+this.mapRoot.y)
-        
         this.mapRoot.x += x;
         this.mapRoot.y += y;
         //handle border
@@ -68,6 +77,15 @@ export default class gMap extends App {
         if(this.mapRoot.y < this.mapMin.y)
             this.mapRoot.y = this.mapMin.y;
         
+    }
+
+    updateCursor(){
+        let self = this;
+        this.iconRoot.children.forEach((element)=>{
+            if(element.getComponent(mapIcon).scene == GameInfo.Inst.curRealityScene){
+                self.cursor.position = element.position
+            }
+        })
     }
 
     endApp(){
