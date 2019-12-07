@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "fe9adf2a-4c21-4838-b30b-b7c195a01d22",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "IG_drink_king": {
+      "ver": "1.0.4",
+      "uuid": "de22f532-0d69-4b96-9b51-71ef81572ff1",
+      "rawTextureUuid": "fe9adf2a-4c21-4838-b30b-b7c195a01d22",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 555,
+      "height": 245,
+      "rawWidth": 555,
+      "rawHeight": 245,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

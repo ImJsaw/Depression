@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "66568a9c-6347-486c-acdb-06b066bfb623",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "IG_hippopgirl": {
+      "ver": "1.0.4",
+      "uuid": "d8112c14-b0bc-4113-b5f4-c8663571741b",
+      "rawTextureUuid": "66568a9c-6347-486c-acdb-06b066bfb623",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 555,
+      "height": 244,
+      "rawWidth": 555,
+      "rawHeight": 245,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

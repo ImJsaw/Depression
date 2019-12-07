@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1d3c7ca2-8646-4586-b29e-b664602eded4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "IG_flower": {
+      "ver": "1.0.4",
+      "uuid": "c9fcccab-3606-4566-bbde-ffcf8400c335",
+      "rawTextureUuid": "1d3c7ca2-8646-4586-b29e-b664602eded4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 555,
+      "height": 244,
+      "rawWidth": 555,
+      "rawHeight": 245,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
