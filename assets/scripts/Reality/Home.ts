@@ -22,9 +22,9 @@ export default class Home extends cc.Component {
         this.node.getChildByName("leadingRoleRoom").active = false
     }
 
-    goToFrontOfDoor(){
+    goToMyRoom(){
         this.node.children.forEach(node=>node.active=false)
-        this.node.getChildByName("frontOfDoor").active=true
+        this.node.getChildByName("myRoom").active=true
     }
 
     goToLeadingRoleRoom(){

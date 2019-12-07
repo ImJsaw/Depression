@@ -8,22 +8,30 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class GhostCursor extends cc.Component {
-    start () {
-		this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
-		this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
+    start() {
+        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
+        this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
+        this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
     }
 
-    onMouseLeave (_) {
+    onMouseLeave(_) {
         cc.find('Canvas/Cursor').setPosition(-4096, -2048)
     }
 
-    onMouseMove (evt) {
+    onMouseMove(evt) {
         evt.stopPropagation()
         let mousePosition = this.node.convertToNodeSpaceAR(evt.getLocation());
+        //let mousePosition = evt.getLocation();
+        mousePosition = mousePosition.add(this.node.position);
         cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
     }
+    onMouseDown(_) {
+        cc.find('Canvas/Cursor').setPosition(-4096, -2048)
+    }
+
+
 }
