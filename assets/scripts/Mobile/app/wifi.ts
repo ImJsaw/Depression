@@ -18,7 +18,7 @@ export default class wifi extends App {
     private showPW :string = "";
     private curNum : number = 0;
 
-    private pw : number = 1238;
+    private pw : number = 86519;
 
     @property(cc.Node)
     passwordUI : cc.Node = null;

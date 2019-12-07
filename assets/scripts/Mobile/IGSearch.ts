@@ -12,16 +12,17 @@ export default class IGSearch extends cc.Component {
     searchRoot : cc.Node = null;
 
     @property(Number)
-    maxOffSet : number = 830;
+    maxOffSet : number = 1000;
 
     @property(Number)
-    minOffSet : number = 430;
+    minOffSet : number = 480;
 
     regDragEvent(){
         //register touch event
         cc.log("reg");
         let self = this;
         this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+            event.stopPropagation();
             cc.log("move");
             let delta = event.touch.getDelta();
             //make content move with touch

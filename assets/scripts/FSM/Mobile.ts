@@ -101,7 +101,7 @@ export default class End extends StateBase {
      */
     dragEvent(start : cc.Vec2, end : cc.Vec2, tengent : number){
         // cc.log("drag trigger");
-        if(tengent > 1 && start.y > end.y && !this.isNotifyMenuShow && start.y > 1000){
+        if(tengent > 1 && start.y > end.y && !this.isNotifyMenuShow){
             this.showNotifyMenu(true);
         }
         if(tengent > 1 && start.y < end.y && this.isNotifyMenuShow){

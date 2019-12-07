@@ -25,36 +25,36 @@ export default class PageMgr extends cc.Component {
     }
 
     regDragEvent(){
-        //register touch event
-        let self = this;
-        this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-            //reset delta
-            self.delta = new cc.Vec2(0,0);
-        });
-        this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
-            let delta = event.touch.getDelta();
-            self.delta.x += delta.x;
-            self.delta.y += delta.y;
-            //make every page move with touch
-            self.node.children.forEach(element=>element.x += delta.x);
-        });
-        this.node.on(cc.Node.EventType.TOUCH_END, function () {
-            // cc.log("[Page]delta : " + self.delta.x + " , " + self.delta.y+"curPage"+self.curPageNum);
-            if( Math.abs(self.delta.x) > self.threshold){
-                self.movePage(self.delta.x);
-            }
-            else{
-                self.backToOrigin();
-            }
-        });
-        this.node.on(cc.Node.EventType.TOUCH_CANCEL, function () {
-            if( Math.abs(self.delta.x) > self.threshold){
-                self.movePage(self.delta.x);
-            }
-            else{
-                self.backToOrigin();
-            }
-        });
+        // //register touch event
+        // let self = this;
+        // this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+        //     //reset delta
+        //     self.delta = new cc.Vec2(0,0);
+        // });
+        // this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+        //     let delta = event.touch.getDelta();
+        //     self.delta.x += delta.x;
+        //     self.delta.y += delta.y;
+        //     //make every page move with touch
+        //     self.node.children.forEach(element=>element.x += delta.x);
+        // });
+        // this.node.on(cc.Node.EventType.TOUCH_END, function () {
+        //     // cc.log("[Page]delta : " + self.delta.x + " , " + self.delta.y+"curPage"+self.curPageNum);
+        //     if( Math.abs(self.delta.x) > self.threshold){
+        //         self.movePage(self.delta.x);
+        //     }
+        //     else{
+        //         self.backToOrigin();
+        //     }
+        // });
+        // this.node.on(cc.Node.EventType.TOUCH_CANCEL, function () {
+        //     if( Math.abs(self.delta.x) > self.threshold){
+        //         self.movePage(self.delta.x);
+        //     }
+        //     else{
+        //         self.backToOrigin();
+        //     }
+        // });
     }
 
     unRegDragEvent(){

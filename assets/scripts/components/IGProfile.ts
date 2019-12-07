@@ -32,6 +32,8 @@ export default class IGProfile extends cc.Component {
     onLoad(){
         let self = this;
         this.postRoot.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+            event.stopPropagation();
+            cc.log("move profile");
             let delta = event.touch.getDelta();
             //make map move with touch
             self.movePost(delta.y);
