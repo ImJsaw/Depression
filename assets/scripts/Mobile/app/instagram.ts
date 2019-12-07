@@ -1,5 +1,6 @@
 import * as Define from "../../Define";
 import App from "./App";
+import IGProfile from "../../components/IGProfile";
 
 const {ccclass, property} = cc._decorator;
 
@@ -15,6 +16,9 @@ export default class instagram extends App {
 
     @property(cc.Node)
     postRoot : cc.Node = null;
+
+    @property(cc.Node)
+    profileRoot : cc.Node = null;
 
     onLoad(){
         this.node.scale = 0;
@@ -56,6 +60,16 @@ export default class instagram extends App {
 
     renewPost(){
         //TODO:
+    }
+
+    openProfile(account : Define.IGAccount){
+        this.profileRoot.children.forEach((element)=>{
+            if(element.getComponent(IGProfile).getAccount() == account){
+                element.active = true;
+            }
+            else 
+                element.active = false;
+        })
     }
 
     endApp(){
