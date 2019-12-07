@@ -42,24 +42,9 @@ export default class instagram extends App {
         this.node.runAction(action);
 
         this.renewPost();
-
-        let self = this;
-        this.postRoot.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
-            let delta = event.touch.getDelta();
-            //make map move with touch
-            self.movePost(delta.y);
-        });
         
     }
 
-    movePost(y : number){
-        this.postRoot.y += y;
-        //handle border
-        if(this.postRoot.y > this.maxOffSet)
-            this.postRoot.y = this.maxOffSet;
-        if(this.postRoot.y < 0)
-            this.postRoot.y = 0;
-    }
 
     renewPost(){
         //TODO:

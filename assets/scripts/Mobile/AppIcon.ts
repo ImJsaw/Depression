@@ -18,7 +18,7 @@ export default class AppIcon extends cc.Component {
     appName : cc.Label = null;
 
     start(){
-        this.appIcon.spriteFrame = Game.Inst.resourcesMgr.load(Converter.getAppIconName(this.app));
+        // this.appIcon.spriteFrame = Game.Inst.resourcesMgr.load(Converter.getAppIconName(this.app));
         this.appName.string = Converter.getAppName(this.app);
     }
 

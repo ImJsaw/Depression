@@ -13,5 +13,20 @@ export default class IGSearch extends cc.Component {
     
     onClick(){
         //TODO
+
+    }
+
+    regDragEvent(){
+        //register touch event
+        let self = this;
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+            let delta = event.touch.getDelta();
+            //make content move with touch
+            self.moveContent( delta.y);
+        });
+    }
+
+    moveContent(y : number){
+
     }
 }

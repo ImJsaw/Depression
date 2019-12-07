@@ -63,6 +63,8 @@ export class GameInfo{
 
     isWifiConnect : boolean = false;
 
+    mobilePassword : number = 1206;
+
     curIGState : number = 0;
     /**目前line狀態id */
     curLineState : number = 0;

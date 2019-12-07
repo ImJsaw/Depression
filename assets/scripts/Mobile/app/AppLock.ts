@@ -1,3 +1,5 @@
+import * as Define from "../../Define";
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -30,15 +32,18 @@ export default class AppLock extends cc.Component {
         cc.log("curPW : " + this.curNum);
 
         if(this.count==4){
-            this.reset();
             if(this.isPasswordCorrect()){
                 this.node.active =false
             }
+            this.reset();
         }
     }
 
     isPasswordCorrect(){
-        return true;
+        if(this.curNum == Define.GameInfo.Inst.mobilePassword)
+            return true;
+        cc.log("cur : "+this.curNum+", correct : "+Define.GameInfo.Inst.mobilePassword);
+        return false;
     }
 
     reset(){
