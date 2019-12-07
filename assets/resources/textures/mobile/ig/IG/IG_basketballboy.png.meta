@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "8ebdc075-04d4-4a95-8da9-1d7f442426ac",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "IG_basketballboy": {
+      "ver": "1.0.4",
+      "uuid": "1ef271d7-e8ce-403e-a9c4-37e5e019eab4",
+      "rawTextureUuid": "8ebdc075-04d4-4a95-8da9-1d7f442426ac",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 555,
+      "height": 910,
+      "rawWidth": 555,
+      "rawHeight": 910,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
