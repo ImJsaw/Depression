@@ -15,9 +15,6 @@ export default class instagram extends App {
     private maxOffSet : number = 2743;
 
     @property(cc.Node)
-    postRoot : cc.Node = null;
-
-    @property(cc.Node)
     profileRoot : cc.Node = null;
 
     @property(cc.Node)
@@ -40,7 +37,7 @@ export default class instagram extends App {
             cc.fadeTo(0.3,255).easing(cc.easeCubicActionIn()),
         );
         this.node.runAction(action);
-
+        this.openMyProfile();
         this.renewPost();
         
     }
@@ -51,7 +48,6 @@ export default class instagram extends App {
     }
 
     openProfile(account : Define.IGAccount){
-        this.postRoot.active = false;
         this.searchRoot.active = false;
         this.profileRoot.active = true;
 
@@ -64,14 +60,18 @@ export default class instagram extends App {
         })
     }
 
+    openMyProfile(){
+        this.openProfile(Define.IGAccount.Malaise);
+    }
+
     openSearch(){
-        this.postRoot.active = false;
         this.profileRoot.active = false;
         this.searchRoot.active = true;
     }
 
     endApp(){
-        this.postRoot.off(cc.Node.EventType.TOUCH_MOVE);
+        this.profileRoot.active = false;
+        this.searchRoot.active = false;
         cc.log("end IG");
     }
 }
