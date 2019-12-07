@@ -1,6 +1,6 @@
 import Game from "../Game";
 import * as Define from "../Define";
-import instagram from "../Mobile/app/instagram";
+import instagram from "./app/instagram";
 
 const { ccclass, property } = cc._decorator;
 

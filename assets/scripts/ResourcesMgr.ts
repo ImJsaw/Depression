@@ -85,23 +85,22 @@ export default class ResourcesMgr extends cc.Component {
      */
     preload(idx: ResourceIndex, onloading: Function = undefined) {
         cc.log("ResourceMgr.preload mobile content");
-        let url = "text/mobile.json";
-        cc.loader.loadRes(url, (err, res) => {
-            if (cc.isValid(err)) {
-                cc.error("[ResourceMgr]: " + err);
-                return;
-            }
+        // let url = "text/mobile.json";
+        // cc.loader.loadRes(url, (err, res) => {
+        //     if (cc.isValid(err)) {
+        //         cc.error("[ResourceMgr]: " + err);
+        //         return;
+        //     }
+        //     let cont : Define.MobileContent = res["json"];
+        //     cc.log("load mobile content : ");
+        //     cc.log(cont);
+        //     this.LineStates = cont.LineState;
+        //     this.LineLogs = cont.LineLogs;
+        //     this.IGStates = cont.IGState;
+        //     // this.IGPosts = cont.IGPosts;
+        //     cc.log(this.LineStates);
 
-            let cont : Define.MobileContent = res["json"];
-            cc.log("load mobile content : ");
-            cc.log(cont);
-            this.LineStates = cont.LineState;
-            this.LineLogs = cont.LineLogs;
-            this.IGStates = cont.IGState;
-            // this.IGPosts = cont.IGPosts;
-            cc.log(this.LineStates);
-
-        });
+        // });
         
         cc.log("ResourcesMgr.preload texture");
         let assetListComplete = 0;

@@ -20,6 +20,9 @@ export default class instagram extends App {
     @property(cc.Node)
     profileRoot : cc.Node = null;
 
+    @property(cc.Node)
+    searchRoot : cc.Node = null;
+
     onLoad(){
         this.node.scale = 0;
         this.node.opacity = 0;
@@ -63,6 +66,10 @@ export default class instagram extends App {
     }
 
     openProfile(account : Define.IGAccount){
+        this.postRoot.active = false;
+        this.searchRoot.active = false;
+        this.profileRoot.active = true;
+
         this.profileRoot.children.forEach((element)=>{
             if(element.getComponent(IGProfile).getAccount() == account){
                 element.active = true;
@@ -70,6 +77,12 @@ export default class instagram extends App {
             else 
                 element.active = false;
         })
+    }
+
+    openSearch(){
+        this.postRoot.active = false;
+        this.profileRoot.active = false;
+        this.searchRoot.active = true;
     }
 
     endApp(){
