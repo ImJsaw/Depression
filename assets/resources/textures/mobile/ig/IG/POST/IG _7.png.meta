@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "5b252f30-57d7-4384-8e3a-66395b9850f1",
+  "uuid": "49fc34c6-2922-43bf-acb5-8ca3f645aeed",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "IG _7": {
       "ver": "1.0.4",
-      "uuid": "b5ad2ff7-1872-4899-8c56-5b84a30616fb",
-      "rawTextureUuid": "5b252f30-57d7-4384-8e3a-66395b9850f1",
+      "uuid": "d7d24996-78c1-404f-8bf2-56a0105f72ed",
+      "rawTextureUuid": "49fc34c6-2922-43bf-acb5-8ca3f645aeed",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

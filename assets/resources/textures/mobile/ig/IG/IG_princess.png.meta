@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "c09cea76-4560-43a9-9213-5fa2aeaf76d3",
+  "uuid": "4f81cb90-80db-47ac-ab89-872399935345",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "IG_princess": {
       "ver": "1.0.4",
-      "uuid": "15c6fbc1-21f6-402a-973f-9a94ad33fbaa",
-      "rawTextureUuid": "c09cea76-4560-43a9-9213-5fa2aeaf76d3",
+      "uuid": "fbaab199-fafb-46d3-84cd-007e58ba22db",
+      "rawTextureUuid": "4f81cb90-80db-47ac-ab89-872399935345",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "cfa7c36f-6d6c-44e2-b896-378f8b5633a0",
+  "uuid": "64db7de5-8b48-4e1d-a70c-2c4ee4baaaca",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "IG_Malaise": {
       "ver": "1.0.4",
-      "uuid": "5575b12f-fd5c-4928-aafe-f2fa92799e17",
-      "rawTextureUuid": "cfa7c36f-6d6c-44e2-b896-378f8b5633a0",
+      "uuid": "deaefc70-46dc-41cc-98f2-16127473ecb5",
+      "rawTextureUuid": "64db7de5-8b48-4e1d-a70c-2c4ee4baaaca",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "8ebdc075-04d4-4a95-8da9-1d7f442426ac",
+  "uuid": "e3250f6c-80d0-4d98-807b-2fc0fbf4f3e5",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "IG_basketballboy": {
       "ver": "1.0.4",
-      "uuid": "1ef271d7-e8ce-403e-a9c4-37e5e019eab4",
-      "rawTextureUuid": "8ebdc075-04d4-4a95-8da9-1d7f442426ac",
+      "uuid": "e07d3774-3315-4598-a122-876173059d68",
+      "rawTextureUuid": "e3250f6c-80d0-4d98-807b-2fc0fbf4f3e5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

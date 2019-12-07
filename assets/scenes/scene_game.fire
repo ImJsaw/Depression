@@ -44,8 +44,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.3417708502875434,
-      "y": 0.3417708502875434,
+      "x": 0.2776041921507657,
+      "y": 0.2776041921507657,
       "z": 1
     },
     "_quat": {
@@ -22403,7 +22403,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -352,
+      "x": -102,
       "y": 564,
       "z": 0
     },
@@ -22438,10 +22438,10 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f5e0f8f3-b122-4621-a28b-9356eda9a8b5"
+      "__uuid__": "67ab82ef-87d5-40e4-9811-594748855cf5"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -23601,8 +23601,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 472,
-      "y": -424,
+      "x": -930,
+      "y": -346,
       "z": 0
     },
     "_scale": {
@@ -23696,8 +23696,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 69,
-      "height": 68
+      "width": 87,
+      "height": 87
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -23706,8 +23706,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 461,
-      "y": -146,
+      "x": -421,
+      "y": 854,
       "z": 0
     },
     "_scale": {
@@ -23740,9 +23740,11 @@
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": null,
+    "_spriteFrame": {
+      "__uuid__": "191943dd-68f8-4edc-b443-f1a4421177d1"
+    },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -23751,7 +23753,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_state": 0,
     "_atlas": null,
     "_id": "3dJ8N6vRZF5rOPA4h9O0u4"
@@ -23809,7 +23811,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -351,
+      "x": 293,
       "y": -165,
       "z": 0
     },
@@ -23914,8 +23916,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -756,
-      "y": 41,
+      "x": 1210,
+      "y": -1,
       "z": 0
     },
     "_scale": {

@@ -5,5 +5,27 @@
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
-  "subMetas": {}
+  "subMetas": {
+    "sunny": {
+      "ver": "1.0.4",
+      "uuid": "5e2e58be-ff78-41c0-ac27-c87015763c6b",
+      "rawTextureUuid": "c1f03abb-e946-4bae-bce6-934bf63f3ae7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 560,
+      "offsetY": 1.5,
+      "trimX": 1338,
+      "trimY": 2,
+      "width": 11373,
+      "height": 4786,
+      "rawWidth": 12929,
+      "rawHeight": 4793,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
 }

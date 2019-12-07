@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "0446c396-7415-497f-9339-3179e110d3c9",
+  "uuid": "bd83bd76-459b-477b-b6fc-fddd517031d4",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "IG_drink_king": {
       "ver": "1.0.4",
-      "uuid": "65d3239c-2bfa-400e-b4b2-045343f2c246",
-      "rawTextureUuid": "0446c396-7415-497f-9339-3179e110d3c9",
+      "uuid": "e147b76a-33ce-4475-8011-c740f9a9ccd5",
+      "rawTextureUuid": "bd83bd76-459b-477b-b6fc-fddd517031d4",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

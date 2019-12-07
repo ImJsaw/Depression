@@ -5,5 +5,27 @@
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
-  "subMetas": {}
+  "subMetas": {
+    "fatBoy": {
+      "ver": "1.0.4",
+      "uuid": "bb37f52c-af26-42ef-9378-5e2224487833",
+      "rawTextureUuid": "95dad7cc-6c04-48e2-8e97-02a05a39a171",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -3505.5,
+      "offsetY": 35,
+      "trimX": 2545,
+      "trimY": 1048,
+      "width": 828,
+      "height": 2627,
+      "rawWidth": 12929,
+      "rawHeight": 4793,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
 }
