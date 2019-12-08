@@ -14,6 +14,7 @@ export default class GameMgr extends GameMgrBase {
 
     startStateMachine() {
         this.FSM.setState(Define.GameState.Reality);
+        // cc.find('Canvas/Msg').getComponent('MsgMgr').play("momCall");
         //BGM
         // Game.Inst.audioMgr.playBGM("");
     }

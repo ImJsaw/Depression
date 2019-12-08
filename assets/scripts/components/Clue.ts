@@ -7,9 +7,14 @@ const { ccclass, property } = cc._decorator;
 export default class Clue extends cc.Component {
 
     @property(cc.String)
-    objName : string = "";
+    objName: string = "";
+
+    onClick() {
+        // Game.Inst.eventMgr.onTriggerObject(this.node, this.objName);
+        Game.Inst.eventMgr.onTriggerObject(this.node, this.node.name);
+    }
     
-    onClick(){
-        Game.Inst.eventMgr.onTriggerObject(this.objName);
+    disable() {
+       // this.node.active = false;
     }
 }

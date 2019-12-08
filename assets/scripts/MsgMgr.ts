@@ -8,7 +8,7 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class MsgMgr extends cc.Component {
@@ -24,11 +24,11 @@ export default class MsgMgr extends cc.Component {
     private playing: string
     private playingProcess: number
 
-    async start () {
-        this.node.y+=2000;
+    async onLoad() {
+        this.node.y += 2000;
 
         this.nextButton = cc.find('MsgBox/Next', this.node)
-        this.speaker = cc.find('Speaker', this.node) 
+        this.speaker = cc.find('Speaker', this.node)
         this.nameText = cc.find('MsgBox/Name/Background/Text', this.node)
         this.contentText = cc.find('MsgBox/Content/Background/Text', this.node)
         this.buttonGroup = cc.find('MsgBox/Buttons', this.node)
@@ -38,18 +38,17 @@ export default class MsgMgr extends cc.Component {
         this.buttons.push(cc.find('ButtonD', this.buttonGroup))
 
         this.node.on('click', this.next)
-        await this.load('腳本/School')
-        
+        await this.load('腳本/scenario')
+
         window['playScript'] = (name) => this.play(name)
         window['stopScript'] = () => this.close()
 
         this.node.active = false
 
-        this.node.y-=2000;
-
+        this.node.y -= 2000;
     }
 
-    load (file: string) {
+    load(file: string) {
         return new Promise((res, rej) => {
             cc.loader.loadRes(file, (err, obj) => {
                 if (err) console.error(err)
@@ -66,11 +65,11 @@ export default class MsgMgr extends cc.Component {
         })
     }
 
-    autoloadSpeaker (script) {
+    autoloadSpeaker(script) {
         return Promise.all(script.map(e => this.loadSpeakerImage(e.speaker)))
     }
 
-    loadSpeakerImage (file: string) {
+    loadSpeakerImage(file: string) {
         return new Promise((res, rej) => {
             if (this.speakerImage && this.speakerImage[file]) res(this.speakerImage[file])
             cc.loader.loadRes('人物/' + file, cc.SpriteFrame, (err, obj) => {
@@ -85,7 +84,7 @@ export default class MsgMgr extends cc.Component {
         })
     }
 
-    play (script: string, init: number = 0) {
+    play(script: string, init: number = 0) {
         this.node.active = true
         this.playing = script
         this.playingProcess = init
@@ -99,17 +98,17 @@ export default class MsgMgr extends cc.Component {
         this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
     }
 
-    close () {
+    close() {
         this.node.active = false
     }
 
-    next (evt) {
+    next(evt) {
         evt.stopPropagation()
         if (this.scripts[this.playing][this.playingProcess].selections) {
             return false
         }
-        
-        this.playingProcess += 1 
+
+        this.playingProcess += 1
         if (this.scripts[this.playing].length <= this.playingProcess) {
             this.node.active = false
             return false
@@ -124,13 +123,13 @@ export default class MsgMgr extends cc.Component {
         return true
     }
 
-    normal (obj: {name: string, content: string}) {
+    normal(obj: { name: string, content: string }) {
         this.buttonGroup.active = false
         this.nameText.getComponent(cc.Label).string = obj.name
         this.contentText.getComponent(cc.Label).string = obj.content
     }
 
-    select (obj: {name: string, content: string, selections: Array<{content: string, event: string, data?: any}>}) {
+    select(obj: { name: string, content: string, selections: Array<{ content: string, event: string, data?: any }> }) {
         this.buttonGroup.active = true
         this.buttons.forEach(n => {
             n.active = false
@@ -152,7 +151,7 @@ export default class MsgMgr extends cc.Component {
         }
     }
 
-    update (dt) {
+    update(dt) {
         this.nameText.parent.width = this.nameText.width
         this.contentText.parent.width = this.contentText.width
         this.contentText.parent.height = this.contentText.height
