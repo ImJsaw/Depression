@@ -44,8 +44,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.21767256843180116,
-      "y": 0.21767256843180116,
+      "x": 0.3417708502875434,
+      "y": 0.3417708502875434,
       "z": 1
     },
     "_quat": {
@@ -46375,7 +46375,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Sprite(Splash)",
+    "_name": "cursorImg",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1090
@@ -46444,7 +46444,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "bab9847c-61ff-4ae6-a8c6-3d33d69c17f3"
+      "__uuid__": "43f3c4e4-e9aa-48a7-be02-4741005c4e2e"
     },
     "_type": 0,
     "_sizeMode": 0,

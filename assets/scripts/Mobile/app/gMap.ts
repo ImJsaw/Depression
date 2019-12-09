@@ -50,6 +50,7 @@ export default class gMap extends App {
         //register touch event
         let self = this;
         this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+            event.stopPropagation();
             let delta = event.touch.getDelta();
             //make map move with touch
             self.moveMap(delta.x, delta.y);
