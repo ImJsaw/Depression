@@ -16,22 +16,27 @@ export default class AnimMgr extends cc.Component {
 
     }
 
-    playTransitionAnim(todo?){
+    playTransitionAnim(todo?,onFinished?){
         let duration : number = 5;
-
+        let self = this;
         this.mask.active = true;
 
         let action = cc.sequence(
             cc.fadeTo(0, 0),
             cc.fadeTo(duration, 255),
             cc.callFunc(()=>{
-                cc.log("mid action");
                 if(todo != undefined){
                     todo();
                 }
             }),
             cc.fadeTo(duration, 0),
-            cc.fadeTo(0, 0)
+            cc.fadeTo(0, 0),
+            cc.callFunc(()=>{
+                self.mask.active = false;
+                if(onFinished != undefined){
+                    onFinished();
+                }
+            })
         );
 
         this.mask.runAction(action);

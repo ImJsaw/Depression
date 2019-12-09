@@ -14,8 +14,11 @@ export default class RealityUIMgr extends cc.Component {
     @property(Reality)
     realityStateMachine : Reality = null;
 
+    private onTransition : boolean = false;
+
     onLoad() {
         this.showRealityUI(false);
+        this.onTransition = false;
     }
 
     showRealityUI( isOn : boolean){
@@ -26,15 +29,20 @@ export default class RealityUIMgr extends cc.Component {
     }
 
     changeScene( sceneName : Define.RealityScene , transiton : boolean = false){
+        //avoid repeat transition
+        if (this.onTransition) return;
+        this.onTransition = true;
         let self = this;
         if(!transiton){
             this.gotoScene(sceneName);
+            this.onTransition = false;
             return;
         }
-        cc.warn("transition/////////////");
         UIMgr.Inst.transitionAnim(()=>{
             self.gotoScene(sceneName);
             UIMgr.Inst.mobileMgr.gotoReality();
+        },()=>{
+            self.onTransition = false;
         })
         
     }

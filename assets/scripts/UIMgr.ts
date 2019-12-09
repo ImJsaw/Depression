@@ -51,7 +51,7 @@ export default class UIMgr extends cc.Component {
         this.postMgr.showPostUI(isOn);
     }
 
-    transitionAnim(todo?){
-        this.animMgr.playTransitionAnim(todo);
+    transitionAnim(todo?,onFinished?){
+        this.animMgr.playTransitionAnim(todo,onFinished);
     }
 }
