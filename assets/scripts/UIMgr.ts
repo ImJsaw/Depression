@@ -1,4 +1,4 @@
-import AnimMgr from "./AnimationMgr";
+import AnimMgr from "./animMgr";
 import * as Define from "./Define";
 import Game from "./Game";
 import MobileUIMgr from "./UI/MobileUIMgr";
@@ -49,5 +49,9 @@ export default class UIMgr extends cc.Component {
         //anim if need
         //TODO in animNgr....
         this.postMgr.showPostUI(isOn);
+    }
+
+    transitionAnim(todo?){
+        this.animMgr.playTransitionAnim(todo);
     }
 }

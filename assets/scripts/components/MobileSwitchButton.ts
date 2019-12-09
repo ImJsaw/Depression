@@ -15,7 +15,7 @@ export default class mobileSwitchButton extends cc.Component {
                 UIMgr.Inst.mobileMgr.gotoReality();
                 break;
             case Define.GameState.Reality:
-                UIMgr.Inst.mobileMgr.openMobile();
+                UIMgr.Inst.realityMgr.openMobile();
                 break;
             default:
                 cc.warn("wrong state");

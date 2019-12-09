@@ -1,6 +1,6 @@
 import App from "./App";
 import mapIcon from "../mapIcon";
-import { GameInfo } from "../../Define";
+import * as Define from "../../Define";
 
 const {ccclass, property} = cc._decorator;
 
@@ -42,7 +42,7 @@ export default class gMap extends App {
 
         this.regDragEvent();
 
-        this.updateCursor();
+        this.updateCursor(Define.GameInfo.Inst.curRealityScene);
         
     }
 
@@ -80,10 +80,10 @@ export default class gMap extends App {
         
     }
 
-    updateCursor(){
+    updateCursor(scene : Define.RealityScene){
         let self = this;
         this.iconRoot.children.forEach((element)=>{
-            if(element.getComponent(mapIcon).scene == GameInfo.Inst.curRealityScene){
+            if(element.getComponent(mapIcon).scene == scene){
                 self.cursor.position = element.position
             }
         })

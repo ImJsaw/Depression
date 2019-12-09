@@ -4,7 +4,6 @@ import PageMgr from "../Mobile/PageMgr";
 import * as Define from "../Define";
 import Game from "../Game";
 import Mobile from "../FSM/Mobile";
-import Reality from "../FSM/Reality";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -25,9 +24,6 @@ export default class MobileUIMgr extends cc.Component {
 
     @property(Mobile)
     mobileStateMachine : Mobile = null;
-
-    @property(Reality)
-    realityStateMachine : Reality = null;
 
     onLoad() {
         this.mobileRoot.active = true;
@@ -69,10 +65,6 @@ export default class MobileUIMgr extends cc.Component {
 
     gotoPost(){
         this.mobileStateMachine.gotoPost();
-    }
-
-    openMobile(){
-        this.realityStateMachine.openMobile();
     }
     
 }

@@ -16,8 +16,8 @@ export default class RealityEntry extends cc.Component {
     mapInst : gMap = null;
     
     onClick(){
-        UIMgr.Inst.realityMgr.changeScene(this.sceneName);
-        this.mapInst.updateCursor();
+        this.mapInst.updateCursor(this.sceneName);
+        UIMgr.Inst.realityMgr.changeScene(this.sceneName,true);
     }
 
     onLoad(){
