@@ -65,6 +65,9 @@ export class GameInfo{
     mobilePassword : number = 1206;
 
     curRealityScene : RealityScene = RealityScene.None;
+
+    curState : GameState = GameState.None;
+
     endGame: boolean = false;
 }
 

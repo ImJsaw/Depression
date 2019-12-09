@@ -9,7 +9,7 @@ import gMap from "../Mobile/app/gMap";
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class End extends StateBase {
+export default class Mobile extends StateBase {
 
     @property({type:cc.Enum(Define.GameState),serializable:true})
     public state:Define.GameState = Define.GameState.Mobile;
@@ -28,6 +28,7 @@ export default class End extends StateBase {
     }
     
     public stateInitialize(){
+        Define.GameInfo.Inst.curState = Define.GameState.Mobile;
         this.mobileRoot = UIMgr.Inst.mobileMgr.mobileRoot;
         cc.warn("Enter Mobile!!!");
         UIMgr.Inst.showMobile(true);
@@ -43,7 +44,7 @@ export default class End extends StateBase {
     public stateUpdate(dt: number){
     }
 
-    change(){
+    gotoPost(){
         this.m_FSM.setState(Define.GameState.PostWorld);
     }
 

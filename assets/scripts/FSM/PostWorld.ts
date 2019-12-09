@@ -19,6 +19,7 @@ export default class Post extends StateBase {
     
     public stateInitialize(){
         cc.warn("Enter post!!!");
+        Define.GameInfo.Inst.curState = Define.GameState.PostWorld;
         UIMgr.Inst.showPost(true);
     }
     

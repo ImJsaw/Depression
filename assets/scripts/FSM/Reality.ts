@@ -20,6 +20,7 @@ export default class Reality extends StateBase {
     
     public stateInitialize(){
         cc.warn("Enter Reality!!!");
+        Define.GameInfo.Inst.curState = Define.GameState.Reality;
         UIMgr.Inst.showReality(true);
         //change to current scene
         UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene);
