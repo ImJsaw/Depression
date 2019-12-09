@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "Sunny": {
+    "sunny": {
       "ver": "1.0.4",
       "uuid": "61d81c32-f3e9-4e31-903c-a05d09b2593e",
       "rawTextureUuid": "ca91aaaf-55de-4f93-8825-fd033fc5ba61",
