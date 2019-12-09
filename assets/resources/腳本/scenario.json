@@ -1,0 +1,166 @@
+{
+    "template": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "momCall": [
+        {
+            "name": "？？？",
+            "speaker": "null",
+            "content": "喂！宇翔你這週該回家了吧？\n已經兩個禮拜沒回來了欸，你是上台北玩瘋了\n就忘記還有個家了是嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "痾...我不是宇翔啦，您是宇翔的媽媽嗎？"
+        },
+        {
+            "name": "宇翔的媽媽",
+            "speaker": "null",
+            "content": "蛤？你不是宇翔哦，那你是宇翔的室友囉？\n平常我們家宇翔受你照顧了，可以請他接一下電話嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "呃...宇翔今天好像忘了帶手機出門，我待會找到他以後，再請他跟你聯絡好嗎？"
+        },
+        {
+            "name": "宇翔的媽媽",
+            "speaker": "null",
+            "content": "這個小子這樣迷迷糊糊，還每次都說我囉嗦。\n自己這樣長不大我是要怎麼放心啦。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "沒事啦阿姨，宇翔只是不小心忘記而已，他其實很穩重的。"
+        },
+        {
+            "name": "宇翔的媽媽",
+            "speaker": "null",
+            "content": "好吧，同學那就麻煩欸。\n掰掰。"
+        }
+    ],
+    "Ch1-1_jersey": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔的球衣，放在這裡很久了..."
+        }
+    ],
+    "Ch1-1_switch": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "好久沒跟林克一起戰鬥了啊...好久沒跟林克一起戰鬥了呢，不如..."
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "痾啊啊啊，不行！我要認真上課，不能帶電玩去啊！"
+        }
+    ],
+    "Ch1-1_phone": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "怎麼會連手機都沒帶就出門了？\n宇翔真的是很搞笑欸"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "等等上課時順便帶去給他好了..."
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（拿起＂宇翔的手機＂）"
+        }
+    ],
+    "Ch1-1_wallet": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "一百…兩百…三百…四百…"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "好！今天應該還不用領錢"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（拿起＂錢包＂）"
+        }
+    ],
+    "Ch1-1_book": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "今天要上的是＜程式語言＞吧。唉，這原文書真的是有夠厚重的"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "唉，這原文書真的是有夠厚重的"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（拿起＂原文書＂）"
+        }
+    ],
+    "Ch1-1_bag": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "似乎還少了些甚麼..."
+        }
+    ],
+    "Ch1-1_door": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "現在不是進別人房間的時候，先整理書包準備上學吧"
+        }
+    ],
+    "Ch1-1_key": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "可別忘記帶鑰匙呢"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "上次忘記帶可麻煩了宇翔趕回來開門，有夠不好意思的"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（拿起＂鑰匙＂）"
+        }
+    ],
+    "Ch1-1_complete": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "好！手機、鑰匙、錢包、原文書...\n該帶的都帶齊了"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "時間也差不多了，出門去上學吧！"
+        }
+    ],
+    "SCENARIO1-HOME-END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ]
+}

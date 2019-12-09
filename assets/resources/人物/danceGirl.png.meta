@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a9da8e70-d9fd-4117-a5d3-6264053233f4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "danceGirl": {
+      "ver": "1.0.4",
+      "uuid": "fea8568c-3ce9-4973-80f4-280f060a9e24",
+      "rawTextureUuid": "a9da8e70-d9fd-4117-a5d3-6264053233f4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -88,
+      "trimX": 461,
+      "trimY": 176,
+      "width": 747,
+      "height": 1074,
+      "rawWidth": 1667,
+      "rawHeight": 1250,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
