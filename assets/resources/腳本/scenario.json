@@ -982,10 +982,6 @@
             "content": "哎呀！上課了，得趕快回到座位上才行"
         }
     ],
-
-
-
-
     "Ch1-2_stupidBoy": [
         {
             "name": "鳴志",
@@ -1028,14 +1024,14 @@
             "content": ""
         }
     ],
-    "Ch1-3_calendar_now1": [
+    "Ch1-3_calendar": [
         {
             "name": "",
             "speaker": "null",
-            "content": "啊...... 都已經A月BB日了，下次段考是不是快到了啊......。"
+            "content": "啊...都已經12月2日了，下次段考是不是快到了啊......。"
         }
     ],
-    "Ch1-3_poster_now1": [
+    "Ch1-3_poster": [
         {
             "name": "",
             "speaker": "null",
@@ -1047,21 +1043,14 @@
             "content": " 沒想到在他房間裡也這麼多，這也太狂熱了吧！"
         }
     ],
-    "Ch1-3_medal_default": [
+    "Ch1-3_award": [
         {
             "name": "",
             "speaker": "null",
             "content": "宇翔真厲害，會打球又人緣好，根本人生勝利組。"
         }
     ],
-    "筆記本、日記、動畫分鏡、貼圖草稿內容都放在桌上右書中呈現": [
-        {
-            "name": "",
-            "speaker": "null",
-            "content": ""
-        }
-    ],
-    "Ch1-3_yxbook_now1": [
+    "Ch1-3_diary": [
         {
             "name": "",
             "speaker": "null",
@@ -1118,14 +1107,14 @@
             "content": "嗯？等等，這貼圖好像跟上次出的內容有點不同的樣子。為什麼宇翔的手上會有這東西啊？"
         }
     ],
-    "Ch1-3_gift1_default": [
+    "Ch1-3_cabinet1": [
         {
             "name": "",
             "speaker": "null",
             "content": "這好像是宇翔女友送他的耶，真羨慕。"
         }
     ],
-    "Ch1-3_gift2_default": [
+    "Ch1-3_cabinet4": [
         {
             "name": "上面的文字",
             "speaker": "null",
@@ -1137,6 +1126,14 @@
             "content": "該不會是宇翔的粉絲送的??"
         }
     ],
+    "Ch1-3_laptop": [
+        {
+            "name": "電競筆電",
+            "speaker": "null",
+            "content": "真是高級啊，這一台要六、七萬吧\n真不知道宇翔哪來這麼多錢"
+        }
+    ],
+
     "Ch1-3_calendar_past": [
         {
             "name": "宇翔",
@@ -1293,7 +1290,7 @@
             "name": "",
             "speaker": "null",
             "content": "(說不定這串字不是正著看而是倒著看?)"
-        },
+        }
     ],
     "Ch1-4_poster_now2": [
         {
@@ -1511,5 +1508,4 @@
             "content": ""
         }
     ]
-
 }

@@ -53,6 +53,7 @@ export default class EventMgr {
                     case "complete":
                         // this.checkChapter1_1(callingNode);
                         if (this.bringToSchool == 4) {
+                            callingNode.name = "bag";
                             let livingRoom = callingNode.parent.parent.getChildByName('overview');
                             livingRoom.getChildByName('goToLeadingRoleRoom').active = true;
                             livingRoom.getChildByName('door').destroy();
@@ -100,7 +101,7 @@ export default class EventMgr {
 
     public screenUnlock() {
         if (this.scenario == ScenarioState.Ch1_1) {
-            let livingRoom = cc.find("Canvas/centerAncher/reality/home/livingRoom");
+            let livingRoom = cc.find("Canvas/centerAnchor/reality/home/overview");
             livingRoom.getChildByName('goToLeadingRoleRoom').active = true;
             livingRoom.getChildByName('door').destroy();
 
@@ -109,7 +110,7 @@ export default class EventMgr {
         }
         else if (this.scenario == ScenarioState.Ch1_2) {
             this.play('Ch1-2_complete');
-            
+
             this.scenario = ScenarioState.Ch1_3;
             Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;
             UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
