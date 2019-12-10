@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "66a5faa6-3ba8-425a-a157-61d1e0d49d5f",
+  "uuid": "d5e937c8-1430-4294-8170-3983e9382a92",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "stupidBoy": {
       "ver": "1.0.4",
-      "uuid": "9167f8a3-65d1-4b73-9556-f264614c89a7",
-      "rawTextureUuid": "66a5faa6-3ba8-425a-a157-61d1e0d49d5f",
+      "uuid": "3f5935a3-6161-4c26-9f57-515bfafb28b1",
+      "rawTextureUuid": "d5e937c8-1430-4294-8170-3983e9382a92",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
