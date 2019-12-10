@@ -11,8 +11,8 @@ export default class NotifyMsgPrefab extends cc.Component {
 
     private duration : number = 0.2;
 
-    private down : cc.Vec2 = new cc.Vec2(0, -200);
-    private up : cc.Vec2 = new cc.Vec2(0, 200);
+    private down : cc.Vec2 = new cc.Vec2(0, -124);
+    private up : cc.Vec2 = new cc.Vec2(0, 124);
     
     private delta : cc.Vec2 = new cc.Vec2(0,0);
     //觸發拖曳閾值
@@ -55,6 +55,7 @@ export default class NotifyMsgPrefab extends cc.Component {
 
     init( serialNum: number){
         this.serialNum = serialNum;
+        cc.log("generate"+serialNum+"msg");
         if(serialNum > this.node.childrenCount){
             cc.log("msg not set");
             return;

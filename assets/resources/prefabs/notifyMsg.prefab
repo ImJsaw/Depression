@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "msg",
+    "_name": "notifyMsg",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -33,7 +33,7 @@
       }
     ],
     "_active": true,
-    "_level": 1,
+    "_level": 8,
     "_components": [
       {
         "__id__": 17
@@ -58,7 +58,7 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -114,13 +114,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
-      "height": 10
+      "width": 552,
+      "height": 124
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -159,7 +159,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "9a71f7d5-d54e-42fd-a016-2bfac0084572"
+      "__uuid__": "8c3312d7-e4ab-47f1-b6cb-576d8e0b3a5c"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -209,19 +209,19 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 9,
-      "b": 9,
+      "g": 255,
+      "b": 255,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
-      "height": 10
+      "width": 552,
+      "height": 124
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -260,7 +260,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "9a71f7d5-d54e-42fd-a016-2bfac0084572"
+      "__uuid__": "c804308d-d731-4057-92be-c475dbf1d786"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -322,7 +322,7 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -423,7 +423,7 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",
@@ -524,7 +524,7 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_position": {
       "__type__": "cc.Vec3",

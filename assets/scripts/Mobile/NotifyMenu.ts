@@ -29,7 +29,7 @@ export default class NotifyMenu extends cc.Component {
     private isMoving : boolean = false;
 
     /**目前訊息流水號派發 */
-    private curMsgSerialNum : number = 1;
+    private curMsgSerialNum : number = 0;
 
     onLoad(){
         /**init */
@@ -84,7 +84,7 @@ export default class NotifyMenu extends cc.Component {
         //generate new msg
         let node = cc.instantiate(this.msgPrefab);
         node.parent = this.msgRoot;
-        node.y = 200;
+        node.y = 124;
 
         //manage serial num
         node.getComponent(NotifyMsgPrefab).init(this.curMsgSerialNum);
