@@ -9,8 +9,9 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class SceneLoading extends cc.Component {
 
-    @property(cc.VideoPlayer) openingVideo : cc.VideoPlayer = null;
+    // @property(cc.VideoPlayer) openingVideo : cc.VideoPlayer = null;
     @property(cc.Node) bg : cc.Node = null;
+    @property(cc.Label) progressLabel : cc.Label = null;
 
     progress : number = 0;
     isLoadingComplete: boolean;
@@ -22,31 +23,33 @@ export default class SceneLoading extends cc.Component {
             return;
         }
         Game.Inst.utils.resize();
+        cc.log("start preloading");
         this.startPreloading();
-        this.registerVideo();
+        // this.registerVideo();
     }
 
     registerVideo(){
-        this.openingVideo.node.active = true;
-        this.isVideoComplete = false;
-        this.openingVideo.node.on("ready-to-play",this.startVideo, this);
-        this.openingVideo.node.on("completed",this.onVideoComplete,this);
+        // this.openingVideo.node.active = true;
+        // this.isVideoComplete = true;
+        // this.openingVideo.node.on("ready-to-play",this.startVideo, this);
+        // this.openingVideo.node.on("completed",this.onVideoComplete,this);
     }
 
-    startVideo(){
-        this.openingVideo.play();
-        this.isVideoComplete = true;
-    }
+    // startVideo(){
+    //     cc.log("start vid");
+    //     this.openingVideo.play();
+    // }
 
-    onVideoComplete(){
-        this.openingVideo.node.active = false;
-        this.bg.active = false;
-        //check goto game
-        this.isVideoComplete = true;
-        if(this.isLoadingComplete){
-            Game.Inst.mainStateMgr.changeState(GameState.Game);
-        }
-    }
+    // onVideoComplete(){
+    //     cc.log("vid complete");
+    //     this.openingVideo.node.active = false;
+    //     this.bg.active = false;
+    //     //check goto game
+    //     this.isVideoComplete = true;
+    //     if(this.isLoadingComplete){
+    //         Game.Inst.mainStateMgr.changeState(GameState.Game);
+    //     }
+    // }
 
     startPreloading() {
         this.isLoadingComplete = false;
@@ -60,6 +63,7 @@ export default class SceneLoading extends cc.Component {
     }
 
     onLoadComplete() {
+        this.enterGame();
         this.isLoadingComplete = true;
         //check goto game
         if(this.isVideoComplete){
@@ -69,6 +73,10 @@ export default class SceneLoading extends cc.Component {
     
     enterGame(){
         Game.Inst.mainStateMgr.changeState(GameState.Game);
+    }
+
+    update(){
+        this.progressLabel.string = (this.progress*100).toString() + "%";
     }
     
 }

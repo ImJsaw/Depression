@@ -179,14 +179,14 @@ export default class ResourcesMgr extends cc.Component {
     }
 
     /**return cur line logs */
-    getLineLog(){
-        let logs : Define.LineLog[] = [];
-        this.LineStates[Define.GameInfo.Inst.curLineState].index.forEach((element)=>{
-            cc.log("cur : "+element);
-            logs.push(this.LineLogs[element]);
-        });
-        return logs;
-    }
+    // getLineLog(){
+    //     let logs : Define.LineLog[] = [];
+    //     this.LineStates[Define.GameInfo.Inst.curLineState].index.forEach((element)=>{
+    //         cc.log("cur : "+element);
+    //         logs.push(this.LineLogs[element]);
+    //     });
+    //     return logs;
+    // }
 
     // getIGPost( id : number){
     //     let posts : Define.IGpost[] = [];

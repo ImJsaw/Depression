@@ -27,20 +27,24 @@ export default class SceneStart extends cc.Component {
     regEvent(){
         let self = this;
         this.startButton.on(cc.Node.EventType.MOUSE_ENTER, function (event) {
+            cc.log("mouse in");
             self.start2.active = true;
         });
 
         this.startButton.on(cc.Node.EventType.MOUSE_LEAVE, function (event) {
+            cc.log("mouse out");
             self.start2.active = false;
         });
 
-        this.startButton.on(cc.Node.EventType.TOUCH_START, function (event) {
+        this.startButton.on(cc.Node.EventType.MOUSE_DOWN, function (event) {
+            cc.log("mouse click");
             self.enterGame();
         });
 
     }
 
     enterGame(){
+        cc.log("goto loading");
         Game.Inst.mainStateMgr.changeState(GameState.Loading);
     }
 }
