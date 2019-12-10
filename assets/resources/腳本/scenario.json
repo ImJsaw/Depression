@@ -25,7 +25,7 @@
         {
             "name": "",
             "speaker": "null",
-            "content": "呃...宇翔今天好像忘了帶手機出門，我待會找到他以後，再請他跟你聯絡好嗎？"
+            "content": "呃...宇翔今天好像忘了帶手機出門\n我待會找到他以後，再請他跟你聯絡好嗎？"
         },
         {
             "name": "宇翔的媽媽",
@@ -54,7 +54,7 @@
         {
             "name": "",
             "speaker": "null",
-            "content": "好久沒跟林克一起戰鬥了啊...好久沒跟林克一起戰鬥了呢，不如..."
+            "content": "好久沒跟林克一起戰鬥了呢，不如..."
         },
         {
             "name": "",
@@ -1507,5 +1507,108 @@
             "speaker": "null",
             "content": ""
         }
+    ],    
+    "punk": [
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "欸！你怎麼會來這裡？"
+        }
+
+    ],
+    "editor": [
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "都已經半了，怎麼還沒有看到人呢？(喃喃自語)"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你好，請問你有看到宇翔嗎？"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "你是...？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我是宇翔的朋友，想要把手機還給他，剛好看到他的行事曆寫約編輯在咖啡廳見面。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "喔這樣啊，我就是他的編輯。喔，應該說是前編輯。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "前編輯？"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "對啊，我們公司之前跟宇翔有簽約。可惜後來發生了一些事情，我們不得已只好終止合作。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "終止合作，聽起來很嚴重。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "沒辦法，因為他後來作品都沒辦法如期繳交，他蠻有天賦的，我們也覺得很可惜。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我..."
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "我在這邊等十幾分鐘了，都沒有看到他。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "這次的會面是他自己約我出來的，結果現在又搞失蹤。\n就是這樣我才討厭跟學生談業務，氣死我了。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "是喔... 我要是遇到宇翔會幫你提醒他的。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "那就先謝謝你了，這樣子我想他是不會來了\n我還有事就先離開囉"
+        }
+    ],
+
+    "strongBoy": [
+        {
+            "name": "奕軍",
+            "speaker": "strongBoy",
+            "content": "早就叫妳減肥了吧霆軒\n你看你現在沒跑幾步就喘成這樣"
+        }
+    ],
+    "fatBoy": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "少囉...嗦...\n呼...呼...我只是...\n...只是讓你而已"
+        }
+    ],
+    "keyRing": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "奕軍的鑰匙圈，聽說是莉晴送他的\n我跟宇翔一直懷疑他們在曖昧，但奕均堅持否認..."
+        }
     ]
+
 }

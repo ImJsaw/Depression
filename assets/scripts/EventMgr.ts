@@ -26,9 +26,10 @@ export default class EventMgr {
         }
     }
     onTriggerObject(callingNode: cc.Node, objName: string) {
+        cc.log(objName);
         if (objName == "") return;
         if (objName == "default") {
-            this.play(callingNode.name);
+            this.play(callingNode.getComponent("Clue").objName);
             return;
         }
 
@@ -104,7 +105,7 @@ export default class EventMgr {
             let livingRoom = cc.find("Canvas/centerAnchor/reality/home/overview");
             livingRoom.getChildByName('goToLeadingRoleRoom').active = true;
             livingRoom.getChildByName('door').destroy();
-
+            cc.find('Canvas/centerAnchor/reality/school/overview/angryPrincess').destroy();
             this.play('Ch1-1_jumpToCh1-3');
             this.scenario = ScenarioState.Ch1_3;
         }
