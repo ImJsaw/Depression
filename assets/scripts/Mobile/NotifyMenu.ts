@@ -27,6 +27,7 @@ export default class NotifyMenu extends cc.Component {
     private duration : number = 1;
 
     private isMoving : boolean = false;
+    private isShowing : boolean = false;
 
     /**目前訊息流水號派發 */
     private curMsgSerialNum : number = 0;
@@ -41,11 +42,13 @@ export default class NotifyMenu extends cc.Component {
 
     }
 
-    isShow(isOn : boolean, onFinished?){
+    isShow(isOn : boolean){
         //do nothing if still moving
         if(this.isMoving) return;
-
+        //do nothing if already in the state
+        if(isOn == this.isShowing) return;
         this.isMoving = true;
+        this.isShowing = isOn;
 
         let self = this;
         let start : cc.Vec2;
@@ -65,8 +68,8 @@ export default class NotifyMenu extends cc.Component {
             cc.callFunc(()=>{
                 //move complete, close flag
                 self.isMoving = false;
-                if(onFinished != undefined )
-                    onFinished();
+                // if(onFinished != undefined )
+                //     onFinished();
             })
         )
         this.dropMenuRoot.runAction(action);
@@ -75,9 +78,9 @@ export default class NotifyMenu extends cc.Component {
     /**show wifi connect icon */
     setWifi(isOn : boolean){
         if(isOn)
-            this.wifiIcon.spriteFrame = Game.Inst.resourcesMgr.load("notify_wifi");
+            this.wifiIcon.node.active = true;
         else
-            this.wifiIcon.spriteFrame = null;
+            this.wifiIcon.node.active = false;
     }
 
     getNotify(){

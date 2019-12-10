@@ -16,8 +16,13 @@ export default class RealityEntry extends cc.Component {
     mapInst : gMap = null;
     
     onClick(){
-        this.mapInst.updateCursor(this.sceneName);
-        UIMgr.Inst.realityMgr.changeScene(this.sceneName,true);
+        UIMgr.Inst.realityMgr.changeScene(this.sceneName,true,()=>{
+            this.mapInst.updateCursor(this.sceneName);  
+            this.mapInst.endApp();
+            this.mapInst.node.children.forEach( (element)=>element.active  = false);
+            //return focus to pageMgr
+            UIMgr.Inst.mobileMgr.pageMgr.setFocus(true);
+        });
     }
 
     onLoad(){

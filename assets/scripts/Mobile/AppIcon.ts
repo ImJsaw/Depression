@@ -1,6 +1,7 @@
 import Converter, * as Define from "../Define";
 import Game from "../Game";
 import AppMgr from "./AppMgr";
+import UIMgr from "../UIMgr";
 
 const {ccclass, property} = cc._decorator;
 
@@ -26,5 +27,6 @@ export default class AppIcon extends cc.Component {
 
     enterApp(){
         AppMgr.Inst.startApp(this.app);
+        UIMgr.Inst.mobileMgr.notifyMenu.isShow(false);
     }
 }

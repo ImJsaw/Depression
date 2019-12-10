@@ -102,10 +102,10 @@ export default class Mobile extends StateBase {
      */
     dragEvent(start : cc.Vec2, end : cc.Vec2, tengent : number){
         // cc.log("drag trigger");
-        if(tengent > 1 && start.y > end.y && !this.isNotifyMenuShow){
+        if(tengent > 1 && start.y > end.y){
             this.showNotifyMenu(true);
         }
-        if(tengent > 1 && start.y < end.y && this.isNotifyMenuShow){
+        if(tengent > 1 && start.y < end.y){
             this.showNotifyMenu(false);
         }
     }
@@ -115,7 +115,7 @@ export default class Mobile extends StateBase {
      * @param isOn 
      */
     showNotifyMenu(isOn : boolean){
-        UIMgr.Inst.mobileMgr.showNotifyMenu(isOn, ()=> this.isNotifyMenuShow = isOn );
+        UIMgr.Inst.mobileMgr.showNotifyMenu(isOn);
     }
 
 }
