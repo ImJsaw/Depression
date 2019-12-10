@@ -12,10 +12,11 @@ export default class GameMgr extends GameMgrBase {
         this.init();
     }
 
-    startStateMachine() {
-        this.FSM.setState(Define.GameState.Reality);    
-        cc.find('Canvas/Msg').getComponent('MsgMgr').load('腳本/scenario');
-        cc.find('Canvas/Msg').getComponent('MsgMgr').play("momCall");
+    async startStateMachine() {
+        this.FSM.setState(Define.GameState.Reality);
+        let msgMgr = cc.find('Canvas/Msg').getComponent('MsgMgr')
+        await cc.find('Canvas/Msg').getComponent('MsgMgr').load('腳本/scenario');
+        msgMgr.play("momCall");
         //BGM
         // Game.Inst.audioMgr.playBGM("");
     }

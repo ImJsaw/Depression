@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class MsgMgr extends cc.Component {
-    private speakerImage: Object
+    private speakerImage: Object = {}
     private speaker: cc.Node
     private static selectionChar = ['A', 'B', 'C', 'D']
     private nextButton: cc.Node
@@ -23,6 +23,7 @@ export default class MsgMgr extends cc.Component {
     private scripts: Object = {}
     private playing: string
     private playingProcess: number
+    private afterLoad: Function
 
     async onLoad() {
         this.node.y += 2000;
@@ -38,14 +39,15 @@ export default class MsgMgr extends cc.Component {
         this.buttons.push(cc.find('ButtonD', this.buttonGroup))
 
         this.node.on('click', this.next)
-        await this.load('腳本/scenario')
-
+        
         window['playScript'] = (name) => this.play(name)
         window['stopScript'] = () => this.close()
 
         this.node.active = false
 
         this.node.y -= 2000;
+
+        if (this.afterLoad) this.afterLoad()
     }
 
     load(file: string) {
@@ -85,6 +87,10 @@ export default class MsgMgr extends cc.Component {
     }
 
     play(script: string, init: number = 0) {
+        if (!this.node) {
+            this.afterLoad = () => this.play(script, init)
+            return
+        }
         this.node.active = true
         this.playing = script
         this.playingProcess = init
