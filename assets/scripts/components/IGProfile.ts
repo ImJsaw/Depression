@@ -15,25 +15,32 @@ export default class IGProfile extends cc.Component {
 
     @property(Number)
     maxOffSet : number = 200;
+
+    private curOffset : number = 0;
     
     getAccount() : Define.IGAccount{
         return this.account;
     }
 
     movePost(y : number){
-        this.postRoot.y += y;
+        let offset = y;
+        this.curOffset += y;
         //handle border
-        if(this.postRoot.y > this.maxOffSet)
-            this.postRoot.y = this.maxOffSet;
-        if(this.postRoot.y < 0)
-            this.postRoot.y = 0;
+        if(this.curOffset > this.maxOffSet){
+            offset = offset - (this.curOffset-this.maxOffSet);
+            this.curOffset = this.maxOffSet;
+        }
+        if(this.curOffset < 0){
+            offset = offset - this.curOffset;
+            this.curOffset = 0;
+        }
+        this.postRoot.children.forEach((element)=>element.y += offset);
     }
 
     onLoad(){
         let self = this;
         this.postRoot.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
             event.stopPropagation();
-            cc.log("move profile");
             let delta = event.touch.getDelta();
             //make map move with touch
             self.movePost(delta.y);

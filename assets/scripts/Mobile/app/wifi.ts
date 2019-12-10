@@ -71,9 +71,12 @@ export default class wifi extends App {
     }
 
     connectWifi(){
+        if(Define.GameInfo.Inst.isWifiConnect) return;
         Define.GameInfo.Inst.isWifiConnect = true;
         UIMgr.Inst.mobileMgr.notifyMenu.setWifi(true);
         cc.log("connectWIFI");
+        UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
+        UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
         UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
         UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
     }
