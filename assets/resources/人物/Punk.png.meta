@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "Punk": {
+    "punk": {
       "ver": "1.0.4",
       "uuid": "1b34e9bc-b1cd-4254-b01b-ca567d1b187f",
       "rawTextureUuid": "cc3223a7-0358-4da6-b042-26de38a73a31",

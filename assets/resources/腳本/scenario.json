@@ -156,11 +156,1360 @@
             "content": "時間也差不多了，出門去上學吧！"
         }
     ],
-    "SCENARIO1-HOME-END": [
+    "Ch1-1_jumpToCh1-3": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "哈哈哈\n宇翔的密碼果然是這個"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "看樣子即使是被分手了他還是放不下呢"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "欸？不對...這個時間..."
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "怎麼已經下午一點了！\n該死的，我又睡過下午的課了嗎\n宇翔為什麼沒叫我起床啊？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "上完課了人也沒回來，手機也沒帶\n這傢伙到底在搞甚麼啊..."
+        }
+    ],
+    "==================================================================SCENARIO_Ch1-1_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-2_angryPrincess_1": [
+        {
+            "name": "？？？",
+            "speaker": "null",
+            "content": "欸！那個誰來著！你站住！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這個聲音…該不會是…我招誰惹誰了啊…"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "喂！跟你說話呢！是不會回話嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "princess",
+            "content": "痾…啊哈哈…早上好啊茱茵，妳找我有甚麼事嗎？"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "你那個好朋友宇翔是在發甚麼神經？"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "走路不看路，撞到人也不會說對不起，還害我剛買的新包包掉到了地上"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "包包是白色的欸！才買不到三天欸！\n現在就沾到地上的灰塵是要我怎麼繼續用啊，快氣死了！"
+        },
+        {
+            "name": "",
+            "speaker": "princess",
+            "content": "（那麼容易髒就不要買白色的啊...而且又不是我做的，幹嘛遷怒我啊...）"
+        },
+        {
+            "name": "",
+            "speaker": "princess",
+            "content": "怎麼能這樣呢！宇翔太過分了吧，他現在在哪裡，我馬上去叫他向妳道歉"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "哼！誰知道他去哪裡。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "剛剛匆匆忙忙的從櫃子拿了某個東西後就跑下樓了，"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "不知道是在做甚麼偷雞摸狗的事"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "你最好告訴他，不要仗著自己有幾分本事就囂張了起來，"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "這世界上比他厲害的人跟我拒絕過的告白一樣多，哼！"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我要去上課了，再見！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "嗯嗯好的！我一定轉達！掰掰哦"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（...終於走了...剛剛那是甚麼自戀的比喻啊...）"
+        }
+    ],
+    "Ch1-2_fatBoy_1": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "我跟你說，這兩包零食是我的姑姑的客戶的兒子的老師的老公\n從韓國帶回來、最近超流行、超級好吃的哦"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "蛤？這洋芋片不是便利商店就有賣嗎？前天才看到的"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "怎麼可能，才…才不是呢！你一定是羨慕我有洋芋片，才這樣貶低它們。\n哼！我可是一包都不會分給你的"
+        }
+    ],
+    "Ch1-2_fatBoy_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "早上好啊！奕軍、霆軒"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "嘿！你來得正好！快幫我看一下明天比賽的這兩支球隊"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你覺得我應該押注在哪隊上啊？"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "不用猶豫辣！就跟你說下勇士就對了，勇士必勝！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(選擇A)押勇士"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你也這麼覺得嗎…可是我上次押勇士慘賠3000元欸\n嗯…還是問問看宇翔好了"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(選擇B)不押勇士"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "齁！你不懂辣！我們去問宇翔，他一定會同意我的"
+        }
+    ],
+    "Ch1-2_strongBoy_1": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "我跟你說，這兩包零食是我的姑姑的客戶的兒子的老師的老公\n從韓國帶回來、最近超流行、超級好吃的哦"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "蛤？這洋芋片不是便利商店就有賣嗎？前天才看到的"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "怎麼可能，才…才不是呢！你一定是羨慕我有洋芋片，才這樣貶低它們。\n哼！我可是一包都不會分給你的"
+        }
+    ],
+    "Ch1-2_strongBoy_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "早上好啊！奕軍、霆軒"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "嘿！你來得正好！快幫我看一下明天比賽的這兩支球隊"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你覺得我應該押注在哪隊上啊？"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "不用猶豫辣！就跟你說下勇士就對了，勇士必勝！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(選擇A)押勇士"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你也這麼覺得嗎…可是我上次押勇士慘賠3000元欸\n嗯…還是問問看宇翔好了"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(選擇B)不押勇士"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "齁！你不懂辣！我們去問宇翔，他一定會同意我的"
+        }
+    ],
+    "Ch1-2_punk_1": [
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "你知道嗎？有篇報導說\n每天都喝水的人有很大的機率在100年內死去欸！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "天啊！太可怕了吧，所以我不應該天天喝水囉"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "沒錯，我們應該用飲料來代替水，以免容易死亡！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "對欸！妳好聰明哦，我還在苦惱怎樣才能一整天不喝水，哈哈哈哈"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "噗哧妳真的很好笑欸\n哈哈哈哈哈哈哈哈"
+        }
+    ],
+    "Ch1-2_punk_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "欸你們今天有看到宇翔嗎？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "誰知道啊，大概是跟XXX一起翹課出去玩了吧。"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "又出去玩？他們該不會還在熱戀期吧？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "但我聽說他們一起兩年多了。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "所以．．．你們知道宇翔去哪裡了嗎？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "哇~這麼厲害喔，好想知道要怎麼維持一段兩年的感情喔。"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "這種事情有什麼好羨慕的？不就死撐著不分手？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "哎呀！宇翔跟你這冷血怪才不一樣！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "有次還被我看到錢包裡放她照片，連上次借我腳踏車，都被我發現密碼鎖是設女友的生日喔。"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "你敢說我冷血怪，看來是嫌水喝得不夠多是吧？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（看來在這裡是問不出什麼了．．．）"
+        }
+    ],
+    "Ch1-2_sunny_1": [
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "你知道嗎？有篇報導說\n每天都喝水的人有很大的機率在100年內死去欸！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "天啊！太可怕了吧，所以我不應該天天喝水囉"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "沒錯，我們應該用飲料來代替水，以免容易死亡！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "對欸！妳好聰明哦，我還在苦惱怎樣才能一整天不喝水，哈哈哈哈"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "噗哧妳真的很好笑欸\n哈哈哈哈哈哈哈哈"
+        }
+    ],
+    "Ch1-2_sunny_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "欸你們今天有看到宇翔嗎？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "誰知道啊，大概是跟XXX一起翹課出去玩了吧。"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "又出去玩？他們該不會還在熱戀期吧？"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "但我聽說他們一起兩年多了。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "所以．．．你們知道宇翔去哪裡了嗎？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "哇~這麼厲害喔，好想知道要怎麼維持一段兩年的感情喔。"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "這種事情有什麼好羨慕的？不就死撐著不分手？"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "哎呀！宇翔跟你這冷血怪才不一樣！"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "有次還被我看到錢包裡放她照片，連上次借我腳踏車，都被我發現密碼鎖是設女友的生日喔。"
+        },
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "你敢說我冷血怪，看來是嫌水喝得不夠多是吧？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（看來在這裡是問不出什麼了．．．）"
+        }
+    ],
+    "Ch1-2_princess_1": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_princess_2": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_danceGirl_1": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_danceGirl_2": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_badBoy_1": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_badBoy_2": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "子昀～等等下午要不要一起去看電影啊？\n我們可以先在西門町逛逛街，然後買個鹽酥雞或是臭豆腐進電影院吃"
+        },
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "痾不用了，我想要去穿堂練舞"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "呿，真是掃興\n那茱茵呢？你下午沒事吧，我可以陪你逛街哦～"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "我才不要嘞，西門町那麼遠，你又沒有車，我還不如去找勇庠學長，長得也比較帥"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "......"
+        }
+    ],
+    "Ch1-2_nerd_1": [
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "拜託教一下我啦佑亘，我這次作業交不出來就真的要被當了"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "不是啊，這題就是照著AES的步驟做就好了啊，那麼簡單"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "…AES…那是甚麼啊…"
+        },
+        {
+            "name": "玩家心想",
+            "speaker": "null",
+            "content": "(對了，不然我去看一下宇翔的櫃子好了，說不定就能知道他為什麼那麼奇怪了)"
+        }
+    ],
+    "Ch1-2_nerd_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你們今天有看到宇翔嗎？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "沒欸，該不會是跑去圖書館拚期中考了吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "每次都考第一名，上個月小考被我反超一次，應該是怕了吧。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "也才被你反超一次，宇翔人那麼好，會熱心幫助同學，應該會跟我講什麼是AES吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "他人是好，不過很可惜他現在不在，救不了明天要考試的你哈哈。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "所以，你們也不知道他去哪裡了齁？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "作為被我認可的男人，應該是沒問題啦。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "那你願意認可我，幫我寫作業嗎？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "躺分仔，滾!"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（不然我來賭賭看好了，宇翔手機的密碼）"
+        }
+    ],
+    "Ch1-2_stupidBoy_1": [
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "拜託教一下我啦佑亘，我這次作業交不出來就真的要被當了"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "不是啊，這題就是照著AES的步驟做就好了啊，那麼簡單"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "…AES…那是甚麼啊…"
+        },
+        {
+            "name": "玩家心想",
+            "speaker": "null",
+            "content": "(對了，不然我去看一下宇翔的櫃子好了，說不定就能知道他為什麼那麼奇怪了)"
+        }
+    ],
+    "Ch1-2_stupidBoy_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你們今天有看到宇翔嗎？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "沒欸，該不會是跑去圖書館拚期中考了吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "每次都考第一名，上個月小考被我反超一次，應該是怕了吧。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "也才被你反超一次，宇翔人那麼好，會熱心幫助同學，應該會跟我講什麼是AES吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "他人是好，不過很可惜他現在不在，救不了明天要考試的你哈哈。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "所以，你們也不知道他去哪裡了齁？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "作為被我認可的男人，應該是沒問題啦。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "那你願意認可我，幫我寫作業嗎？"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "躺分仔，滾!"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（不然我來賭賭看好了，宇翔手機的密碼）"
+        }
+    ],
+    "Ch1-2_items_1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "搞甚麼鬼啊，這也弄得太亂了吧"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔今天是吃錯藥囉？太反常了..."
+        }
+    ],
+    "Ch1-2_items_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "搞甚麼鬼啊，這也弄得太亂了吧"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔今天是吃錯藥囉？太反常了..."
+        }
+    ],
+    "Ch1-2_card_1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "上面寫著兩週年快樂跟一些情話"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你心想真是肉麻啊，沒想到宇翔還留著這些情書"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(上面註明女友生日1206)"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(對了，我等等進教室問一下宇翔的朋友好了)"
+        }
+    ],
+    "Ch1-2_card_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "上面寫著兩週年快樂跟一些情話"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你心想真是肉麻啊，沒想到宇翔還留著這些情書"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(上面註明女友生日1206)"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(對了，我等等進教室問一下宇翔的朋友好了)"
+        }
+    ],
+    "Ch1-2_shoes_1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔的球鞋，破破舊舊的\n看起來已經很久沒穿了"
+        }
+    ],
+    "Ch1-2_shoes_2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔的球鞋，破破舊舊的\n看起來已經很久沒穿了"
+        }
+    ],
+    "Ch1-2_complete": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "沒想到宇翔的手機密碼真的是這個啊..."
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "不知道是忘了改，還是說..."
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "唉，是個深情的男子啊"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "噹噹噹噹噹！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "哎呀！上課了，得趕快回到座位上才行"
+        }
+    ],
+
+
+
+
+    "Ch1-2_stupidBoy": [
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "嗨~"
+        }
+    ],
+    "Ch1-2_danceGirl": [
+        {
+            "name": "子昀",
+            "speaker": "danceGirl",
+            "content": "我不想上課啊!好累.."
+        }
+    ],
+    "Ch1-2_badBoy": [
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "今天天氣真好，要不要去逛街?"
+        }
+    ],
+    "Ch1-2_bulletinboard_default": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這是甚麼東西啊，看起來有點眼熟。"
+        }
+    ],
+    "Ch1-2_cabinet_strange": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這是系櫃，大家都有一個位置，但櫃子怎麼看起來怪怪的?算了應該不重要。"
+        }
+    ],
+    "====================================================================================SCENARIO_Ch1-2_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-3_calendar_now1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "啊...... 都已經A月BB日了，下次段考是不是快到了啊......。"
+        }
+    ],
+    "Ch1-3_poster_now1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "每次看到宇翔，真的都會看到這系列的角色周邊出現在他旁邊耶。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": " 沒想到在他房間裡也這麼多，這也太狂熱了吧！"
+        }
+    ],
+    "Ch1-3_medal_default": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔真厲害，會打球又人緣好，根本人生勝利組。"
+        }
+    ],
+    "筆記本、日記、動畫分鏡、貼圖草稿內容都放在桌上右書中呈現": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-3_yxbook_now1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我看看......"
+        },
+        {
+            "name": "筆記本內容-編輯的意見",
+            "speaker": "null",
+            "content": "C月DD日 編輯的意見"
+        },
+        {
+            "name": "筆記本內容-編輯的意見",
+            "speaker": "null",
+            "content": "．上次的企劃太無聊了，沒辦法吸引到現在的年輕族群。"
+        },
+        {
+            "name": "筆記本內容-編輯的意見",
+            "speaker": "null",
+            "content": "．圖文現在已經不流行了，有沒有辦法嘗試轉型做點小動畫？Youtuber正紅呢。 "
+        },
+        {
+            "name": "筆記本內容-編輯的意見",
+            "speaker": "null",
+            "content": "．我上次叫你出的line貼圖我就說會打到市場吧！\n趁著還紅，應該趕快畫第二彈！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": " ......剩下的看起來也是差不多的內容。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "再往後看吧!"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "line貼圖？企劃？這個筆記本在記錄甚麼啊？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "哇...... 這是某種的分鏡圖吧？ 這是我們學校哪門課的專題作業嗎？\n這課也太重了吧，我一定不要修這門課。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "欸，這不是宇翔很愛的那系列上次出的貼圖嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "嗯？等等，這貼圖好像跟上次出的內容有點不同的樣子。為什麼宇翔的手上會有這東西啊？"
+        }
+    ],
+    "Ch1-3_gift1_default": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這好像是宇翔女友送他的耶，真羨慕。"
+        }
+    ],
+    "Ch1-3_gift2_default": [
+        {
+            "name": "上面的文字",
+            "speaker": "null",
+            "content": "送給宇翔老師...，該不會是宇翔的粉絲送的??"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "該不會是宇翔的粉絲送的??"
+        }
+    ],
+    "Ch1-3_calendar_past": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "欸！下次更新的日期好像又快到了！"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "嗯嗯，真期待讀者這次會有甚麼反應，這次要更新的內容應該會讓他們很驚訝吧！"
+        }
+    ],
+    "看過月曆、書、書櫃1、書櫃3才能觸發lamp_past_finished，否則lamp_past_unfinished": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-3_lamp_past_finished": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "哼嗯......應該差不多是時候休息了。 "
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "對了，上次請人在我房間裡裝了台wifi分享機，但密碼有點難記，我也不知道怎麼改密碼...... "
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "先去把它隨便記在某個東西上再睡......不然就月曆的背面好了。"
+        }
+    ],
+    "Ch1-3_lamp_past_unfinished": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "我在熄燈睡覺前應該還有點事情要做，今日事今日畢，可不能都把事情堆到明天。 "
+        }
+    ],
+    "Ch1-3_gift1_past": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "這是我生日時女友送給我的，雖然我不知道能用在哪。"
+        }
+    ],
+    "Ch1-3_gift2_past": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "沒想到當圖文作家也能收到粉絲送的禮物，真棒!"
+        }
+    ],
+    "Ch1-3_yxbook_past": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "嗯......上次我記得採訪了以前的同學吧？"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "突然私訊了小學同學，那時候他們還以為我是來安麗的所以拖了好久都不讀不回呢，哈哈。"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "那時候的採訪內容是......我看看...... 他們覺得這樣的事情很有趣、很有共鳴"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "那如果我來針對這個主題來做一回圖文的話...... 啊啊靈感來了！！筆、筆呢！電腦！"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "這樣寫的話好像爆點又不太夠，可是那樣寫是不是又有點太超展開了？"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "……還是要這樣......。 嗯嗯，這樣處理的話應該沒有問題！完美！"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "哼哼，這次一定要讓讀者們知道我花少心力準備這次的作品！"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "(正在寫字)讀...者...說...很...喜...歡...我..."
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "上...次...的...畫...面...呈...現...，...彷...彿...能..."
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "直...接...感...受... 到...他...們...心...情...。 上..."
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "個...禮...拜...寫...的...那...篇...則...被...說...非..."
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "常...有...共...鳴...，...而...且...還...很...好... 笑...，"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "...下...次...可...以...寫...寫...這...篇...的...其...他...延...伸...。"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "好。嗯......我想想還有什麼是我可以寫在日記裡面的......"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "啊，作著這份工作的事情是不是下次 可以跟爸媽講呢？"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "不知道他們會有甚麼反應，希望......他們能喜歡就好了。"
+        }
+    ],
+    "====================================================================================SCENARIO_Ch1-3_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-4_calendar_now2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "......還真的有一串密碼......這真的就是wifi密碼嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(說不定這串字不是正著看而是倒著看?)"
+        },
+    ],
+    "Ch1-4_poster_now2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "原來以前每次看到宇翔都會看到一堆這東西的周邊"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "是因為他根本自己就是這東西的作者"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "啊！！！！ 我的天以前還以為他只是這系列的鋼鐵粉絲而已，娘子快出來見作者啊！ "
+        }
+    ],
+    "筆記本、日記、動畫分鏡、貼圖草稿內容都放在桌上右書中呈現": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "Ch1-4_yxbook_now2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這本筆記本......"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "剛在那個奇怪畫面裡看到的靈感採訪的筆記本好像是同一本。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "......往回翻看看。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "......天啊，越往前真的就看到越多靈感採訪的記錄......"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "反而是編輯意見越往回翻越少的樣子， 而接近現在的日期則沒什麼靈感採訪的內容。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "哇賽，原來這系列都是宇翔一個人畫出來的？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "太扯了吧，到底是要怎麼曾經當過卷哥、參加過籃球比賽得過獎、有一堆朋友"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "而且還同時是 個人氣圖文作家？ 可...可惡，這個人也實在是太勝利了。"
+        }
+    ],
+    "Ch1-4_gift1_default": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這好像是宇翔女友送他的耶，真羨慕。"
+        }
+    ],
+    "Ch1-4_gift2_default": [
+        {
+            "name": "上面的文字",
+            "speaker": "null",
+            "content": "送給宇翔老師...，該不會是宇翔的粉絲送的??"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "該不會是宇翔的粉絲送的??"
+        }
+    ],
+    "咖啡廳和編輯對話": [
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "都已經半了，怎麼還沒有看到人呢？(喃喃自語)"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "你好，請問你有看到宇翔嗎？"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "你是...？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我是宇翔的朋友，想要把手機還給他，剛好看到他的行事曆寫約編輯在咖啡廳見面。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "喔這樣啊，我就是他的編輯。喔，應該說是前編輯。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "前編輯？"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "對啊，我們公司之前跟宇翔有簽約。可惜後來發生了一些事情，我們不得已只好終止合作。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "終止合作，聽起來很嚴重。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "沒辦法，因為他後來作品都沒辦法如期繳交，他蠻有天賦的，我們也覺得很可惜。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我..."
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "我在這邊等十幾分鐘了，都沒有看到他。"
+        },
+        {
+            "name": "編輯",
+            "speaker": "null",
+            "content": "這次的會面是他自己約我出來的，結果現在又搞失蹤。\n就是這樣我才討厭跟學生談業務，氣死我了。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "是喔... 我要是遇到宇翔會幫你提醒他的。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "(結束對話)"
+        }
+    ],
+    "美術館密碼提示對話-支線對話（密碼提示）": [
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "之前有人跟我說要是生活中缺乏靈感的話，就來美術館看看畫作，\n看看那些藝術家、那些經過時間和沉澱後的作品。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "對阿，不像現在的漫畫家或圖文作家，幾乎都要每周更新才行。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "以前的人比較有醞釀的感覺。像梵谷，每隔一段時間的畫作給人的感受都很不一樣。"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "我也喜歡梵谷！而且我特別喜歡向日葵那幾幅。"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "花花草草的，還好吧。"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "我最喜歡十五朵向日葵那幅畫作，Van Gogh-D-1004。\n每朵花都不一樣，有的含苞待放，有的開始凋零，卻也全力盛開，像極了我們。"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "你幹嘛，一副看到妹子的表情，用那種色瞇瞇的樣子看這幅畫。1004是啥，我只知道104人力銀行。"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "齁，霆軒，你真的是很沒有常識欸，那是畫作編號，\n名畫都會有這些編號，方便不同國家的人也可以快速查詢，或甚至複製什麼的。"
+        },
+        {
+            "name": "宇翔",
+            "speaker": "null",
+            "content": "就像莉晴說的，畫作編號是有意義的，代表著那幅畫和其精神，對我來說也特別具紀念性。"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "好啦，1004是吧，我記得了拉，生日的時候給你們一人一幅1004。"
+        }
+    ],
+    "====================================================================================SCENARIO_Ch1-4_END": [
         {
             "name": "",
             "speaker": "null",
             "content": ""
         }
     ]
+
 }

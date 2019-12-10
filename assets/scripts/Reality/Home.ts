@@ -34,7 +34,7 @@ export default class Home extends cc.Component {
 
     goToLivingRoom(){
         this.node.children.forEach(node=>node.active=false)
-        this.node.getChildByName("livingRoom").active=true
+        this.node.getChildByName("overview").active=true
     }
 
 
