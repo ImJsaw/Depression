@@ -25,6 +25,7 @@ export default class SceneLoading extends cc.Component {
         Game.Inst.utils.resize();
         cc.log("start preloading");
         this.startPreloading();
+        this.startAnime();
         // this.registerVideo();
     }
 
@@ -39,6 +40,25 @@ export default class SceneLoading extends cc.Component {
     //     cc.log("start vid");
     //     this.openingVideo.play();
     // }
+
+    startAnime(){
+        let self = this;
+        this.isVideoComplete = false;
+        let action = cc.sequence(
+            cc.fadeTo(5,0),
+            cc.callFunc(()=>{
+                self.onAnimComplete();
+            })
+        )
+        this.bg.runAction(action);
+    }
+
+    onAnimComplete(){
+        this.isVideoComplete = true;
+        if(this.isLoadingComplete){
+            Game.Inst.mainStateMgr.changeState(GameState.Game);
+        }
+    }
 
     // onVideoComplete(){
     //     cc.log("vid complete");
@@ -63,7 +83,6 @@ export default class SceneLoading extends cc.Component {
     }
 
     onLoadComplete() {
-        this.enterGame();
         this.isLoadingComplete = true;
         //check goto game
         if(this.isVideoComplete){
