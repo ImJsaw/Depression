@@ -29,8 +29,8 @@ export default class RealityUIMgr extends cc.Component {
     }
 
     changeScene( sceneName : Define.RealityScene , transiton : boolean = false){
-        //avoid repeat transition
-        if (this.onTransition) return;
+        //avoid repeat clicking map issue
+        if (this.onTransition && transiton) return;
         this.onTransition = true;
         let self = this;
         if(!transiton){
@@ -39,7 +39,7 @@ export default class RealityUIMgr extends cc.Component {
             return;
         }
         UIMgr.Inst.transitionAnim(()=>{
-            self.gotoScene(sceneName);
+            Define.GameInfo.Inst.curRealityScene = sceneName;
             UIMgr.Inst.mobileMgr.gotoReality();
         },()=>{
             self.onTransition = false;

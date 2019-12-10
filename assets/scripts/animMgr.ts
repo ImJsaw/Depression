@@ -1,4 +1,3 @@
-import AnimationBase from "./components/animation/AnimationBase";
 
 const { ccclass, property } = cc._decorator;
 
@@ -17,7 +16,7 @@ export default class AnimMgr extends cc.Component {
     }
 
     playTransitionAnim(todo?,onFinished?){
-        let duration : number = 5;
+        let duration : number = 2;
         let self = this;
         this.mask.active = true;
 
