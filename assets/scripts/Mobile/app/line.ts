@@ -57,9 +57,9 @@ export default class line extends App {
     }
 
     getCurLineMsg(){
-        let curLog : Define.LineLog[] = Game.Inst.resourcesMgr.getLineLog();
-        cc.log("[Line]curMsg : ");
-        cc.log(curLog);
+       // let curLog : Define.LineLog[] = Game.Inst.resourcesMgr.getLineLog();
+       // cc.log("[Line]curMsg : ");
+       // cc.log(curLog);
     }
 
     openChat(){

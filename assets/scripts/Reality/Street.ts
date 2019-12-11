@@ -11,7 +11,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class Street extends cc.Component {
     goToStreet() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("overview").active = true;

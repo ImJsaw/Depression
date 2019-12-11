@@ -28,10 +28,8 @@ export default class GhostCursor extends cc.Component {
         //let mousePosition = evt.getLocation();
         mousePosition = mousePosition.add(this.node.position);
         cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
-        cc.log(mousePosition);
     }
     onMouseDown(_) {
-        cc.log(cc.find('Canvas/Cursor').position);
         cc.find('Canvas/Cursor').setPosition(-4096, -2048)
     }
 

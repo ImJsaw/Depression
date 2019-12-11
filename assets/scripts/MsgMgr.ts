@@ -39,7 +39,7 @@ export default class MsgMgr extends cc.Component {
         this.buttons.push(cc.find('ButtonD', this.buttonGroup))
 
         this.node.on('click', this.next)
-        
+
         window['playScript'] = (name) => this.play(name)
         window['stopScript'] = () => this.close()
 
@@ -94,6 +94,8 @@ export default class MsgMgr extends cc.Component {
         this.node.active = true
         this.playing = script
         this.playingProcess = init
+        if (this.scripts[this.playing] == undefined) return;
+        if (this.scripts[this.playing] == null) return;
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])

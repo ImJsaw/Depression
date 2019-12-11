@@ -11,7 +11,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class Bridge extends cc.Component {
     goToBridge() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("overview").active = true;
