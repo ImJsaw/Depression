@@ -47,7 +47,8 @@ export enum IGAccount{
     smart123,
     hippopgirl,
     flower,
-    ton
+    ton,
+    girlFriend
 }
 
 export class GameInfo{
