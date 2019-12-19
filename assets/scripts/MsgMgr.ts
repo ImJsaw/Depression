@@ -51,6 +51,7 @@ export default class MsgMgr extends cc.Component {
     }
 
     load(file: string) {
+        cc.log(file)
         return new Promise((res, rej) => {
             cc.loader.loadRes(file, (err, obj) => {
                 if (err) console.error(err)
@@ -79,17 +80,21 @@ export default class MsgMgr extends cc.Component {
                 if (!this.speakerImage) {
                     this.speakerImage = {}
                 }
-                console.log(obj)
                 this.speakerImage[file] = obj
                 res(this.speakerImage)
             })
         })
     }
 
-    play(script: string, init: number = 0) {
+    play(script: string, force: boolean = false, init: number = 0) {
         if (!this.node) {
-            this.afterLoad = () => this.play(script, init)
+            this.afterLoad = () => this.play(script, force, init)
             return
+        }
+        if (this.node.active && !force) {
+            cc.warn('reject to play script ' + script)
+            return // reject to play another script if there already one playing
+            // you can set force to true to force play
         }
         this.node.active = true
         this.playing = script
@@ -113,10 +118,10 @@ export default class MsgMgr extends cc.Component {
     next(evt) {
         evt.stopPropagation()
         if (this.scripts[this.playing][this.playingProcess].selections) {
-            return false
+            return false // reject play next if is in selection
         }
-
         this.playingProcess += 1
+
         if (this.scripts[this.playing].length <= this.playingProcess) {
             this.node.active = false
             return false
@@ -128,16 +133,31 @@ export default class MsgMgr extends cc.Component {
             this.normal(this.scripts[this.playing][this.playingProcess])
         }
         this.speaker.getComponent(cc.Sprite).spriteFrame = this.speakerImage[this.scripts[this.playing][this.playingProcess].speaker]
+        
         return true
     }
 
-    normal(obj: { name: string, content: string }) {
+    normal(obj: { name: string, content: string, before?: string, end?: string }) {
+        let hook: string
+        if (hook = this.scripts[this.playing][this.playingProcess].start) {
+            this.node.getComponent('MsgEvents')[hook]()
+        }
+
         this.buttonGroup.active = false
         this.nameText.getComponent(cc.Label).string = obj.name
         this.contentText.getComponent(cc.Label).string = obj.content
+
+        if (hook = this.scripts[this.playing][this.playingProcess].end) {
+            this.node.getComponent('MsgEvents')[hook]()
+        }
     }
 
-    select(obj: { name: string, content: string, selections: Array<{ content: string, event: string, data?: any }> }) {
+    select(obj: { name: string, content: string, selections: Array<{ content: string, event: string, data?: any }>, before?: string, end?: string }) {
+        let hook: string
+        if (hook = this.scripts[this.playing][this.playingProcess].start) {
+            this.node.getComponent('MsgEvents')[hook]()
+        }
+
         this.buttonGroup.active = true
         this.buttons.forEach(n => {
             n.active = false
@@ -156,6 +176,10 @@ export default class MsgMgr extends cc.Component {
             Object.assign(tmpEventHandler, obj.selections[i].data)
 
             this.buttons[i].getComponent(cc.Button).clickEvents.push(tmpEventHandler)
+        }
+        
+        if (hook = this.scripts[this.playing][this.playingProcess].end) {
+            this.node.getComponent('MsgEvents')[hook]()
         }
     }
 
