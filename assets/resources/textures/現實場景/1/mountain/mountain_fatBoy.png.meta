@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "d09821b5-9365-43df-ba5a-319295b13100",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "mountain_fatBoy": {
+      "ver": "1.0.4",
+      "uuid": "4a68104e-43ba-47a3-8cdf-226a206498d7",
+      "rawTextureUuid": "d09821b5-9365-43df-ba5a-319295b13100",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 271,
+      "height": 433,
+      "rawWidth": 272,
+      "rawHeight": 433,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
