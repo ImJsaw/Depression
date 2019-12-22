@@ -3,15 +3,15 @@
         {
             "name": "",
             "speaker": "null",
-            "content": ""
+            "content": "",
+            "end": "example"
         }
     ],
     "momCall": [
         {
             "name": "？？？",
             "speaker": "null",
-            "content": "喂！宇翔你這週該回家了吧？\n已經兩個禮拜沒回來了欸，你是上台北玩瘋了\n就忘記還有個家了是嗎？",
-            "start": "example"
+            "content": "喂！宇翔你這週該回家了吧？\n已經兩個禮拜沒回來了欸，你是上台北玩瘋了\n就忘記還有個家了是嗎？"
         },
         {
             "name": "",
@@ -21,8 +21,7 @@
         {
             "name": "宇翔的媽媽",
             "speaker": "null",
-            "content": "蛤？你不是宇翔哦，那你是宇翔的室友囉？\n平常我們家宇翔受你照顧了，可以請他接一下電話嗎？",
-            "end": "example"
+            "content": "蛤？你不是宇翔哦，那你是宇翔的室友囉？\n平常我們家宇翔受你照顧了，可以請他接一下電話嗎？"
         },
         {
             "name": "",
@@ -156,6 +155,12 @@
             "name": "",
             "speaker": "null",
             "content": "時間也差不多了，出門去上學吧！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "",
+            "end": "goToSchool"
         }
     ],
     "Ch1-1_jumpToCh1-3": [
@@ -221,7 +226,7 @@
         {
             "name": "茱茵",
             "speaker": "princess",
-            "content": "走路不看路，撞到人也不會說對不起，還害我剛買的新包包掉到了地上"
+            "content": "走路不看路，撞到人也不會說對不起\n還害我剛買的新包包掉到了地上"
         },
         {
             "name": "茱茵",
@@ -231,12 +236,12 @@
         {
             "name": "",
             "speaker": "princess",
-            "content": "（那麼容易髒就不要買白色的啊...而且又不是我做的，幹嘛遷怒我啊...）"
+            "content": "（那麼容易髒就不要買白色的啊...）"
         },
         {
             "name": "",
             "speaker": "princess",
-            "content": "怎麼能這樣呢！宇翔太過分了吧，他現在在哪裡，我馬上去叫他向妳道歉"
+            "content": "怎麼能這樣呢！宇翔太過分了吧\n他現在在哪裡，我馬上去叫他向妳道歉"
         },
         {
             "name": "茱茵",
@@ -982,6 +987,12 @@
             "name": "",
             "speaker": "null",
             "content": "哎呀！上課了，得趕快回到座位上才行"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "",
+            "end": "goToHome"
         }
     ],
     "Ch1-2_stupidBoy": [
@@ -1020,6 +1031,13 @@
         }
     ],
     "====================================================================================SCENARIO_Ch1-2_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "backToHome": [
         {
             "name": "",
             "speaker": "null",
@@ -1135,7 +1153,6 @@
             "content": "真是高級啊，這一台要六、七萬吧\n真不知道宇翔哪來這麼多錢"
         }
     ],
-
     "Ch1-3_calendar_past": [
         {
             "name": "宇翔",
@@ -1509,14 +1526,13 @@
             "speaker": "null",
             "content": ""
         }
-    ],    
+    ],
     "punk": [
         {
             "name": "蕭彤",
             "speaker": "punk",
             "content": "欸！你怎麼會來這裡？"
         }
-
     ],
     "editor": [
         {
@@ -1590,7 +1606,6 @@
             "content": "那就先謝謝你了，這樣子我想他是不會來了\n我還有事就先離開囉"
         }
     ],
-
     "strongBoy": [
         {
             "name": "奕軍",
@@ -1611,6 +1626,680 @@
             "speaker": "null",
             "content": "奕軍的鑰匙圈，聽說是莉晴送他的\n我跟宇翔一直懷疑他們在曖昧，但奕均堅持否認..."
         }
-    ]
+    ],
+    "CH2_fatBoy": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "欸，你確定他們是來這裡嗎？"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "而且這座山那麼大，是要怎麼找啦"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "早就跟你說不要大老遠過來了，宇翔他自己搞得定啦"
+        },
+        {
+            "name": "奕軍",
+            "speaker": "strongBoy",
+            "content": "少在那邊一直抱怨啦，當初湊合他們倆的是我們欸\n當然要見證一下這歷史性的一刻啊"
+        },
+        {
+            "name": "奕軍",
+            "speaker": "strongBoy",
+            "content": "何況要是有甚麼意外，我們也好去幫助宇翔啊"
+        }
+    ],
+    "CH2_strongBoy": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "欸，你確定他們是來這裡嗎？"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "而且這座山那麼大，是要怎麼找啦"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "早就跟你說不要大老遠過來了，宇翔他自己搞得定啦"
+        },
+        {
+            "name": "奕軍",
+            "speaker": "strongBoy",
+            "content": "少在那邊一直抱怨啦，當初湊合他們倆的是我們欸\n當然要見證一下這歷史性的一刻啊"
+        },
+        {
+            "name": "奕軍",
+            "speaker": "strongBoy",
+            "content": "何況要是有甚麼意外，我們也好去幫助宇翔啊"
+        }
+    ],
+    "CH2_stupidBoy": [
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "欸，佑亘，你知道宇翔在做圖文作家嗎?"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "我知道啊，你現在才知道喔?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "我最近才知道的啦，好厲害喔，跟我同年竟然已經有這種成就了。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "反觀我到現在都沒自己賺過錢，沒啥朋友，成績又爛，根本魯蛇。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "拜託，那又沒甚麼，我大一的時候就在外面教學店生寫程式了欸!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "而且你不孤單，畢竟我也邊緣人。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "別裝了啦，你不是學霸嗎?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "話說好羨慕宇翔喔，肯定有很多粉絲!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "也對啦，我覺得那種行業可能很容易有很多瘋狂粉絲。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "像甚麼鋼鐵翔粉之類的。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "哈哈，根本人生勝利組欸，我上次還看到他去打系籃，超帥的。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "系籃有啥好玩的啊，不如在家打lol看動漫，我覺得爬分更有成就感。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "唉，肥宅就是肥宅，你這種肥宅怎麼懂人生勝利組的想法呢。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "你說誰肥宅? 你下學期統計學不想被罩了是不是?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "別啊大哥，我說錯話了!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "知錯能改善莫大焉，宇翔的統計學想贏過我還早得很呢!"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "可是宇翔的成績不是也很好嗎?你這麼有自信贏過他?"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "廢話，我數學那麼猛，統計學那麼簡單，"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "甚麼joint probability、marginal density，我不信這次期末考宇翔會算。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "哇學霸果然不一樣!"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "好了啦，我們趕快去上下一堂課吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "走吧。"
+        }
+    ],
+    "CH2_nerd": [
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "欸，佑亘，你知道宇翔在做圖文作家嗎?"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "我知道啊，你現在才知道喔?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "我最近才知道的啦，好厲害喔，跟我同年竟然已經有這種成就了。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "反觀我到現在都沒自己賺過錢，沒啥朋友，成績又爛，根本魯蛇。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "拜託，那又沒甚麼，我大一的時候就在外面教學店生寫程式了欸!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "而且你不孤單，畢竟我也邊緣人。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "別裝了啦，你不是學霸嗎?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "話說好羨慕宇翔喔，肯定有很多粉絲!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "也對啦，我覺得那種行業可能很容易有很多瘋狂粉絲。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "像甚麼鋼鐵翔粉之類的。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "哈哈，根本人生勝利組欸，我上次還看到他去打系籃，超帥的。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "系籃有啥好玩的啊，不如在家打lol看動漫，我覺得爬分更有成就感。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "唉，肥宅就是肥宅，你這種肥宅怎麼懂人生勝利組的想法呢。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "你說誰肥宅? 你下學期統計學不想被罩了是不是?"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "別啊大哥，我說錯話了!"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "知錯能改善莫大焉，宇翔的統計學想贏過我還早得很呢!"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "可是宇翔的成績不是也很好嗎?你這麼有自信贏過他?"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "廢話，我數學那麼猛，統計學那麼簡單，"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "甚麼joint probability、marginal density，我不信這次期末考宇翔會算。"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "哇學霸果然不一樣!"
+        },
+        {
+            "name": "鳴志",
+            "speaker": "stupidBoy",
+            "content": "好了啦，我們趕快去上下一堂課吧。"
+        },
+        {
+            "name": "佑亘",
+            "speaker": "nerd",
+            "content": "走吧。"
+        }
+    ],
+    "choose_get_job_1": [
+        {
+            "name": "選擇1",
+            "speaker": "null",
+            "content": "原來宇翔在大家的眼中是這麼的厲害呀!"
+        },
+        {
+            "name": "選擇1",
+            "speaker": "null",
+            "content": "我應該跟他好好學習的，成為第二個宇翔。"
+        }
+    ],
+    "choose_get_job_2": [
+        {
+            "name": "選擇2",
+            "speaker": "null",
+            "content": "看來宇翔也沒很厲害呀，不過就一般大學生也能做到的，"
+        },
+        {
+            "name": "選擇2",
+            "speaker": "null",
+            "content": "真正厲害的不是休學去發大財，不然就出國再也不回來的。"
+        }
+    ],
+    "choose_get_job_3": [
+        {
+            "name": "選擇3",
+            "speaker": "null",
+            "content": "剛剛有人提到統計學期末考?聽說有人一修再修不夠，暑假還跑去修的。"
+        },
+        {
+            "name": "選擇3",
+            "speaker": "null",
+            "content": "希望今年我一定要過，不然要修第三次了..."
+        }
+    ],
+    "====================================================================================SCENARIO_Ch2_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ],
+    "CH3_sunny": [
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "這樣做好嗎？宇翔他很可憐欸"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "先照顧好你自己吧"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "你辭去了打工只為了多花點時間陪伴他，結果他還不是一樣\n三不五時發作"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "記得上次我們工作室開會，他發了瘋的打了十幾通電話"
 
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "吵著要你回去陪他"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "根本就是情緒勒索嘛"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "還有一次他莫名其妙自已跑到山上，也不開手機"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "你擔心的把班上所有人都問了一遍\n結果他回來還質疑你，說甚麼你不該用看待病人的方式對待他"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "反正你怎樣做他都聽不下去，又何必再繼續自討苦吃呢？"
+        }
+    ],
+    "CH3_punk": [
+        {
+            "name": "蕭彤",
+            "speaker": "punk",
+            "content": "這樣做好嗎？宇翔他很可憐欸"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "先照顧好你自己吧"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "你辭去了打工只為了多花點時間陪伴他，結果他還不是一樣\n三不五時發作"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "記得上次我們工作室開會，他發了瘋的打了十幾通電話"
+
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "吵著要你回去陪他"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "根本就是情緒勒索嘛"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "還有一次他莫名其妙自已跑到山上，也不開手機"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "你擔心的把班上所有人都問了一遍\n結果他回來還質疑你，說甚麼你不該用看待病人的方式對待他"
+        },
+        {
+            "name": "莉晴",
+            "speaker": "sunny",
+            "content": "反正你怎樣做他都聽不下去，又何必再繼續自討苦吃呢？"
+        }
+    ],
+
+    "CH3_princess": [
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "聽說那個宇翔喔，他工作好像丟了，可憐"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不意外啊，要比帥，帥不過我，要比才華，也比不過我。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "乾脆讓我代替他畫畫吧。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "要比帥你還早得很，別臭美了。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "還有我以前就不太喜歡宇翔，連提到他名字都懶。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "在我眼裡他就只是個笑話，專門娛樂我的小丑。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "那我在你眼裡算甚麼?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "也是小丑，你跟宇翔同個level的，不要往自己臉上貼金。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "哈?我比宇翔高級太多了吧?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "用食物來比喻的話我就是高檔餐廳的牛排，而他就是麥當勞的薯條。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "你懂我意思嗎?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "不懂，完全不懂，就說你是小丑你不信，你剛剛說笑話?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "算了，不過我也不太喜歡宇翔，尤其那個甚麼事情都想做的樣子。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不乖乖待著打籃球、讀書，偏要跑去做圖文作家兼職"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "是不是覺得我們這些人的層次配不上他啊。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "對對對，你說到重點了，我才這麼不爽他。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "這次被炒真的是報應啦，有一次我忘記發生甚麼事情了，"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "他惹的我很不高興，結果也沒跟我道歉，活該!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "真的，啊我們到了，就在這裡。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "最好這間店有賣我想要的東西，如果沒有就別想我再跟你出來了!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "放心，我不是宇翔那種冒失鬼，怎麼可能搞錯"
+        }
+    ],
+    "CH3_badBoy": [
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "聽說那個宇翔喔，他工作好像丟了，可憐"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不意外啊，要比帥，帥不過我，要比才華，也比不過我。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "乾脆讓我代替他畫畫吧。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "要比帥你還早得很，別臭美了。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "還有我以前就不太喜歡宇翔，連提到他名字都懶。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "在我眼裡他就只是個笑話，專門娛樂我的小丑。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "那我在你眼裡算甚麼?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "也是小丑，你跟宇翔同個level的，不要往自己臉上貼金。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "哈?我比宇翔高級太多了吧?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "用食物來比喻的話我就是高檔餐廳的牛排，而他就是麥當勞的薯條。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "你懂我意思嗎?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "不懂，完全不懂，就說你是小丑你不信，你剛剛說笑話?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "算了，不過我也不太喜歡宇翔，尤其那個甚麼事情都想做的樣子。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不乖乖待著打籃球、讀書，偏要跑去做圖文作家兼職"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "是不是覺得我們這些人的層次配不上他啊。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "對對對，你說到重點了，我才這麼不爽他。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "這次被炒真的是報應啦，有一次我忘記發生甚麼事情了，"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "他惹的我很不高興，結果也沒跟我道歉，活該!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "真的，啊我們到了，就在這裡。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "最好這間店有賣我想要的東西，如果沒有就別想我再跟你出來了!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "放心，我不是宇翔那種冒失鬼，怎麼可能搞錯"
+        }
+    ],
+    "choose_lose_job_1": [
+        {
+            "name": "選擇1",
+            "speaker": "null",
+            "content": "宇翔真可憐...有這麼多人在他背後說閒話。"
+        },
+        {
+            "name": "選擇1",
+            "speaker": "null",
+            "content": "看到宇翔的遭遇不禁讓我自己也難過起來，我完全能感同身受"
+        }
+    ],
+    "choose_lose_job_2": [
+        {
+            "name": "選擇2",
+            "speaker": "null",
+            "content": "那兩個人一看就不是甚麼好東西，肯定常常這樣亂講話。"
+        },
+        {
+            "name": "選擇2",
+            "speaker": "null",
+            "content": "以後得罪不該得罪的人可就麻煩囉。"
+        }
+    ],
+    "choose_lose_job_3": [
+        {
+            "name": "選擇3",
+            "speaker": "null",
+            "content": "那男的真的是小丑耶，再怎麼討好那女的，肯定也是工具人啦，"
+        },
+        {
+            "name": "選擇3",
+            "speaker": "null",
+            "content": "我們的宇翔才沒有他們說的那麼糟勒"
+        }
+    ],
+    "====================================================================================SCENARIO_Ch3_END": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": ""
+        }
+    ]
 }

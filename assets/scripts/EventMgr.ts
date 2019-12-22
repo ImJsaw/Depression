@@ -4,7 +4,7 @@ import MsgMgr from "./MsgMgr";
 import UIMgr from "./UIMgr";
 
 enum ScenarioState {
-    Ch1_1, Ch1_2, Ch1_3
+    Ch1_1, Ch1_2, Ch1_3,CH2,CH3
 }
 const { ccclass, property, executionOrder } = cc._decorator;
 
@@ -59,8 +59,9 @@ export default class EventMgr {
                             livingRoom.getChildByName('goToLeadingRoleRoom').active = true;
                             livingRoom.getChildByName('door').destroy();
                             this.scenario = ScenarioState.Ch1_2;
-                            Define.GameInfo.Inst.curRealityScene = Define.RealityScene.school;
-                            UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
+                            // Define.GameInfo.Inst.curRealityScene = Define.RealityScene.school;
+                            // UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
+
 
                         }
                         return;
@@ -94,6 +95,28 @@ export default class EventMgr {
                         break;
                 }
                 break;
+            case ScenarioState.Ch1_3:
+                this.play('Ch1-3_' + objName);
+                switch (objName) {
+                    case "":
+                        callingNode.destroy();
+                        break;
+                    case "":
+                        this.clickCard = true;
+                        break;
+                }
+                break;
+            case ScenarioState.CH2:
+                this.play('Ch2_' + objName);
+                switch (objName) {
+                }
+                break;
+            case ScenarioState.CH3:
+                this.play('Ch3_' + objName);
+                switch (objName) {
+                }
+                break;
+
         }
     }
     play(name: string) {
@@ -110,11 +133,11 @@ export default class EventMgr {
             this.scenario = ScenarioState.Ch1_3;
         }
         else if (this.scenario == ScenarioState.Ch1_2) {
+            this.scenario = ScenarioState.Ch1_3;
             this.play('Ch1-2_complete');
 
-            this.scenario = ScenarioState.Ch1_3;
-            Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;
-            UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
+            // Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;
+            // UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
 
         }
     }

@@ -1,4 +1,6 @@
 const {ccclass, property} = cc._decorator;
+import * as Define from "./Define";
+import UIMgr from "./UIMgr";
 
 @ccclass
 export default class MsgEvents extends cc.Component {
@@ -16,5 +18,19 @@ export default class MsgEvents extends cc.Component {
 
     ingore(){
         this.demo.active=true
+    }
+
+    goToSchool(){
+        window['stopScript']()
+        Define.GameInfo.Inst.curRealityScene = Define.RealityScene.school;
+        UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
+
+    }
+
+    goToHome(){
+        window['stopScript']()
+        Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;
+        UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
+        cc.find('Canvas/Msg').getComponent('MsgMgr').play("backToHome");
     }
 }
