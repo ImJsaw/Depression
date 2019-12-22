@@ -6,7 +6,7 @@
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "5": {
+    "grab": {
       "ver": "1.0.4",
       "uuid": "281fdc9a-e706-435c-8944-cf66dd2a5a8f",
       "rawTextureUuid": "be2b8488-fc99-424b-ba56-c56009ee3cfb",
