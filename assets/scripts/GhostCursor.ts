@@ -10,8 +10,18 @@
 
 const { ccclass, property } = cc._decorator;
 
+export enum cursorType{
+    None = -1,
+    Item,
+    Door,
+    Character
+}
+
 @ccclass
 export default class GhostCursor extends cc.Component {
+    @property({type:cc.Enum(cursorType),serializable:true})
+    type : cursorType = cursorType.Item;
+    
     start() {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
         this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
@@ -19,7 +29,7 @@ export default class GhostCursor extends cc.Component {
     }
 
     onMouseLeave(_) {
-        cc.find('Canvas/Cursor').setPosition(-4096, -2048)
+        this.dropTip();
     }
 
     onMouseMove(evt) {
@@ -27,11 +37,40 @@ export default class GhostCursor extends cc.Component {
         let mousePosition = this.node.convertToNodeSpaceAR(evt.getLocation()).add(this.node.parent.position);
         //let mousePosition = evt.getLocation();
         mousePosition = mousePosition.add(this.node.position);
-        cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
+        this.moveTip(mousePosition);
+        // cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
     }
+    
     onMouseDown(_) {
-        cc.find('Canvas/Cursor').setPosition(-4096, -2048)
+        this.dropTip();
     }
 
+    moveTip(pos : cc.Vec2){
+        switch(this.type){
+            case cursorType.Character:
+                cc.find('Canvas/CharacterCursor').setPosition(pos);
+                return;
+            case cursorType.Door:    
+                cc.find('Canvas/DoorCursor').setPosition(pos);
+                return;    
+            case cursorType.Item:
+                cc.find('Canvas/ItemCursor').setPosition(pos);
+                return;
+        }
+    }
+
+    dropTip(){
+        switch(this.type){
+            case cursorType.Character:
+                cc.find('Canvas/CharacterCursor').setPosition(-4096, -2048);
+                return;
+            case cursorType.Door:    
+                cc.find('Canvas/DoorCursor').setPosition(-4096, -2048);
+                return;    
+            case cursorType.Item:
+                cc.find('Canvas/ItemCursor').setPosition(-4096, -2048);
+                return;
+        }
+    }
 
 }
