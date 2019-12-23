@@ -20,5 +20,9 @@ export default class Bridge extends cc.Component {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("basketballCourt").active = true;
     }
+    goToBasketBallBack() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("basketballCourtBack").active = true;
+    }
 
 }

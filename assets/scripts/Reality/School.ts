@@ -20,10 +20,21 @@ export default class School extends cc.Component {
         this.node.getChildByName("classroom").active = true
         this.getComponent(LongAxis).enabled = false
     }
+    goToClassroomBack(){
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("classroomBack").active = true
+        this.getComponent(LongAxis).enabled = false
+    }
 
     goToHallway(){
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("hallway").active = true
+        this.getComponent(LongAxis).enabled = true
+    
+    }
+    goToHallwayBack(){
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("hallwayBack").active = true
         this.getComponent(LongAxis).enabled = true
     
     }

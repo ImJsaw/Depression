@@ -8,33 +8,38 @@
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Home extends cc.Component {
-    turnOnLight(){
+    turnOnLight() {
         this.node.getChildByName("leadingRoleRoom").active = true
         this.node.getChildByName("darkRoom").active = false
     }
 
-    turnOffLight(){
+    turnOffLight() {
         this.node.getChildByName("darkRoom").active = true
         this.node.getChildByName("leadingRoleRoom").active = false
     }
 
-    goToMyRoom(){
-        this.node.children.forEach(node=>node.active=false)
-        this.node.getChildByName("myRoom").active=true
+    goToMyRoom() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("myRoom").active = true
     }
 
-    goToLeadingRoleRoom(){
-        this.node.children.forEach(node=>node.active=false)
-        this.node.getChildByName("darkRoom").active=true
+    goToLeadingRoleRoom() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("darkRoom").active = true
     }
 
-    goToLivingRoom(){
-        this.node.children.forEach(node=>node.active=false)
-        this.node.getChildByName("overview").active=true
+    goToLeadingRoleRoomBack() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("leadingRoleRoomBack").active = true
+    }
+
+    goToLivingRoom() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("overview").active = true
     }
 
 

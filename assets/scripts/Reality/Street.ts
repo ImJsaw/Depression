@@ -20,5 +20,9 @@ export default class Street extends cc.Component {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("cafe").active = true;
     }
+    goToCoffeeBack() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("cafeBack").active = true;
+    }
 
 }

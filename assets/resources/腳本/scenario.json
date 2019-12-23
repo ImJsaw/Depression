@@ -847,6 +847,18 @@
         {
             "name": "鳴志",
             "speaker": "stupidBoy",
+            "content": "躺分仔，滾!"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "（不然我來賭賭看好了，宇翔手機的密碼）"
+        }
+    ],
+    "Ch1-2_items_1": [
+        {
+            "name": "",
+            "speaker": "null",
             "content": "也才被你反超一次，宇翔人那麼好，會熱心幫助同學，應該會跟我講什麼是AES吧。"
         },
         {
@@ -872,18 +884,6 @@
         {
             "name": "佑亘",
             "speaker": "nerd",
-            "content": "躺分仔，滾!"
-        },
-        {
-            "name": "",
-            "speaker": "null",
-            "content": "（不然我來賭賭看好了，宇翔手機的密碼）"
-        }
-    ],
-    "Ch1-2_items_1": [
-        {
-            "name": "",
-            "speaker": "null",
             "content": "搞甚麼鬼啊，這也弄得太亂了吧"
         },
         {
@@ -1041,7 +1041,61 @@
         {
             "name": "",
             "speaker": "null",
-            "content": ""
+            "content": "ㄚㄚㄚ"
+        }
+    ],
+    "Ch1-3_jersey": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "宇翔的球衣，放在這裡很久了..."
+        }
+    ],
+    "Ch1-3_switch": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "好久沒跟林克一起戰鬥了呢"
+        }
+    ],
+    "Ch1-3_phone": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "又忘記帶手機出門了？\n真是受不了，唉"
+        }
+    ],
+    "Ch1-3_wallet": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "一百…兩百…三百…四百…"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "今天應該還不用領錢"
+        }
+    ],
+    "Ch1-3_book": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "唉，這原文書真的是有夠厚重的"
+        }
+    ],
+    "Ch1-3_bag": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "我的書包"
+        }
+    ],
+    "Ch1-3_key": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "啊啊啊，鑰匙怎麼掉在這呢？"
         }
     ],
     "Ch1-3_calendar": [
@@ -1127,7 +1181,29 @@
             "content": "嗯？等等，這貼圖好像跟上次出的內容有點不同的樣子。為什麼宇翔的手上會有這東西啊？"
         }
     ],
+    "Ch1-3_sticker": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "貼圖草稿"
+        }
+    ],
+
     "Ch1-3_cabinet1": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這好像是宇翔女友送他的耶，真羨慕。"
+        }
+    ],
+    "Ch1-3_cabinet2": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "這好像是宇翔女友送他的耶，真羨慕。"
+        }
+    ],
+    "Ch1-3_cabinet3": [
         {
             "name": "",
             "speaker": "null",
@@ -1968,7 +2044,6 @@
             "name": "莉晴",
             "speaker": "sunny",
             "content": "記得上次我們工作室開會，他發了瘋的打了十幾通電話"
-
         },
         {
             "name": "莉晴",
@@ -2016,7 +2091,6 @@
             "name": "莉晴",
             "speaker": "sunny",
             "content": "記得上次我們工作室開會，他發了瘋的打了十幾通電話"
-
         },
         {
             "name": "莉晴",
@@ -2044,7 +2118,6 @@
             "content": "反正你怎樣做他都聽不下去，又何必再繼續自討苦吃呢？"
         }
     ],
-
     "CH3_princess": [
         {
             "name": "茱茵",

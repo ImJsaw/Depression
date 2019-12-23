@@ -96,11 +96,11 @@ export default class MsgMgr extends cc.Component {
             return // reject to play another script if there already one playing
             // you can set force to true to force play
         }
-        this.node.active = true
         this.playing = script
         this.playingProcess = init
         if (this.scripts[this.playing] == undefined) return;
         if (this.scripts[this.playing] == null) return;
+        this.node.active = true
         if (this.scripts[this.playing][this.playingProcess].selections) {
             // @ts-ignore
             this.select(this.scripts[this.playing][this.playingProcess])

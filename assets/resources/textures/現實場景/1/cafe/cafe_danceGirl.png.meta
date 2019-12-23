@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "fa5408e9-5392-4b28-9a9e-a1fc1e548472",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "cafe_danceGirl": {
+      "ver": "1.0.4",
+      "uuid": "9f447a27-737a-4817-9060-76a974100ca6",
+      "rawTextureUuid": "fa5408e9-5392-4b28-9a9e-a1fc1e548472",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 151,
+      "height": 224,
+      "rawWidth": 151,
+      "rawHeight": 224,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
