@@ -71,7 +71,7 @@
             "content": "系上籃球隊訂製的球衣，放在這裡很久了..."
         }
     ],
-    "Ch1-1_switch": [
+    "Ch1-1_switCh": [
         {
             "name": "",
             "speaker": "null",
@@ -158,7 +158,7 @@
             "name": "",
             "speaker": "null",
             "content": "",
-            "end": "goToSchool"
+            "end": "goToSChool"
         }
     ],
     "==================================================================SCENARIO_Ch1-1_END": [
@@ -267,7 +267,23 @@
             "name": "霆軒",
             "speaker": "fatBoy",
             "content": "不用猶豫辣！就跟你說下勇士就對了，勇士必勝！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "",
+            "selections": [
+                {
+                    "content": "押勇士",
+                    "event": "warrior"
+                },
+                {
+                    "content": "不押勇士",
+                    "event": "notWarrior"
+                }
+            ]
         }
+
     ],
     "Ch1-2_strongBoy_1": [
         {
@@ -321,6 +337,20 @@
                     "event": "notWarrior"
                 }
             ]
+        }
+    ],
+    "warrior": [
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你也這麼覺得嗎…可是我上次押勇士慘賠3000元欸..."
+        }
+    ],
+    "notWarrior": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "齁！你不懂辣！少在那邊亂說哦"
         }
     ],
     "Ch1-2_punk_1": [
@@ -852,7 +882,7 @@
             "content": "系上籃球隊訂製的球衣，放在這裡很久了..."
         }
     ],
-    "Ch1-3_switch": [
+    "Ch1-3_switCh": [
         {
             "name": "",
             "speaker": "null",
@@ -936,22 +966,22 @@
         {
             "name": "筆記本內容-編輯的意見",
             "speaker": "null",
-            "content": "2018年10月23日 編輯的意見"
+            "content": "2018年11月23日 編輯的意見"
         },
         {
             "name": "筆記本內容-編輯的意見",
             "speaker": "null",
-            "content": "．上次的企劃太無聊了，沒辦法吸引到現在的年輕族群。"
+            "content": "上次的企劃太無聊了，沒辦法吸引到現在的年輕族群。"
         },
         {
             "name": "筆記本內容-編輯的意見",
             "speaker": "null",
-            "content": "．圖文現在已經不流行了，有沒有辦法嘗試轉型做點小動畫？Youtuber正紅呢。 "
+            "content": "圖文現在已經不流行了\n有沒有辦法嘗試轉型做點小動畫？Youtuber正紅呢。 "
         },
         {
             "name": "筆記本內容-編輯的意見",
             "speaker": "null",
-            "content": "．上次叫我出的line貼圖果真打到市場了！\n趁著還紅，應該趕快畫第二彈！"
+            "content": "上次叫我出的line貼圖果真打到市場了！\n趁著還紅，應該趕快畫第二彈！"
         }
     ],
     "Ch1-3_sticker": [
@@ -1442,7 +1472,7 @@
             "content": "那就先謝謝你了，這樣子我想他是不會來了\n我還有事就先離開囉"
         }
     ],
-    "CH2_punkAndDance": [
+    "Ch2_punkAndDance": [
         {
             "name": "蕭彤",
             "speaker": "punk",
@@ -1509,21 +1539,21 @@
             "content": "哈哈哈，現在看看是誰再犯花痴呀"
         }
     ],
-    "CH2_punkBack": [
+    "Ch2_punkBack": [
         {
             "name": "蕭彤",
             "speaker": "punk",
             "content": "哈哈哈，現在看看是誰再犯花痴呀"
         }
     ],
-    "CH2_danceBack": [
+    "Ch2_danceBack": [
         {
             "name": "子昀",
             "speaker": "danceGirl",
             "content": "弈軍人又高又帥又強壯，根本是我的天菜啊"
         }
     ],
-    "CH2_strongAndFat": [
+    "Ch2_strongAndFat": [
         {
             "name": "霆軒",
             "speaker": "fatBoy",
@@ -1551,7 +1581,7 @@
             "end":"strongAndFatEnd"
         }
     ],
-    "CH2_fatBoyBack": [
+    "Ch2_fatBoyBack": [
         {
             "name": "霆軒",
             "speaker": "fatBoy",
@@ -1563,21 +1593,21 @@
             "content": "好累哦"
         }
     ],
-    "CH2_strongBoyBack": [
+    "Ch2_strongBoyBack": [
         {
             "name": "奕軍",
             "speaker": "strongBoy",
             "content": "到底會跑去哪裡呢？"
         }
     ],
-    "CH2_nerdBack": [
+    "Ch2_nerdBack": [
         {
             "name": "佑亘",
             "speaker": "nerd",
             "content": "下一堂課要上的是...\n得先預習才行"
         }
     ],
-    "CH2_nerdAndStupid": [
+    "Ch2_nerdAndStupid": [
         {
             "name": "鳴志",
             "speaker": "stupidBoy",
@@ -1654,14 +1684,14 @@
             "content": "知錯能改善莫大焉"
         }
     ],
-    "CH2_stupidBoyBack": [
+    "Ch2_stupidBoyBack": [
         {
             "name": "鳴志",
             "speaker": "stupidBoy",
             "content": "下一堂課要上的是...\n好！可以睡覺！"
         }
     ],
-    "choose_get_job_1": [
+    "Choose_get_job_1": [
         {
             "name": "選擇1",
             "speaker": "null",
@@ -1673,7 +1703,7 @@
             "content": "我應該跟他好好學習的，成為第二個宇翔。"
         }
     ],
-    "choose_get_job_2": [
+    "Choose_get_job_2": [
         {
             "name": "選擇2",
             "speaker": "null",
@@ -1685,7 +1715,7 @@
             "content": "真正厲害的不是休學去發大財，不然就出國再也不回來的。"
         }
     ],
-    "choose_get_job_3": [
+    "Choose_get_job_3": [
         {
             "name": "選擇3",
             "speaker": "null",
@@ -1711,7 +1741,7 @@
             "content": "奕軍的鑰匙圈，聽說是莉晴送他的\n我一直懷疑他們在曖昧，但奕均堅持否認..."
         }
     ],
-    "CH3_strongAndFat": [
+    "Ch3_strongAndFat": [
         {
             "name": "奕軍",
             "speaker": "strongBoy",
@@ -1763,21 +1793,21 @@
             "content": "唉算了，你是隊長，你愛怎麼做就怎麼做吧"
         }
     ],
-    "CH3_fatBoyBack": [
+    "Ch3_fatBoyBack": [
         {
             "name": "霆軒",
             "speaker": "fatBoy",
             "content": "唉，好想拿一次冠軍哦"
         }
     ],
-    "CH3_strongBoyBack": [
+    "Ch3_strongBoyBack": [
         {
             "name": "奕軍",
             "speaker": "strongBoy",
             "content": "我該怎麼做，才能兩全其美呢？"
         }
     ],
-    "CH3_sunnyAndPunk": [
+    "Ch3_sunnyAndPunk": [
         {
             "name": "蕭彤",
             "speaker": "punk",
@@ -1824,14 +1854,14 @@
             "content": "反正你怎樣做他都聽不下去，又何必再繼續自討苦吃呢？"
         }
     ],
-    "CH3_sunny": [
+    "Ch3_sunny": [
         {
             "name": "莉晴",
             "speaker": "sunny",
             "content": "那種人不值得你的同情"
         }
     ],
-    "CH3_punk": [
+    "Ch3_punk": [
         {
             "name": "蕭彤",
             "speaker": "punk",
@@ -1843,7 +1873,7 @@
             "content": "這樣丟下他不管真的好嗎？"
         }
     ],
-    "CH3_princessAndBad": [
+    "Ch3_princessAndBad": [
         {
             "name": "映之",
             "speaker": "badBoy",
@@ -1943,7 +1973,7 @@
             ]
         }
     ],
-    "CH3_princessBack": [
+    "Ch3_princessBack": [
         {
             "name": "茱茵",
             "speaker": "princess",
@@ -1955,7 +1985,7 @@
             "content": "在我眼裡他就只是個笑話，自作自受的蠢貨"
         }
     ],
-    "CH3_badBoyBack": [
+    "Ch3_badBoyBack": [
         {
             "name": "映之",
             "speaker": "badBoy",
