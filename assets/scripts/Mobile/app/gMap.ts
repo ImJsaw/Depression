@@ -35,21 +35,12 @@ export default class gMap extends App {
     startApp(){
         
         cc.log("start gMap");
-        this.showWifiHint();
-        if (!Define.GameInfo.Inst.isWifiConnect) {
-            return;
-        }
-        this.node.children.forEach( (element)=>element.active = true);
+        this.checkWifi();
         let action = cc.spawn(
             cc.scaleTo(0.3, 1).easing(cc.easeCubicActionOut()),
             cc.fadeTo(0.3,255).easing(cc.easeCubicActionIn()),
         );
         this.node.runAction(action);
-
-        this.regDragEvent();
-
-        this.updateCursor(Define.GameInfo.Inst.curRealityScene);
-        
     }
 
     regDragEvent(){
@@ -63,8 +54,15 @@ export default class gMap extends App {
         });
     }
 
-    showWifiHint(){
-        this.wifiHint.active = !Define.GameInfo.Inst.isWifiConnect;
+    checkWifi(){
+        if(!Define.GameInfo.Inst.isWifiConnect){
+            this.wifiHint.active = true;
+        }
+        else{
+            this.node.children.forEach( (element)=>element.active = true);
+            this.updateCursor(Define.GameInfo.Inst.curRealityScene);
+            this.regDragEvent();
+        }
     }
 
     unRegDragEvent(){
