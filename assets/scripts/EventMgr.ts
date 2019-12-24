@@ -12,6 +12,9 @@ const { ccclass, property, executionOrder } = cc._decorator;
 export default class EventMgr {
     private scenario: ScenarioState = ScenarioState.Ch1_1;
     private bringToSchool = 0;
+    private Ch2Count = 0;
+    private Ch3Count = 0;
+
     private clickCard = false;
     checkChapter1_1(callingNode: cc.Node) {
         if (this.bringToSchool == 4) {
@@ -46,14 +49,14 @@ export default class EventMgr {
                     case "book":
                         this.bringToSchool += 1;
                         callingNode.destroy();
-                        if (this.bringToSchool == 4) {
+                        if (this.bringToSchool == 3) {
                             let myRoom = callingNode.parent.parent.getChildByName('myRoom');
                             myRoom.getChildByName('bag').name = "complete";
                         }
                         break;
                     case "complete":
                         // this.checkChapter1_1(callingNode);
-                        if (this.bringToSchool == 4) {
+                        if (this.bringToSchool == 3) {
                             callingNode.name = "bag";
                             let livingRoom = cc.find("Canvas/centerAnchor/reality/home/overview");
                             livingRoom.getChildByName('goToLeadingRoleRoomBack').active = true;
@@ -90,25 +93,41 @@ export default class EventMgr {
                     case "":
                         callingNode.destroy();
                         break;
-                    case "":
-                        this.clickCard = true;
-                        break;
                 }
                 break;
             case ScenarioState.Ch2:
                 this.play('Ch2_' + objName);
                 switch (objName) {
+                    case "strongAndFat":
+                    case "punkAndDance":
+                    case "nerdAndStupid":
+                        this.Ch2Count += 1;
+                        callingNode.destroy();
+                        if (this.Ch2Count == 3) {
+                            this.Ch2Complete();
+                        }
+                        break;
                 }
                 break;
             case ScenarioState.Ch3:
                 this.play('Ch3_' + objName);
                 switch (objName) {
+                    case "strongAndFat":
+                    case "sunnyAndPunk":
+                    case "princessAndBad":
+                        this.Ch2Count += 1;
+                        callingNode.destroy();
+                        if (this.Ch3Count == 3) {
+                            let mountain = cc.find("Canvas/centerAnchor/reality/mountain/overview");
+                            mountain.getChildByName("ending").active = true;
+                        }
+                        break;
                 }
                 break;
-
         }
     }
     play(name: string) {
+        cc.log(name);
         cc.find('Canvas/Msg').getComponent('MsgMgr').play(name);
     }
 
@@ -125,7 +144,6 @@ export default class EventMgr {
         else if (this.scenario == ScenarioState.Ch1_2) {
             this.scenario = ScenarioState.Ch1_3;
             this.play('Ch1-2_complete');
-
             // Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;
             // UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
 
@@ -137,38 +155,31 @@ export default class EventMgr {
         let livingRoom = cc.find("Canvas/centerAnchor/reality/home/overview");
         livingRoom.getChildByName('goToLeadingRoleRoomBack').destroy();
 
-        let hallway = cc.find("Canvas/centerAnchor/reality/school/hallway");
-        hallway.getChildByName("goToLocker").active = false;
-        hallway.getChildByName("items").active = false;
-        hallway.getChildByName("goToClassroom").active = false;
-        hallway.getChildByName("goToClassroomBack").active = true;
-
+        let school = cc.find("Canvas/centerAnchor/reality/school/overview");
+        school.getChildByName("goToHallwayEmpty").active = true;
+        school.getChildByName("goToHallwayBack").active = false;
     }
+
     public Ch2Complete() {
-        this.play('Ch2Complete');
+        //this.play('Ch2Complete');
         this.scenario = ScenarioState.Ch3;
 
         let mountain = cc.find("Canvas/centerAnchor/reality/mountain/overview");
         mountain.getChildByName("fatBoyBack").active = false;
-        mountain.getChildByName("strongBoy").active = false;
+        mountain.getChildByName("strongBoyBack").active = false;
 
         let school = cc.find("Canvas/centerAnchor/reality/school/overview");
-        school.getChildByName("goToHallway").active = false;
+        school.getChildByName("goToHallwayEmpty").active = false;
         school.getChildByName("goToHallwayBack").active = true;
-
-        let classroom = cc.find("Canvas/centerAnchor/reality/school/classroom");
-        classroom.getChildByName("goToHallway").active = false;
-        classroom.getChildByName("goToHallwayBack").active = true;
 
         let bridge = cc.find("Canvas/centerAnchor/reality/bridge/overview");
         bridge.getChildByName("goToBasketballCourt").active = true;
 
         let street = cc.find("Canvas/centerAnchor/reality/street/overview");
-        street.getChildByName("badBoyBack").active = false;
-        street.getChildByName("princessBack").active = false;
+        street.getChildByName("badBoyBack").active = true;
+        street.getChildByName("princessBack").active = true;
         street.getChildByName("goToCafe").active = true;
         street.getChildByName("goToCafeBack").active = false;
-
     }
 
 }

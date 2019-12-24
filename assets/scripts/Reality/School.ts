@@ -10,40 +10,52 @@ import LongAxis from "../LongAxisMgr";
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class School extends cc.Component {
 
-    goToClassroom(){
+    goToClassroom() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("classroom").active = true
         this.getComponent(LongAxis).enabled = false
     }
-    goToClassroomBack(){
+    goToClassroomBack() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("classroomBack").active = true
         this.getComponent(LongAxis).enabled = false
     }
+    goToClassroomEmpty() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("classroomEmpty").active = true
+        this.getComponent(LongAxis).enabled = false
+    }
 
-    goToHallway(){
+    goToHallway() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("hallway").active = true
+        this.getComponent(LongAxis).target = this.node.getChildByName("hallway");
         this.getComponent(LongAxis).enabled = true
-    
+
     }
-    goToHallwayBack(){
+    goToHallwayBack() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("hallwayBack").active = true
+        this.getComponent(LongAxis).target = this.node.getChildByName("hallwayBack");
         this.getComponent(LongAxis).enabled = true
-    
+    }
+    goToHallwayEmpty() {
+        this.node.children.forEach(node => node.active = false)
+        this.node.getChildByName("hallwayEmpty").active = true
+        this.getComponent(LongAxis).target = this.node.getChildByName("hallwayEmpty");
+        this.getComponent(LongAxis).enabled = true
     }
 
-    goToLocker(){
+    goToLocker() {
         this.node.children.forEach(node => node.active = false)
         this.node.getChildByName("locker").active = true
         this.getComponent(LongAxis).enabled = false
-    
+
     }
 
 }

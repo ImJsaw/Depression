@@ -1,10 +1,19 @@
-
 {
     "scriptname": [
         {
             "name": "eqweq",
             "speaker": "躲酒王",
             "content": "emqkweqweqjeioq"
+        },
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你也這麼覺得嗎…可是我上次押勇士慘賠3000元欸\n嗯…還是問問看宇翔好了"
+        },
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "齁！你不懂辣！我們去問宇翔，他一定會同意我的"
         },
         {
             "name": "eqweq",
@@ -16,6 +25,143 @@
                     "event": "example"
                 }
             ]
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": " ......剩下的看起來也是差不多的內容。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "再往後看吧!"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "line貼圖？企劃？這個筆記本在記錄甚麼啊？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "哇...... 這是某種的分鏡圖吧？ 這是我們學校哪門課的專題作業嗎？\n這課也太重了吧，我一定不要修這門課。"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "欸，這不是宇翔很愛的那系列上次出的貼圖嗎？"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "嗯？等等，這貼圖好像跟上次出的內容有點不同的樣子。為什麼宇翔的手上會有這東西啊？"
+        }
+    ],
+    "CH3_badBoy": [
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "聽說那個宇翔喔，他工作好像丟了，可憐"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不意外啊，要比帥，帥不過我，要比才華，也比不過我。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "乾脆讓我代替他畫畫吧。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "要比帥你還早得很，別臭美了。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "還有我以前就不太喜歡宇翔，連提到他名字都懶。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "在我眼裡他就只是個笑話，專門娛樂我的小丑。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "那我在你眼裡算甚麼?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "也是小丑，你跟宇翔同個level的，不要往自己臉上貼金。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "哈?我比宇翔高級太多了吧?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "用食物來比喻的話我就是高檔餐廳的牛排，而他就是麥當勞的薯條。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "你懂我意思嗎?"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "不懂，完全不懂，就說你是小丑你不信，你剛剛說笑話?"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "算了，不過我也不太喜歡宇翔，尤其那個甚麼事情都想做的樣子。"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "不乖乖待著打籃球、讀書，偏要跑去做圖文作家兼職"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "是不是覺得我們這些人的層次配不上他啊。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "對對對，你說到重點了，我才這麼不爽他。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "這次被炒真的是報應啦，有一次我忘記發生甚麼事情了，"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "他惹的我很不高興，結果也沒跟我道歉，活該!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "真的，啊我們到了，就在這裡。"
+        },
+        {
+            "name": "茱茵",
+            "speaker": "princess",
+            "content": "最好這間店有賣我想要的東西，如果沒有就別想我再跟你出來了!"
+        },
+        {
+            "name": "映之",
+            "speaker": "badBoy",
+            "content": "放心，我不是宇翔那種冒失鬼，怎麼可能搞錯"
         }
     ]
 }

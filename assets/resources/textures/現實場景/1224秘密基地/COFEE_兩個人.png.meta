@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "f57f6b97-6887-4db9-8f4c-21d8d61b1e4a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "COFEE_兩個人": {
+      "ver": "1.0.4",
+      "uuid": "4d664c23-0a8d-4e6e-b98d-8565f053e080",
+      "rawTextureUuid": "f57f6b97-6887-4db9-8f4c-21d8d61b1e4a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1980,
+      "height": 1080,
+      "rawWidth": 1980,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

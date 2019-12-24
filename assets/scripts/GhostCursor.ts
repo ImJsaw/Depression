@@ -10,18 +10,19 @@
 
 const { ccclass, property } = cc._decorator;
 
-export enum cursorType{
-    None = -1,
-    Item,
+export enum cursorType {
+    None,
     Door,
-    Character
+    Character,
+     Item
+
 }
 
 @ccclass
 export default class GhostCursor extends cc.Component {
-    @property({type:cc.Enum(cursorType),serializable:true})
-    type : cursorType = cursorType.Item;
-    
+    @property({ type: cc.Enum(cursorType), serializable: true })
+    type: cursorType = cursorType.Item;
+
     start() {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
         this.node.on(cc.Node.EventType.MOUSE_MOVE, this.onMouseMove, this);
@@ -40,33 +41,33 @@ export default class GhostCursor extends cc.Component {
         this.moveTip(mousePosition);
         // cc.find('Canvas/Cursor').setPosition(mousePosition.x, mousePosition.y)
     }
-    
+
     onMouseDown(_) {
         this.dropTip();
     }
 
-    moveTip(pos : cc.Vec2){
-        switch(this.type){
+    moveTip(pos: cc.Vec2) {
+        switch (this.type) {
             case cursorType.Character:
                 cc.find('Canvas/CharacterCursor').setPosition(pos);
                 return;
-            case cursorType.Door:    
+            case cursorType.Door:
                 cc.find('Canvas/DoorCursor').setPosition(pos);
-                return;    
+                return;
             case cursorType.Item:
                 cc.find('Canvas/ItemCursor').setPosition(pos);
                 return;
         }
     }
 
-    dropTip(){
-        switch(this.type){
+    dropTip() {
+        switch (this.type) {
             case cursorType.Character:
                 cc.find('Canvas/CharacterCursor').setPosition(-4096, -2048);
                 return;
-            case cursorType.Door:    
+            case cursorType.Door:
                 cc.find('Canvas/DoorCursor').setPosition(-4096, -2048);
-                return;    
+                return;
             case cursorType.Item:
                 cc.find('Canvas/ItemCursor').setPosition(-4096, -2048);
                 return;
