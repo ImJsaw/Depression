@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "abbcd97e-f900-43d9-94f3-a58b34f47d7e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "basketballboy (2)": {
+      "ver": "1.0.4",
+      "uuid": "6125fdbc-3652-40fb-9992-4626ca7fcfd0",
+      "rawTextureUuid": "abbcd97e-f900-43d9-94f3-a58b34f47d7e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 555,
+      "height": 2467,
+      "rawWidth": 555,
+      "rawHeight": 2467,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
