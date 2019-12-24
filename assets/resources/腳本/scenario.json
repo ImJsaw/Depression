@@ -267,6 +267,21 @@
             "name": "霆軒",
             "speaker": "fatBoy",
             "content": "不用猶豫辣！就跟你說下勇士就對了，勇士必勝！"
+        },
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "",
+            "selections": [
+                {
+                    "content": "押勇士",
+                    "event": "warrior"
+                },
+                {
+                    "content": "不押勇士",
+                    "event": "notWarrior"
+                }
+            ]
         }
     ],
     "Ch1-2_strongBoy_1": [
@@ -321,6 +336,20 @@
                     "event": "notWarrior"
                 }
             ]
+        }
+    ],
+    "warrior": [
+        {
+            "name": "弈軍",
+            "speaker": "strongBoy",
+            "content": "你也這麼覺得嗎…可是我上次押勇士慘賠3000元欸..."
+        }
+    ],
+    "notWarrior": [
+        {
+            "name": "霆軒",
+            "speaker": "fatBoy",
+            "content": "齁！你不懂辣！少在那邊亂說哦"
         }
     ],
     "Ch1-2_punk_1": [

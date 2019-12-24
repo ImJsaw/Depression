@@ -32,7 +32,17 @@ export default class MsgEvents extends cc.Component {
         UIMgr.Inst.realityMgr.changeScene(Define.GameInfo.Inst.curRealityScene, true);
 
     }
+    notWarrior() {
+        window['stopScript']()
+        cc.find('Canvas/Msg').getComponent('MsgMgr').play("notWarrior");
 
+    }
+
+    warrior() {
+        window['stopScript']()
+        cc.find('Canvas/Msg').getComponent('MsgMgr').play("warrior");
+
+    }
     goToHome() {
         window['stopScript']()
         Define.GameInfo.Inst.curRealityScene = Define.RealityScene.home;

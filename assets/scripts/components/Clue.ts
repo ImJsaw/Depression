@@ -1,4 +1,5 @@
 import Game from "../Game";
+import { GameState } from "../MainStateMgr";
 
 const { ccclass, property } = cc._decorator;
 
@@ -35,6 +36,9 @@ export default class Clue extends cc.Component {
                 element.active = false;
         });
         post.getChildByName("openMobile").active = true;
+    }
+    ending(){
+        Game.Inst.mainStateMgr.changeState(GameState.End);
     }
     disable() {
         // this.node.active = false;
