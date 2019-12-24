@@ -178,6 +178,7 @@ export default class EventMgr {
         let street = cc.find("Canvas/centerAnchor/reality/street/overview");
         street.getChildByName("badBoyBack").active = true;
         street.getChildByName("princessBack").active = true;
+        street.getChildByName("princessAndBad").active = true;
         street.getChildByName("goToCafe").active = true;
         street.getChildByName("goToCafeBack").active = false;
     }

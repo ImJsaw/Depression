@@ -1577,8 +1577,7 @@
         {
             "name": "奕軍",
             "speaker": "strongBoy",
-            "content": "何況要是有甚麼意外，我們也好去幫助宇翔啊",
-            "end":"strongAndFatEnd"
+            "content": "何況要是有甚麼意外，我們也好去幫助宇翔啊"
         }
     ],
     "Ch2_fatBoyBack": [
@@ -1790,7 +1789,9 @@
         {
             "name": "霆軒",
             "speaker": "fatBoy",
-            "content": "唉算了，你是隊長，你愛怎麼做就怎麼做吧"
+            "content": "唉算了，你是隊長，你愛怎麼做就怎麼做吧",
+            "end":"strongAndFatEnd"
+
         }
     ],
     "Ch3_fatBoyBack": [
@@ -1917,7 +1918,7 @@
                     "event": "princessAndBad"
                 },
                 {
-                    "content": "經營這麼久，天天發個meme都能超越一萬吧...",
+                    "content": "發meme都能超越一萬吧...",
                     "event": "princessAndBad"
                 }
             ]
@@ -1997,6 +1998,14 @@
             "content": "不乖乖待著打籃球、讀書，偏要跑去做圖文作家兼職"
         }
     ],
+    "connectWifi": [
+        {
+            "name": "",
+            "speaker": "null",
+            "content": "連上網路了"
+        }
+    ],
+
     "====================================================================================SCENARIO_Ch3_END": [
         {
             "name": "",

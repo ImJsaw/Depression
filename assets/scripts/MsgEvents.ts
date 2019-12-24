@@ -23,8 +23,8 @@ export default class MsgEvents extends cc.Component {
         this.demo.active = true
     }
     strongAndFatEnd() {
-        let backetballCourt = cc.find("Canvas/centerAnchor/reality/bridge/backetballCourt");
-        backetballCourt.getChildByName("strongAndFat").active = false;
+        let basketballCourt = cc.find("Canvas/centerAnchor/reality/bridge/basketballCourt");
+        basketballCourt.getChildByName("strongAndFat").active = false;
     }
     goToSchool() {
         window['stopScript']()

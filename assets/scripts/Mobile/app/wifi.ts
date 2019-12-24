@@ -76,6 +76,7 @@ export default class wifi extends App {
         Game.Inst.eventMgr.connectWifi();
         UIMgr.Inst.mobileMgr.notifyMenu.setWifi(true);
         cc.log("connectWIFI");
+        cc.find('Canvas/Msg').getComponent('MsgMgr').play("connectWifi");
         UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
         UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
         UIMgr.Inst.mobileMgr.notifyMenu.getNotify();
