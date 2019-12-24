@@ -54,7 +54,7 @@ export default class MobileUIMgr extends cc.Component {
         else {
             this.notifyMenu.isShow(isOn, ()=>{
                 this.pageMgr.regDragEvent();
-                onFinished();
+                if(onFinished != undefined) onFinished();
             });
         }
     }

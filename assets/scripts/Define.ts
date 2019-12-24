@@ -51,6 +51,16 @@ export enum IGAccount{
     girlFriend
 }
 
+export enum LineMsg{
+    None,
+    EJ,
+    basketball,
+    home,
+    ton,
+    CS,
+    LC
+}
+
 export class GameInfo{
     private static instance: GameInfo = null;
 
@@ -90,11 +100,6 @@ export interface LineLog{
 
 export interface State{
     index : number[];
-}
-
-export interface LineMsg{
-    nameIndex : number;
-    msg : string;
 }
 
 // export interface IGpost{

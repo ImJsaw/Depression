@@ -2,6 +2,7 @@ import * as Define from "../../Define";
 import LineMsgPrefab from "../../components/LineMsgPrefab";
 import App from "./App";
 import Game from "../../Game";
+import LineContent from "../../components/LineContent";
 
 const {ccclass, property} = cc._decorator;
 
@@ -12,12 +13,16 @@ export default class line extends App {
     @property(cc.Node)
     msgRoot : cc.Node = null;
 
-    /**msg prefab */
-    @property(cc.Prefab)
-    msgPrefab : cc.Prefab = null;
+    // /**msg prefab */
+    // @property(cc.Prefab)
+    // msgPrefab : cc.Prefab = null;
 
     @property(cc.Node)
     profile : cc.Node = null;
+
+    @property(cc.Node)
+    contentRoot : cc.Node = null;
+    
 
     /**animation duration */
     private duration : number = 1;
@@ -44,13 +49,13 @@ export default class line extends App {
         this.node.runAction(action);
 
 
-        //refresh msg
-        this.msgRoot.children.forEach((element)=>element.destroy());
+        // //refresh msg
+        // this.msgRoot.children.forEach((element)=>element.destroy());
 
         //get cur log
-        this.getCurLineMsg();
+        // this.getCurLineMsg();
         //test
-        this.generateMsg();
+        // this.generateMsg();
 
         this.openChat();
         // this.regDragEvent();
@@ -64,12 +69,26 @@ export default class line extends App {
 
     openChat(){
         this.profile.active = false;
+        this.contentRoot.active = false;
         this.msgRoot.active = true;
+    }
+
+    openMsg(msgName : Define.LineMsg){
+        this.contentRoot.active = true;
+        this.profile.active = false;
+        this.contentRoot.children.forEach((element)=>{
+            if(element.getComponent(LineContent).getMsgName() == msgName){
+                element.active = true;
+            }
+            else 
+                element.active = false;
+        })
     }
 
     openProfile(){
         this.profile.active = true;
         this.msgRoot.active = false;
+        this.contentRoot.active = false;
     }
 
     regDragEvent(){
@@ -91,20 +110,20 @@ export default class line extends App {
     }
 
 
-    generateMsg(){
-        //generate new msg
-        let node = cc.instantiate(this.msgPrefab);
-        node.parent = this.msgRoot;
-        node.y = 200;
+    // generateMsg(){
+    //     //generate new msg
+    //     let node = cc.instantiate(this.msgPrefab);
+    //     node.parent = this.msgRoot;
+    //     node.y = 200;
 
-        //manage serial num
-        node.getComponent(LineMsgPrefab).init(1);
+    //     //manage serial num
+    //     node.getComponent(LineMsgPrefab).init(1);
 
-        //move all exist msg down
-        this.msgRoot.children.forEach(element=>{
-            element.getComponent(LineMsgPrefab).moveDown();
-        })
-    }
+    //     //move all exist msg down
+    //     this.msgRoot.children.forEach(element=>{
+    //         element.getComponent(LineMsgPrefab).moveDown();
+    //     })
+    // }
 
     /**
      * move msgs

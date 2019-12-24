@@ -16,7 +16,9 @@ export default class gMap extends App {
 
     @property(cc.Node)
     iconRoot : cc.Node = null;
-    
+
+    @property(cc.Node)
+    wifiHint : cc.Node = null;
 
     private mapMax : cc.Vec2 = new cc.Vec2(1000,500);
     private mapMin : cc.Vec2 = new cc.Vec2(-1000,-500);
@@ -33,6 +35,10 @@ export default class gMap extends App {
     startApp(){
         
         cc.log("start gMap");
+        this.showWifiHint();
+        if (!Define.GameInfo.Inst.isWifiConnect) {
+            return;
+        }
         this.node.children.forEach( (element)=>element.active = true);
         let action = cc.spawn(
             cc.scaleTo(0.3, 1).easing(cc.easeCubicActionOut()),
@@ -55,6 +61,10 @@ export default class gMap extends App {
             //make map move with touch
             self.moveMap(delta.x, delta.y);
         });
+    }
+
+    showWifiHint(){
+        this.wifiHint.active = !Define.GameInfo.Inst.isWifiConnect;
     }
 
     unRegDragEvent(){

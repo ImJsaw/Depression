@@ -60,7 +60,7 @@ export default class AppMgr extends cc.Component {
     }
     
     startApp(appID : Define.Apps){
-        if(appID != Define.Apps.None){
+        if(appID != Define.Apps.None && !UIMgr.Inst.mobileMgr.notifyMenu.isShowing){
             this.curAppID = appID;
             UIMgr.Inst.mobileMgr.pageMgr.setFocus(false);
             this.appList[this.curAppID].startApp();
