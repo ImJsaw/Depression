@@ -17,6 +17,7 @@ export default class RealityEntry extends cc.Component {
     
     onClick(){
         UIMgr.Inst.realityMgr.changeScene(this.sceneName,true,()=>{
+            UIMgr.Inst.realityMgr.backToOverView(Define.GameInfo.Inst.curRealityScene);
             this.mapInst.updateCursor(this.sceneName);  
             this.mapInst.endApp();
             this.mapInst.node.children.forEach( (element)=>element.active  = false);

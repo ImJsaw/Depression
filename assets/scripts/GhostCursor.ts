@@ -11,7 +11,6 @@
 const { ccclass, property } = cc._decorator;
 
 export enum cursorType{
-    None = -1,
     Item,
     Door,
     Character
